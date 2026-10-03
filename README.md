@@ -55,6 +55,33 @@ Click the image below to watch the full system demonstration across adverse weat
 
 ---
 
-## 🏗️ System Architecture
 
-The computation pipeline partitions high-density tensor operations to the FPGA hardware pipeline while retaining high-level control in Python/Linux:
+## 🖼️ Showcase & Detection Results
+
+| Speed Limit 100 km/h | No Entry |
+| :---: | :---: |
+| ![Speed Limit 100](assets/traffic_speed100.png) | ![No Entry](assets/traffic_no_entry.png) |
+| **Speed Limit 20 km/h** | **Road Work Ahead** |
+| ![Speed Limit 20](assets/traffic_speed20.png) | ![Road Work](assets/traffic_construction.png) |
+
+---
+
+## 🛠️ Hardware & Software Stack
+
+* **Target Device**: AMD Xilinx PYNQ-ZU (Zynq UltraScale+ XCZU5EV)
+* **EDA & Toolchains**: AMD Vitis HLS, Vivado Design Suite, PYNQ Linux Framework
+* **Core Libraries**: PyTorch (Quantization/Pruning), OpenCV, NumPy
+* **Communication Protocol**: AXI4-Stream, AXI-Lite, Direct Memory Access (DMA)
+
+---
+
+## 📁 Repository Structure
+
+```text
+edge-traffic-sign-system/
+├── assets/                  # Architecture diagrams, test images, and snapshots
+├── hls/                     # Vitis HLS source code and pragmas for Conv/Pool IP
+├── overlay/                 # Vivado bitstream (.bit) and hardware handoff (.hwh)
+├── notebooks/               # Jupyter notebooks for runtime inference and testing
+├── .gitignore               # Excludes large checkpoints (.dcp) and archive datasets
+└── README.md
