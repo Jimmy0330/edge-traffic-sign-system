@@ -9,9 +9,7 @@
 
 ## 🎬 Video Demonstration
 
-Click the image below to watch the full system demonstration across adverse weather conditions (Heavy Rain, Night, Heavy Fog, and Sunny Highway):
-
-[![RE-ATSI Video Demonstration](https://img.youtube.com/vi/XQafspSWWTI/maxresdefault.jpg)](https://www.youtube.com/watch?v=XQafspSWWTI)
+<video src="https://github.com/user-attachments/assets/https://github.com/user-attachments/assets/7d4c22d3-1aca-4843-a06d-ffd919d3bc44.mp4" controls width="100%"></video>
 
 > 💡 *Live demo testing real-time traffic sign detection and warning capabilities under complex edge driving scenarios.*
 ---
