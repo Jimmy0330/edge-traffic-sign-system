@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="gtsrb_cnn.h" path="C:\Xilinx\pynq-zu\HLS\CNN_GTSRB_M3\src\gtsrb_cnn.h"/>
+    <originFiles name="gtsrb_cnn.cpp" path="C:\Xilinx\pynq-zu\HLS\CNN_GTSRB_M3\src\gtsrb_cnn.cpp"/>
+  </source>
+  <testbench>
+    <originFiles name="weight_9.dat" path="C:\Xilinx\pynq-zu\HLS\CNN_GTSRB_M3\src\record\weight_9.dat"/>
+    <originFiles name="weight_8.dat" path="C:\Xilinx\pynq-zu\HLS\CNN_GTSRB_M3\src\record\weight_8.dat"/>
+    <originFiles name="weight_7.dat" path="C:\Xilinx\pynq-zu\HLS\CNN_GTSRB_M3\src\record\weight_7.dat"/>
+    <originFiles name="weight_6.dat" path="C:\Xilinx\pynq-zu\HLS\CNN_GTSRB_M3\src\record\weight_6.dat"/>
+    <originFiles name="weight_5.dat" path="C:\Xilinx\pynq-zu\HLS\CNN_GTSRB_M3\src\record\weight_5.dat"/>
+    <originFiles name="weight_4.dat" path="C:\Xilinx\pynq-zu\HLS\CNN_GTSRB_M3\src\record\weight_4.dat"/>
+    <originFiles name="weight_3.dat" path="C:\Xilinx\pynq-zu\HLS\CNN_GTSRB_M3\src\record\weight_3.dat"/>
+    <originFiles name="weight_2.dat" path="C:\Xilinx\pynq-zu\HLS\CNN_GTSRB_M3\src\record\weight_2.dat"/>
+    <originFiles name="weight_1.dat" path="C:\Xilinx\pynq-zu\HLS\CNN_GTSRB_M3\src\record\weight_1.dat"/>
+    <originFiles name="weight_0.dat" path="C:\Xilinx\pynq-zu\HLS\CNN_GTSRB_M3\src\record\weight_0.dat"/>
+    <originFiles name="test_gtsrb_cnn.cpp" path="C:\Xilinx\pynq-zu\HLS\CNN_GTSRB_M3\src\test_gtsrb_cnn.cpp"/>
+    <originFiles name="input_image.dat" path="C:\Xilinx\pynq-zu\HLS\CNN_GTSRB_M3\src\HLS_TB\input_image.dat"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

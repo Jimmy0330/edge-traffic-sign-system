@@ -1,0 +1,3 @@
+7 errors generated.
+Error while processing C:\Xilinx\pynq-zu\HLS\CNN_GTSRB\CNN_GTSRB\solution1\.autopilot\db\gtsrb_cnn.pp.0.cpp.
+clang-tidy applied 17 of 17 suggested fixes.

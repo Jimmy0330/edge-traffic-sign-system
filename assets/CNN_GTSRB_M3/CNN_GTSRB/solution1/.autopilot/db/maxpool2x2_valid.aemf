@@ -1,0 +1,1823 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1757776639839">
+  <ports id="1" name="feature_in" type="PortType" originalName="feature_in" coreName="RAM_2P_BRAM" coreId="1953394531" bitwidth="32" iftype="IfTypeRegister" arraysize="1024">
+    <dataOutputObjs>getelementptr</dataOutputObjs>
+    <dataOutputObjs>getelementptr</dataOutputObjs>
+    <dataOutputObjs>getelementptr</dataOutputObjs>
+    <dataOutputObjs>getelementptr</dataOutputObjs>
+  </ports>
+  <ports id="2" name="feature_out" type="PortType" originalName="feature_out" coreName="RAM_2P_BRAM" coreId="1969317477" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="256">
+    <dataInputObjs>getelementptr</dataInputObjs>
+  </ports>
+  <edges id="159" source_obj="//@blocks.0/@node_objs.4" sink_obj="//@blocks.0/@node_objs.5"/>
+  <edges id="162" source_obj="//@blocks.0/@node_objs.3" sink_obj="//@blocks.0/@node_objs.6"/>
+  <edges id="165" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@blocks.0/@node_objs.7"/>
+  <edges id="168" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.0/@node_objs.8"/>
+  <edges id="170" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.0/@node_objs.9"/>
+  <edges id="171" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@blocks.0/@node_objs.10"/>
+  <edges id="172" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0"/>
+  <edges id="173" source_obj="//@blocks.0/@node_objs.4" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="174" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2"/>
+  <edges id="177" source_obj="//@regions.0/@basic_blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3"/>
+  <edges id="180" source_obj="//@regions.0/@basic_blocks.0/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.4"/>
+  <edges id="183" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.5"/>
+  <edges id="186" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.6"/>
+  <edges id="189" source_obj="//@regions.0/@basic_blocks.0/@node_objs.5" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.7"/>
+  <edges id="190" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.7"/>
+  <edges id="191" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.7"/>
+  <edges id="192" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.0"/>
+  <edges id="193" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.1"/>
+  <edges id="194" source_obj="//@blocks.0/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.2"/>
+  <edges id="195" source_obj="//@regions.0/@basic_blocks.1/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.3"/>
+  <edges id="197" source_obj="//@regions.0/@basic_blocks.1/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.4"/>
+  <edges id="199" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.4"/>
+  <edges id="200" source_obj="//@regions.0/@basic_blocks.1/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.5"/>
+  <edges id="203" source_obj="//@regions.0/@basic_blocks.1/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.6"/>
+  <edges id="204" source_obj="//@regions.0/@basic_blocks.1/@node_objs.5" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.6"/>
+  <edges id="205" source_obj="//@regions.0/@basic_blocks.1/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.6"/>
+  <edges id="206" source_obj="//@regions.0/@basic_blocks.1/@node_objs.6" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.7"/>
+  <edges id="207" source_obj="//@regions.0/@basic_blocks.1/@node_objs.6" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.8"/>
+  <edges id="208" source_obj="//@regions.0/@basic_blocks.1/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.9"/>
+  <edges id="211" source_obj="//@regions.0/@basic_blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.10"/>
+  <edges id="212" source_obj="//@regions.0/@basic_blocks.1/@node_objs.9" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.10"/>
+  <edges id="213" source_obj="//@regions.0/@basic_blocks.1/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.11"/>
+  <edges id="216" source_obj="//@regions.0/@basic_blocks.1/@node_objs.11" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.12"/>
+  <edges id="217" source_obj="//@regions.0/@basic_blocks.1/@node_objs.9" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.12"/>
+  <edges id="218" source_obj="//@regions.0/@basic_blocks.1/@node_objs.4" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.13"/>
+  <edges id="221" source_obj="//@regions.0/@basic_blocks.1/@node_objs.12" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.14"/>
+  <edges id="222" source_obj="//@regions.0/@basic_blocks.1/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.14"/>
+  <edges id="223" source_obj="//@regions.0/@basic_blocks.1/@node_objs.14" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.15"/>
+  <edges id="225" source_obj="//@regions.0/@basic_blocks.1/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.15"/>
+  <edges id="226" source_obj="//@regions.0/@basic_blocks.1/@node_objs.13" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.16"/>
+  <edges id="227" source_obj="//@regions.0/@basic_blocks.1/@node_objs.12" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.17"/>
+  <edges id="228" source_obj="//@regions.0/@basic_blocks.1/@node_objs.16" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.17"/>
+  <edges id="229" source_obj="//@regions.0/@basic_blocks.1/@node_objs.10" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.17"/>
+  <edges id="231" source_obj="//@regions.0/@basic_blocks.1/@node_objs.16" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.18"/>
+  <edges id="233" source_obj="//@regions.0/@basic_blocks.1/@node_objs.18" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.19"/>
+  <edges id="235" source_obj="//@regions.0/@basic_blocks.1/@node_objs.12" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.20"/>
+  <edges id="236" source_obj="//@regions.0/@basic_blocks.1/@node_objs.13" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.20"/>
+  <edges id="237" source_obj="//@regions.0/@basic_blocks.1/@node_objs.4" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.20"/>
+  <edges id="238" source_obj="//@regions.0/@basic_blocks.1/@node_objs.15" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.21"/>
+  <edges id="239" source_obj="//@regions.0/@basic_blocks.1/@node_objs.15" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.22"/>
+  <edges id="241" source_obj="//@regions.0/@basic_blocks.1/@node_objs.22" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.23"/>
+  <edges id="245" source_obj="//@regions.0/@basic_blocks.1/@node_objs.17" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.24"/>
+  <edges id="248" source_obj="//@regions.0/@basic_blocks.1/@node_objs.23" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.24"/>
+  <edges id="253" source_obj="//@regions.0/@basic_blocks.1/@node_objs.19" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.25"/>
+  <edges id="259" source_obj="//@regions.0/@basic_blocks.0/@node_objs.4" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.26"/>
+  <edges id="262" source_obj="//@regions.0/@basic_blocks.1/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.27"/>
+  <edges id="264" source_obj="//@regions.0/@basic_blocks.1/@node_objs.26" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.27"/>
+  <edges id="265" source_obj="//@regions.0/@basic_blocks.1/@node_objs.12" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.28"/>
+  <edges id="266" source_obj="//@regions.0/@basic_blocks.1/@node_objs.25" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.28"/>
+  <edges id="267" source_obj="//@regions.0/@basic_blocks.1/@node_objs.27" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.28"/>
+  <edges id="270" source_obj="//@regions.0/@basic_blocks.1/@node_objs.28" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.29"/>
+  <edges id="271" source_obj="//@regions.0/@basic_blocks.1/@node_objs.23" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.29"/>
+  <edges id="275" source_obj="//@regions.0/@basic_blocks.1/@node_objs.17" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.30"/>
+  <edges id="277" source_obj="//@regions.0/@basic_blocks.1/@node_objs.21" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.30"/>
+  <edges id="278" source_obj="//@regions.0/@basic_blocks.1/@node_objs.6" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.30"/>
+  <edges id="279" source_obj="//@regions.0/@basic_blocks.1/@node_objs.30" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.31"/>
+  <edges id="280" source_obj="//@ports.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.32"/>
+  <edges id="283" source_obj="//@regions.0/@basic_blocks.1/@node_objs.31" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.32"/>
+  <edges id="284" source_obj="//@regions.0/@basic_blocks.1/@node_objs.32" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.33"/>
+  <edges id="285" source_obj="//@regions.0/@basic_blocks.1/@node_objs.24" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.34"/>
+  <edges id="286" source_obj="//@regions.0/@basic_blocks.1/@node_objs.8" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.34"/>
+  <edges id="287" source_obj="//@regions.0/@basic_blocks.1/@node_objs.34" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.35"/>
+  <edges id="288" source_obj="//@ports.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.36"/>
+  <edges id="290" source_obj="//@regions.0/@basic_blocks.1/@node_objs.35" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.36"/>
+  <edges id="291" source_obj="//@regions.0/@basic_blocks.1/@node_objs.36" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.37"/>
+  <edges id="294" source_obj="//@regions.0/@basic_blocks.1/@node_objs.28" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.38"/>
+  <edges id="295" source_obj="//@regions.0/@basic_blocks.1/@node_objs.21" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.38"/>
+  <edges id="296" source_obj="//@regions.0/@basic_blocks.1/@node_objs.6" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.38"/>
+  <edges id="297" source_obj="//@regions.0/@basic_blocks.1/@node_objs.38" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.39"/>
+  <edges id="298" source_obj="//@ports.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.40"/>
+  <edges id="300" source_obj="//@regions.0/@basic_blocks.1/@node_objs.39" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.40"/>
+  <edges id="301" source_obj="//@regions.0/@basic_blocks.1/@node_objs.40" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.41"/>
+  <edges id="302" source_obj="//@regions.0/@basic_blocks.1/@node_objs.29" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.42"/>
+  <edges id="303" source_obj="//@regions.0/@basic_blocks.1/@node_objs.8" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.42"/>
+  <edges id="304" source_obj="//@regions.0/@basic_blocks.1/@node_objs.42" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.43"/>
+  <edges id="305" source_obj="//@ports.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.44"/>
+  <edges id="307" source_obj="//@regions.0/@basic_blocks.1/@node_objs.43" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.44"/>
+  <edges id="308" source_obj="//@regions.0/@basic_blocks.1/@node_objs.44" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.45"/>
+  <edges id="309" source_obj="//@regions.0/@basic_blocks.1/@node_objs.33" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.46"/>
+  <edges id="312" source_obj="//@regions.0/@basic_blocks.1/@node_objs.46" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.47"/>
+  <edges id="317" source_obj="//@regions.0/@basic_blocks.1/@node_objs.46" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.48"/>
+  <edges id="318" source_obj="//@regions.0/@basic_blocks.1/@node_objs.47" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.49"/>
+  <edges id="321" source_obj="//@regions.0/@basic_blocks.1/@node_objs.48" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.50"/>
+  <edges id="324" source_obj="//@regions.0/@basic_blocks.1/@node_objs.50" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.51"/>
+  <edges id="325" source_obj="//@regions.0/@basic_blocks.1/@node_objs.49" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.51"/>
+  <edges id="326" source_obj="//@regions.0/@basic_blocks.1/@node_objs.33" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.52"/>
+  <edges id="329" source_obj="//@regions.0/@basic_blocks.1/@node_objs.51" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.53"/>
+  <edges id="330" source_obj="//@regions.0/@basic_blocks.1/@node_objs.52" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.53"/>
+  <edges id="331" source_obj="//@regions.0/@basic_blocks.1/@node_objs.53" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.54"/>
+  <edges id="332" source_obj="//@regions.0/@basic_blocks.1/@node_objs.33" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.54"/>
+  <edges id="334" source_obj="//@regions.0/@basic_blocks.1/@node_objs.37" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.55"/>
+  <edges id="336" source_obj="//@regions.0/@basic_blocks.1/@node_objs.55" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.56"/>
+  <edges id="339" source_obj="//@regions.0/@basic_blocks.1/@node_objs.55" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.57"/>
+  <edges id="340" source_obj="//@regions.0/@basic_blocks.1/@node_objs.54" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.58"/>
+  <edges id="342" source_obj="//@regions.0/@basic_blocks.1/@node_objs.58" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.59"/>
+  <edges id="345" source_obj="//@regions.0/@basic_blocks.1/@node_objs.58" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.60"/>
+  <edges id="346" source_obj="//@regions.0/@basic_blocks.1/@node_objs.56" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.61"/>
+  <edges id="348" source_obj="//@regions.0/@basic_blocks.1/@node_objs.57" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.62"/>
+  <edges id="350" source_obj="//@regions.0/@basic_blocks.1/@node_objs.62" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.63"/>
+  <edges id="351" source_obj="//@regions.0/@basic_blocks.1/@node_objs.61" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.63"/>
+  <edges id="352" source_obj="//@regions.0/@basic_blocks.1/@node_objs.59" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.64"/>
+  <edges id="354" source_obj="//@regions.0/@basic_blocks.1/@node_objs.60" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.65"/>
+  <edges id="356" source_obj="//@regions.0/@basic_blocks.1/@node_objs.65" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.66"/>
+  <edges id="357" source_obj="//@regions.0/@basic_blocks.1/@node_objs.64" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.66"/>
+  <edges id="358" source_obj="//@regions.0/@basic_blocks.1/@node_objs.63" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.67"/>
+  <edges id="359" source_obj="//@regions.0/@basic_blocks.1/@node_objs.66" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.67"/>
+  <edges id="360" source_obj="//@regions.0/@basic_blocks.1/@node_objs.37" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.68"/>
+  <edges id="361" source_obj="//@regions.0/@basic_blocks.1/@node_objs.54" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.68"/>
+  <edges id="362" source_obj="//@regions.0/@basic_blocks.1/@node_objs.67" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.69"/>
+  <edges id="363" source_obj="//@regions.0/@basic_blocks.1/@node_objs.68" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.69"/>
+  <edges id="364" source_obj="//@regions.0/@basic_blocks.1/@node_objs.69" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.70"/>
+  <edges id="365" source_obj="//@regions.0/@basic_blocks.1/@node_objs.37" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.70"/>
+  <edges id="366" source_obj="//@regions.0/@basic_blocks.1/@node_objs.54" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.70"/>
+  <edges id="367" source_obj="//@regions.0/@basic_blocks.1/@node_objs.41" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.71"/>
+  <edges id="369" source_obj="//@regions.0/@basic_blocks.1/@node_objs.71" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.72"/>
+  <edges id="372" source_obj="//@regions.0/@basic_blocks.1/@node_objs.71" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.73"/>
+  <edges id="373" source_obj="//@regions.0/@basic_blocks.1/@node_objs.70" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.74"/>
+  <edges id="375" source_obj="//@regions.0/@basic_blocks.1/@node_objs.74" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.75"/>
+  <edges id="378" source_obj="//@regions.0/@basic_blocks.1/@node_objs.74" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.76"/>
+  <edges id="379" source_obj="//@regions.0/@basic_blocks.1/@node_objs.72" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.77"/>
+  <edges id="381" source_obj="//@regions.0/@basic_blocks.1/@node_objs.73" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.78"/>
+  <edges id="383" source_obj="//@regions.0/@basic_blocks.1/@node_objs.78" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.79"/>
+  <edges id="384" source_obj="//@regions.0/@basic_blocks.1/@node_objs.77" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.79"/>
+  <edges id="385" source_obj="//@regions.0/@basic_blocks.1/@node_objs.75" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.80"/>
+  <edges id="387" source_obj="//@regions.0/@basic_blocks.1/@node_objs.76" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.81"/>
+  <edges id="389" source_obj="//@regions.0/@basic_blocks.1/@node_objs.81" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.82"/>
+  <edges id="390" source_obj="//@regions.0/@basic_blocks.1/@node_objs.80" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.82"/>
+  <edges id="391" source_obj="//@regions.0/@basic_blocks.1/@node_objs.79" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.83"/>
+  <edges id="392" source_obj="//@regions.0/@basic_blocks.1/@node_objs.82" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.83"/>
+  <edges id="393" source_obj="//@regions.0/@basic_blocks.1/@node_objs.41" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.84"/>
+  <edges id="394" source_obj="//@regions.0/@basic_blocks.1/@node_objs.70" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.84"/>
+  <edges id="395" source_obj="//@regions.0/@basic_blocks.1/@node_objs.83" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.85"/>
+  <edges id="396" source_obj="//@regions.0/@basic_blocks.1/@node_objs.84" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.85"/>
+  <edges id="397" source_obj="//@regions.0/@basic_blocks.1/@node_objs.85" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.86"/>
+  <edges id="398" source_obj="//@regions.0/@basic_blocks.1/@node_objs.41" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.86"/>
+  <edges id="399" source_obj="//@regions.0/@basic_blocks.1/@node_objs.70" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.86"/>
+  <edges id="400" source_obj="//@regions.0/@basic_blocks.1/@node_objs.45" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.87"/>
+  <edges id="402" source_obj="//@regions.0/@basic_blocks.1/@node_objs.87" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.88"/>
+  <edges id="405" source_obj="//@regions.0/@basic_blocks.1/@node_objs.87" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.89"/>
+  <edges id="406" source_obj="//@regions.0/@basic_blocks.1/@node_objs.86" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.90"/>
+  <edges id="408" source_obj="//@regions.0/@basic_blocks.1/@node_objs.90" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.91"/>
+  <edges id="411" source_obj="//@regions.0/@basic_blocks.1/@node_objs.90" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.92"/>
+  <edges id="412" source_obj="//@regions.0/@basic_blocks.1/@node_objs.88" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.93"/>
+  <edges id="414" source_obj="//@regions.0/@basic_blocks.1/@node_objs.89" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.94"/>
+  <edges id="416" source_obj="//@regions.0/@basic_blocks.1/@node_objs.94" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.95"/>
+  <edges id="417" source_obj="//@regions.0/@basic_blocks.1/@node_objs.93" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.95"/>
+  <edges id="418" source_obj="//@regions.0/@basic_blocks.1/@node_objs.91" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.96"/>
+  <edges id="420" source_obj="//@regions.0/@basic_blocks.1/@node_objs.92" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.97"/>
+  <edges id="422" source_obj="//@regions.0/@basic_blocks.1/@node_objs.97" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.98"/>
+  <edges id="423" source_obj="//@regions.0/@basic_blocks.1/@node_objs.96" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.98"/>
+  <edges id="424" source_obj="//@regions.0/@basic_blocks.1/@node_objs.95" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.99"/>
+  <edges id="425" source_obj="//@regions.0/@basic_blocks.1/@node_objs.98" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.99"/>
+  <edges id="426" source_obj="//@regions.0/@basic_blocks.1/@node_objs.45" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.100"/>
+  <edges id="427" source_obj="//@regions.0/@basic_blocks.1/@node_objs.86" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.100"/>
+  <edges id="428" source_obj="//@regions.0/@basic_blocks.1/@node_objs.99" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.101"/>
+  <edges id="429" source_obj="//@regions.0/@basic_blocks.1/@node_objs.100" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.101"/>
+  <edges id="430" source_obj="//@regions.0/@basic_blocks.1/@node_objs.101" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.102"/>
+  <edges id="431" source_obj="//@regions.0/@basic_blocks.1/@node_objs.45" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.102"/>
+  <edges id="432" source_obj="//@regions.0/@basic_blocks.1/@node_objs.86" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.102"/>
+  <edges id="435" source_obj="//@regions.0/@basic_blocks.1/@node_objs.17" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.103"/>
+  <edges id="436" source_obj="//@regions.0/@basic_blocks.1/@node_objs.21" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.103"/>
+  <edges id="438" source_obj="//@regions.0/@basic_blocks.1/@node_objs.103" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.104"/>
+  <edges id="439" source_obj="//@regions.0/@basic_blocks.1/@node_objs.7" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.104"/>
+  <edges id="440" source_obj="//@regions.0/@basic_blocks.1/@node_objs.104" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.105"/>
+  <edges id="441" source_obj="//@regions.0/@basic_blocks.1/@node_objs.106" sink_obj="//@ports.1"/>
+  <edges id="443" source_obj="//@regions.0/@basic_blocks.1/@node_objs.105" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.106"/>
+  <edges id="444" source_obj="//@regions.0/@basic_blocks.1/@node_objs.102" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.107"/>
+  <edges id="445" source_obj="//@regions.0/@basic_blocks.1/@node_objs.106" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.107"/>
+  <edges id="446" source_obj="//@regions.0/@basic_blocks.1/@node_objs.15" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.108"/>
+  <edges id="448" source_obj="//@regions.0/@basic_blocks.1/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.109"/>
+  <edges id="451" source_obj="//@regions.0/@basic_blocks.1/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.110"/>
+  <edges id="453" source_obj="//@regions.0/@basic_blocks.1/@node_objs.109" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.110"/>
+  <edges id="454" source_obj="//@regions.0/@basic_blocks.0/@node_objs.6" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.111"/>
+  <edges id="455" source_obj="//@blocks.0/@node_objs.4" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.111"/>
+  <edges id="456" source_obj="//@regions.0/@basic_blocks.1/@node_objs.6" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.112"/>
+  <edges id="457" source_obj="//@blocks.0/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.112"/>
+  <edges id="458" source_obj="//@regions.0/@basic_blocks.1/@node_objs.110" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.113"/>
+  <edges id="459" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.113"/>
+  <edges id="460" source_obj="//@regions.0/@basic_blocks.1/@node_objs.20" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.114"/>
+  <edges id="461" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.114"/>
+  <edges id="462" source_obj="//@regions.0/@basic_blocks.1/@node_objs.108" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.115"/>
+  <edges id="463" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.115"/>
+  <edges id="464" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.116"/>
+  <edges id="504" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@regions.0/@basic_blocks.0"/>
+  <edges id="505" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@blocks.1"/>
+  <edges id="506" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.1"/>
+  <edges id="507" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.0" is_back_edge="1"/>
+  <edges id="508" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.1/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.112"/>
+  <edges id="509" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.1/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.113"/>
+  <edges id="510" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.1/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.115"/>
+  <edges id="511" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.5" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="512" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.8" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0"/>
+  <edges id="513" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.5" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.111"/>
+  <edges id="514" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.6" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.2"/>
+  <edges id="515" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.6" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.112"/>
+  <edges id="516" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.7" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.1"/>
+  <edges id="517" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.7" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.113"/>
+  <edges id="518" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.8" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.114"/>
+  <edges id="519" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.9" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.0"/>
+  <edges id="520" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.9" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.115"/>
+  <edges id="521" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.114"/>
+  <edges id="522" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.111"/>
+  <blocks id="16" name="entry" type="BlockType">
+    <controlOutputObjs>for.body9</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="3" name="w" originalName="w" coreId="0" bitwidth="2" opcode="alloca" m_display="0" m_topoIndex="1" m_clusterGroupNumber="-1">
+      <dataOutputObjs>store</dataOutputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="4" name="h" originalName="h" coreId="0" bitwidth="2" opcode="alloca" m_display="0" m_topoIndex="2" m_clusterGroupNumber="-1">
+      <dataOutputObjs>store</dataOutputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="5" name="indvar_flatten" coreId="0" bitwidth="4" opcode="alloca" m_display="0" m_topoIndex="3" m_clusterGroupNumber="-1">
+      <dataOutputObjs>store</dataOutputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="6" name="c" originalName="c" coreId="0" bitwidth="7" opcode="alloca" m_display="0" m_topoIndex="4" m_clusterGroupNumber="-1">
+      <dataOutputObjs>store</dataOutputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="7" name="indvar_flatten19" coreId="0" bitwidth="9" opcode="alloca" m_display="0" m_topoIndex="5" m_clusterGroupNumber="-1">
+      <dataOutputObjs>store</dataOutputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="10" name="indvar_flatten19_write_ln48" lineNumber="48" fileName="src/gtsrb_cnn.cpp" fileDirectory=".." coreId="0" contextFuncName="maxpool2x2_valid" opcode="store" m_display="0" m_delay="0.48" m_topoIndex="6" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/gtsrb_cnn.cpp" linenumber="48" fileDirectory="C:\Xilinx\pynq-zu\HLS\CNN_GTSRB" functionName="maxpool2x2_valid"/>
+      <dataInputObjs>alloca</dataInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="11" name="c_write_ln48" lineNumber="48" fileName="src/gtsrb_cnn.cpp" fileDirectory=".." coreId="0" contextFuncName="maxpool2x2_valid" opcode="store" m_display="0" m_delay="0.48" m_topoIndex="7" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/gtsrb_cnn.cpp" linenumber="48" fileDirectory="C:\Xilinx\pynq-zu\HLS\CNN_GTSRB" functionName="maxpool2x2_valid"/>
+      <dataInputObjs>alloca</dataInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="12" name="indvar_flatten_write_ln48" lineNumber="48" fileName="src/gtsrb_cnn.cpp" fileDirectory=".." coreId="0" contextFuncName="maxpool2x2_valid" opcode="store" m_display="0" m_delay="0.48" m_topoIndex="8" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/gtsrb_cnn.cpp" linenumber="48" fileDirectory="C:\Xilinx\pynq-zu\HLS\CNN_GTSRB" functionName="maxpool2x2_valid"/>
+      <dataInputObjs>alloca</dataInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="13" name="h_write_ln48" lineNumber="48" fileName="src/gtsrb_cnn.cpp" fileDirectory=".." coreId="0" contextFuncName="maxpool2x2_valid" opcode="store" m_display="0" m_delay="0.48" m_topoIndex="9" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/gtsrb_cnn.cpp" linenumber="48" fileDirectory="C:\Xilinx\pynq-zu\HLS\CNN_GTSRB" functionName="maxpool2x2_valid"/>
+      <dataInputObjs>alloca</dataInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="14" name="w_write_ln48" lineNumber="48" fileName="src/gtsrb_cnn.cpp" fileDirectory=".." coreId="0" contextFuncName="maxpool2x2_valid" opcode="store" m_display="0" m_delay="0.48" m_topoIndex="10" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/gtsrb_cnn.cpp" linenumber="48" fileDirectory="C:\Xilinx\pynq-zu\HLS\CNN_GTSRB" functionName="maxpool2x2_valid"/>
+      <dataInputObjs>alloca</dataInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="15" name="br_ln48" lineNumber="48" fileName="src/gtsrb_cnn.cpp" fileDirectory=".." coreId="0" contextFuncName="maxpool2x2_valid" opcode="br" m_display="0" m_topoIndex="11" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/gtsrb_cnn.cpp" linenumber="48" fileDirectory="C:\Xilinx\pynq-zu\HLS\CNN_GTSRB" functionName="maxpool2x2_valid"/>
+      <controlInputObjs>for.body9</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="src/gtsrb_cnn.cpp">
+      <validLinenumbers>48</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="150" name="for.end57.loopexit" type="BlockType">
+    <controlInputObjs>for.body9</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="149" name="_ln71" lineNumber="71" fileName="src/gtsrb_cnn.cpp" fileDirectory=".." coreId="0" contextFuncName="maxpool2x2_valid" opcode="ret" nodeLabel="6.0" m_display="0" m_topoIndex="117" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="src/gtsrb_cnn.cpp" linenumber="71" fileDirectory="C:\Xilinx\pynq-zu\HLS\CNN_GTSRB" functionName="maxpool2x2_valid"/>
+    </node_objs>
+    <fileValidLineNumbers fileName="src/gtsrb_cnn.cpp">
+      <validLinenumbers>71</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <regions anchor_node="-1" region_type="8" interval="2" typeName="Pipeline" iiViolation="Resource Limitation;mFailedII=1;mDependenceDistancedII=-1;mLimitedResource=1;nodes=72__core/RAM_2P_BRAM/feature_in//load,64__core/RAM_2P_BRAM/feature_in//load/store,68__;" id="628" pipe_depth="9" RegionName="VITIS_LOOP_48_1_VITIS_LOOP_49_2_VITIS_LOOP_50_3">
+    <basic_blocks id="25" name="for.body9" type="BlockType">
+      <controlInputObjs>entry</controlInputObjs>
+      <controlInputObjs>for.inc55.loopexit</controlInputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>for.end57.loopexit</controlOutputObjs>
+      <controlOutputObjs>for.inc55.loopexit</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="17" name="h_3" lineNumber="55" originalName="h" fileName="src/gtsrb_cnn.cpp" fileDirectory=".." coreId="0" contextFuncName="maxpool2x2_valid" bitwidth="2" opcode="load" m_display="0" m_topoIndex="12" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="src/gtsrb_cnn.cpp" linenumber="55" fileDirectory="C:\Xilinx\pynq-zu\HLS\CNN_GTSRB" functionName="maxpool2x2_valid"/>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataOutputObjs>trunc</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="18" name="indvar_flatten19_load" lineNumber="48" fileName="src/gtsrb_cnn.cpp" fileDirectory=".." coreId="0" contextFuncName="maxpool2x2_valid" bitwidth="9" opcode="load" m_display="0" m_topoIndex="13" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="src/gtsrb_cnn.cpp" linenumber="48" fileDirectory="C:\Xilinx\pynq-zu\HLS\CNN_GTSRB" functionName="maxpool2x2_valid"/>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="19" name="trunc_ln55" lineNumber="55" fileName="src/gtsrb_cnn.cpp" fileDirectory=".." rtlName="trunc_ln55_fu_220_p1" coreId="0" contextFuncName="maxpool2x2_valid" bitwidth="1" opcode="trunc" m_display="0" m_topoIndex="14" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="src/gtsrb_cnn.cpp" linenumber="55" fileDirectory="C:\Xilinx\pynq-zu\HLS\CNN_GTSRB" functionName="maxpool2x2_valid"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>bitconcatenate</dataOutputObjs>
+        <dataOutputObjs>and</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="20" name="shl_ln" lineNumber="55" fileName="src/gtsrb_cnn.cpp" fileDirectory=".." rtlName="shl_ln_fu_224_p3" coreId="0" contextFuncName="maxpool2x2_valid" bitwidth="4" opcode="bitconcatenate" m_display="0" m_topoIndex="15" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="src/gtsrb_cnn.cpp" linenumber="55" fileDirectory="C:\Xilinx\pynq-zu\HLS\CNN_GTSRB" functionName="maxpool2x2_valid"/>
+        <dataInputObjs>trunc</dataInputObjs>
+        <dataOutputObjs>or</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="21" name="or_ln57" lineNumber="57" fileName="src/gtsrb_cnn.cpp" fileDirectory=".." rtlName="or_ln57_fu_232_p2" coreId="0" contextFuncName="maxpool2x2_valid" bitwidth="4" opcode="or" m_display="0" m_topoIndex="16" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="src/gtsrb_cnn.cpp" linenumber="57" fileDirectory="C:\Xilinx\pynq-zu\HLS\CNN_GTSRB" functionName="maxpool2x2_valid"/>
+        <dataInputObjs>bitconcatenate</dataInputObjs>
+        <dataOutputObjs>partselect</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="22" name="icmp_ln48" lineNumber="48" fileName="src/gtsrb_cnn.cpp" fileDirectory=".." rtlName="icmp_ln48_fu_238_p2" coreName="Cmp" implIndex="auto" control="no" opType="icmp" coreId="9" contextFuncName="maxpool2x2_valid" bitwidth="1" opcode="icmp" m_display="0" m_delay="0.85" m_topoIndex="17" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="src/gtsrb_cnn.cpp" linenumber="48" fileDirectory="C:\Xilinx\pynq-zu\HLS\CNN_GTSRB" functionName="maxpool2x2_valid"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>br</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="23" name="add_ln48" lineNumber="48" fileName="src/gtsrb_cnn.cpp" fileDirectory=".." rtlName="add_ln48_fu_244_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="maxpool2x2_valid" bitwidth="9" opcode="add" m_display="0" m_delay="0.92" m_topoIndex="18" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="src/gtsrb_cnn.cpp" linenumber="48" fileDirectory="C:\Xilinx\pynq-zu\HLS\CNN_GTSRB" functionName="maxpool2x2_valid"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="24" name="br_ln48" lineNumber="48" fileName="src/gtsrb_cnn.cpp" fileDirectory=".." coreId="0" contextFuncName="maxpool2x2_valid" opcode="br" m_display="0" m_topoIndex="19" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="src/gtsrb_cnn.cpp" linenumber="48" fileDirectory="C:\Xilinx\pynq-zu\HLS\CNN_GTSRB" functionName="maxpool2x2_valid"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <controlInputObjs>for.inc55.loopexit</controlInputObjs>
+        <controlInputObjs>for.end57.loopexit</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="src/gtsrb_cnn.cpp">
+        <validLinenumbers>55</validLinenumbers>
+        <validLinenumbers>48</validLinenumbers>
+        <validLinenumbers>57</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="148" name="for.inc55.loopexit" type="BlockType">
+      <controlInputObjs>for.body9</controlInputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>for.body9</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="26" name="w_load" lineNumber="50" fileName="src/gtsrb_cnn.cpp" fileDirectory=".." coreId="0" contextFuncName="maxpool2x2_valid" bitwidth="2" opcode="load" m_display="0" m_topoIndex="20" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="src/gtsrb_cnn.cpp" linenumber="50" fileDirectory="C:\Xilinx\pynq-zu\HLS\CNN_GTSRB" functionName="maxpool2x2_valid"/>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="27" name="indvar_flatten_load" lineNumber="49" fileName="src/gtsrb_cnn.cpp" fileDirectory=".." coreId="0" contextFuncName="maxpool2x2_valid" bitwidth="4" opcode="load" m_display="0" m_topoIndex="21" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="src/gtsrb_cnn.cpp" linenumber="49" fileDirectory="C:\Xilinx\pynq-zu\HLS\CNN_GTSRB" functionName="maxpool2x2_valid"/>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="28" name="c_load" lineNumber="48" fileName="src/gtsrb_cnn.cpp" fileDirectory=".." coreId="0" contextFuncName="maxpool2x2_valid" bitwidth="7" opcode="load" m_display="0" m_topoIndex="22" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="src/gtsrb_cnn.cpp" linenumber="48" fileDirectory="C:\Xilinx\pynq-zu\HLS\CNN_GTSRB" functionName="maxpool2x2_valid"/>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="31" name="icmp_ln49" lineNumber="49" fileName="src/gtsrb_cnn.cpp" fileDirectory=".." rtlName="icmp_ln49_fu_259_p2" coreName="Cmp" implIndex="auto" control="no" opType="icmp" coreId="9" contextFuncName="maxpool2x2_valid" bitwidth="1" opcode="icmp" m_display="0" m_delay="0.88" m_topoIndex="23" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="src/gtsrb_cnn.cpp" linenumber="49" fileDirectory="C:\Xilinx\pynq-zu\HLS\CNN_GTSRB" functionName="maxpool2x2_valid"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <dataOutputObjs>xor</dataOutputObjs>
+        <dataOutputObjs>or</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="32" name="h_mid27" lineNumber="49" fileName="src/gtsrb_cnn.cpp" fileDirectory=".." rtlName="h_mid27_fu_265_p3" coreName="Sel" implIndex="auto_sel" control="no" opType="select" coreId="73" contextFuncName="maxpool2x2_valid" bitwidth="2" opcode="select" m_display="0" m_delay="0.26" m_topoIndex="24" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="src/gtsrb_cnn.cpp" linenumber="49" fileDirectory="C:\Xilinx\pynq-zu\HLS\CNN_GTSRB" functionName="maxpool2x2_valid"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="33" name="add_ln48_3" lineNumber="48" fileName="src/gtsrb_cnn.cpp" fileDirectory=".." rtlName="add_ln48_3_fu_273_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="maxpool2x2_valid" bitwidth="7" opcode="add" m_display="0" m_delay="0.89" m_topoIndex="25" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="src/gtsrb_cnn.cpp" linenumber="48" fileDirectory="C:\Xilinx\pynq-zu\HLS\CNN_GTSRB" functionName="maxpool2x2_valid"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="34" name="c_cast2_mid2_v" lineNumber="49" fileName="src/gtsrb_cnn.cpp" fileDirectory=".." rtlName="c_cast2_mid2_v_fu_279_p3" coreName="Sel" implIndex="auto_sel" control="no" opType="select" coreId="73" contextFuncName="maxpool2x2_valid" bitwidth="7" opcode="select" m_display="0" m_delay="0.42" m_topoIndex="26" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="src/gtsrb_cnn.cpp" linenumber="49" fileDirectory="C:\Xilinx\pynq-zu\HLS\CNN_GTSRB" functionName="maxpool2x2_valid"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <dataInputObjs>add</dataInputObjs>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>zext</dataOutputObjs>
+        <dataOutputObjs>zext</dataOutputObjs>
+        <dataOutputObjs>bitconcatenate</dataOutputObjs>
+        <dataOutputObjs>bitconcatenate</dataOutputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="35" name="c_cast2_mid2" lineNumber="49" fileName="src/gtsrb_cnn.cpp" fileDirectory=".." rtlName="c_cast2_mid2_fu_573_p1" coreId="0" contextFuncName="maxpool2x2_valid" bitwidth="8" opcode="zext" nodeLabel="3.0" m_display="0" m_topoIndex="76" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="src/gtsrb_cnn.cpp" linenumber="49" fileDirectory="C:\Xilinx\pynq-zu\HLS\CNN_GTSRB" functionName="maxpool2x2_valid"/>
+        <dataInputObjs>select</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="36" name="c_cast_mid2" lineNumber="49" fileName="src/gtsrb_cnn.cpp" fileDirectory=".." rtlName="c_cast_mid2_fu_287_p1" coreId="0" contextFuncName="maxpool2x2_valid" bitwidth="10" opcode="zext" m_display="0" m_topoIndex="27" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="src/gtsrb_cnn.cpp" linenumber="49" fileDirectory="C:\Xilinx\pynq-zu\HLS\CNN_GTSRB" functionName="maxpool2x2_valid"/>
+        <dataInputObjs>select</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="37" name="not_exitcond_flatten" lineNumber="49" fileName="src/gtsrb_cnn.cpp" fileDirectory=".." rtlName="not_exitcond_flatten_fu_291_p2" coreName="LogicGate" implIndex="auto" control="no" opType="xor" coreId="74" contextFuncName="maxpool2x2_valid" bitwidth="1" opcode="xor" m_display="0" m_delay="0.33" m_topoIndex="28" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="src/gtsrb_cnn.cpp" linenumber="49" fileDirectory="C:\Xilinx\pynq-zu\HLS\CNN_GTSRB" functionName="maxpool2x2_valid"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <dataOutputObjs>and</dataOutputObjs>
+        <dataOutputObjs>and</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="38" name="trunc_ln55_mid210" lineNumber="55" fileName="src/gtsrb_cnn.cpp" fileDirectory=".." rtlName="trunc_ln55_mid210_fu_297_p2" coreName="LogicGate" implIndex="auto" control="no" opType="and" coreId="74" contextFuncName="maxpool2x2_valid" bitwidth="1" opcode="and" m_display="0" m_topoIndex="29" m_clusterGroupNumber="1">
+        <inlineStackInfo fileName="src/gtsrb_cnn.cpp" linenumber="55" fileDirectory="C:\Xilinx\pynq-zu\HLS\CNN_GTSRB" functionName="maxpool2x2_valid"/>
+        <dataInputObjs>trunc</dataInputObjs>
+        <dataInputObjs>xor</dataInputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="39" name="icmp_ln50" lineNumber="50" fileName="src/gtsrb_cnn.cpp" fileDirectory=".." rtlName="icmp_ln50_fu_303_p2" coreName="Cmp" implIndex="auto" control="no" opType="icmp" coreId="9" contextFuncName="maxpool2x2_valid" bitwidth="1" opcode="icmp" m_display="0" m_delay="0.51" m_topoIndex="30" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="src/gtsrb_cnn.cpp" linenumber="50" fileDirectory="C:\Xilinx\pynq-zu\HLS\CNN_GTSRB" functionName="maxpool2x2_valid"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>and</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="40" name="icmp_ln50_mid218" lineNumber="50" fileName="src/gtsrb_cnn.cpp" fileDirectory=".." rtlName="icmp_ln50_mid218_fu_309_p2" coreName="LogicGate" implIndex="auto" control="no" opType="and" coreId="74" contextFuncName="maxpool2x2_valid" bitwidth="1" opcode="and" m_display="0" m_delay="0.33" m_topoIndex="31" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="src/gtsrb_cnn.cpp" linenumber="50" fileDirectory="C:\Xilinx\pynq-zu\HLS\CNN_GTSRB" functionName="maxpool2x2_valid"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <dataInputObjs>xor</dataInputObjs>
+        <dataOutputObjs>or</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="41" name="add_ln49" lineNumber="49" fileName="src/gtsrb_cnn.cpp" fileDirectory=".." rtlName="add_ln49_fu_315_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="maxpool2x2_valid" bitwidth="2" opcode="add" m_display="0" m_delay="0.62" m_topoIndex="32" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="src/gtsrb_cnn.cpp" linenumber="49" fileDirectory="C:\Xilinx\pynq-zu\HLS\CNN_GTSRB" functionName="maxpool2x2_valid"/>
+        <dataInputObjs>select</dataInputObjs>
+        <dataOutputObjs>trunc</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="43" name="or_ln49" lineNumber="49" fileName="src/gtsrb_cnn.cpp" fileDirectory=".." rtlName="or_ln49_fu_321_p2" coreName="LogicGate" implIndex="auto" control="no" opType="or" coreId="74" contextFuncName="maxpool2x2_valid" bitwidth="1" opcode="or" m_display="0" m_topoIndex="33" m_clusterGroupNumber="2">
+        <inlineStackInfo fileName="src/gtsrb_cnn.cpp" linenumber="49" fileDirectory="C:\Xilinx\pynq-zu\HLS\CNN_GTSRB" functionName="maxpool2x2_valid"/>
+        <dataInputObjs>and</dataInputObjs>
+        <dataInputObjs>icmp</dataInputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="44" name="select_ln49" lineNumber="49" fileName="src/gtsrb_cnn.cpp" fileDirectory=".." rtlName="select_ln49_fu_327_p3" coreName="Sel" implIndex="auto_sel" control="no" opType="select" coreId="73" contextFuncName="maxpool2x2_valid" bitwidth="2" opcode="select" m_display="0" m_delay="0.33" m_topoIndex="34" m_clusterGroupNumber="2">
+        <inlineStackInfo fileName="src/gtsrb_cnn.cpp" linenumber="49" fileDirectory="C:\Xilinx\pynq-zu\HLS\CNN_GTSRB" functionName="maxpool2x2_valid"/>
+        <dataInputObjs>or</dataInputObjs>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>trunc</dataOutputObjs>
+        <dataOutputObjs>shl</dataOutputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="45" name="trunc_ln55_1" lineNumber="55" fileName="src/gtsrb_cnn.cpp" fileDirectory=".." rtlName="trunc_ln55_1_fu_335_p1" coreId="0" contextFuncName="maxpool2x2_valid" bitwidth="1" opcode="trunc" m_display="0" m_topoIndex="35" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="src/gtsrb_cnn.cpp" linenumber="55" fileDirectory="C:\Xilinx\pynq-zu\HLS\CNN_GTSRB" functionName="maxpool2x2_valid"/>
+        <dataInputObjs>add</dataInputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <dataOutputObjs>bitconcatenate</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="46" name="select_ln49_3" lineNumber="49" fileName="src/gtsrb_cnn.cpp" fileDirectory=".." rtlName="select_ln49_3_fu_339_p3" coreName="Sel" implIndex="auto_sel" control="no" opType="select" coreId="73" contextFuncName="maxpool2x2_valid" bitwidth="1" opcode="select" m_display="0" m_delay="0.33" m_topoIndex="36" m_clusterGroupNumber="1">
+        <inlineStackInfo fileName="src/gtsrb_cnn.cpp" linenumber="49" fileDirectory="C:\Xilinx\pynq-zu\HLS\CNN_GTSRB" functionName="maxpool2x2_valid"/>
+        <dataInputObjs>and</dataInputObjs>
+        <dataInputObjs>trunc</dataInputObjs>
+        <dataInputObjs>and</dataInputObjs>
+        <dataOutputObjs>bitconcatenate</dataOutputObjs>
+        <dataOutputObjs>bitconcatenate</dataOutputObjs>
+        <dataOutputObjs>bitconcatenate</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="47" name="shl_ln55_mid1" lineNumber="55" fileName="src/gtsrb_cnn.cpp" fileDirectory=".." rtlName="shl_ln55_mid1_fu_347_p3" coreId="0" contextFuncName="maxpool2x2_valid" bitwidth="4" opcode="bitconcatenate" m_display="0" m_topoIndex="37" m_clusterGroupNumber="3">
+        <inlineStackInfo fileName="src/gtsrb_cnn.cpp" linenumber="55" fileDirectory="C:\Xilinx\pynq-zu\HLS\CNN_GTSRB" functionName="maxpool2x2_valid"/>
+        <dataInputObjs>trunc</dataInputObjs>
+        <dataOutputObjs>or</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="48" name="or_ln57_1" lineNumber="57" fileName="src/gtsrb_cnn.cpp" fileDirectory=".." rtlName="or_ln57_1_fu_355_p2" coreId="0" contextFuncName="maxpool2x2_valid" bitwidth="4" opcode="or" m_display="0" m_topoIndex="38" m_clusterGroupNumber="3">
+        <inlineStackInfo fileName="src/gtsrb_cnn.cpp" linenumber="57" fileDirectory="C:\Xilinx\pynq-zu\HLS\CNN_GTSRB" functionName="maxpool2x2_valid"/>
+        <dataInputObjs>bitconcatenate</dataInputObjs>
+        <dataOutputObjs>partselect</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="49" name="select_ln49_4" lineNumber="49" fileName="src/gtsrb_cnn.cpp" fileDirectory=".." rtlName="select_ln49_4_fu_361_p3" coreName="Sel" implIndex="auto_sel" control="no" opType="select" coreId="73" contextFuncName="maxpool2x2_valid" bitwidth="2" opcode="select" m_display="0" m_delay="0.26" m_topoIndex="39" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="src/gtsrb_cnn.cpp" linenumber="49" fileDirectory="C:\Xilinx\pynq-zu\HLS\CNN_GTSRB" functionName="maxpool2x2_valid"/>
+        <dataInputObjs>and</dataInputObjs>
+        <dataInputObjs>add</dataInputObjs>
+        <dataInputObjs>select</dataInputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="52" name="trunc_ln54" lineNumber="54" fileName="src/gtsrb_cnn.cpp" fileDirectory=".." rtlName="trunc_ln54_fu_369_p1" coreId="0" contextFuncName="maxpool2x2_valid" bitwidth="1" opcode="trunc" m_display="0" m_topoIndex="40" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="src/gtsrb_cnn.cpp" linenumber="54" fileDirectory="C:\Xilinx\pynq-zu\HLS\CNN_GTSRB" functionName="maxpool2x2_valid"/>
+        <dataInputObjs>select</dataInputObjs>
+        <dataOutputObjs>bitconcatenate</dataOutputObjs>
+        <dataOutputObjs>bitconcatenate</dataOutputObjs>
+        <dataOutputObjs>bitconcatenate</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="53" name="shl_ln55" lineNumber="55" fileName="src/gtsrb_cnn.cpp" fileDirectory=".." rtlName="shl_ln55_fu_373_p2" coreId="0" contextFuncName="maxpool2x2_valid" bitwidth="2" opcode="shl" m_display="0" m_topoIndex="41" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="src/gtsrb_cnn.cpp" linenumber="55" fileDirectory="C:\Xilinx\pynq-zu\HLS\CNN_GTSRB" functionName="maxpool2x2_valid"/>
+        <dataInputObjs>select</dataInputObjs>
+        <dataOutputObjs>or</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="54" name="or_ln56" lineNumber="56" fileName="src/gtsrb_cnn.cpp" fileDirectory=".." rtlName="or_ln56_fu_379_p2" coreId="0" contextFuncName="maxpool2x2_valid" bitwidth="2" opcode="or" m_display="0" m_topoIndex="42" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="src/gtsrb_cnn.cpp" linenumber="56" fileDirectory="C:\Xilinx\pynq-zu\HLS\CNN_GTSRB" functionName="maxpool2x2_valid"/>
+        <dataInputObjs>shl</dataInputObjs>
+        <dataOutputObjs>bitconcatenate</dataOutputObjs>
+        <dataOutputObjs>bitconcatenate</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="55" name="shl_ln7" lineNumber="56" fileName="src/gtsrb_cnn.cpp" fileDirectory=".." rtlName="shl_ln7_fu_385_p5" coreId="0" contextFuncName="maxpool2x2_valid" bitwidth="10" opcode="bitconcatenate" m_display="0" m_topoIndex="43" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="src/gtsrb_cnn.cpp" linenumber="56" fileDirectory="C:\Xilinx\pynq-zu\HLS\CNN_GTSRB" functionName="maxpool2x2_valid"/>
+        <dataInputObjs>select</dataInputObjs>
+        <dataInputObjs>or</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="56" name="tmp_3" lineNumber="57" fileName="src/gtsrb_cnn.cpp" fileDirectory=".." rtlName="tmp_3_fu_397_p4" coreId="0" contextFuncName="maxpool2x2_valid" bitwidth="2" opcode="partselect" m_display="0" m_topoIndex="44" m_clusterGroupNumber="3">
+        <inlineStackInfo fileName="src/gtsrb_cnn.cpp" linenumber="57" fileDirectory="C:\Xilinx\pynq-zu\HLS\CNN_GTSRB" functionName="maxpool2x2_valid"/>
+        <dataInputObjs>or</dataInputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="57" name="tmp_4" lineNumber="57" fileName="src/gtsrb_cnn.cpp" fileDirectory=".." rtlName="tmp_4_fu_407_p4" coreId="0" contextFuncName="maxpool2x2_valid" bitwidth="2" opcode="partselect" m_display="0" m_topoIndex="45" m_clusterGroupNumber="3">
+        <inlineStackInfo fileName="src/gtsrb_cnn.cpp" linenumber="57" fileDirectory="C:\Xilinx\pynq-zu\HLS\CNN_GTSRB" functionName="maxpool2x2_valid"/>
+        <dataInputObjs>or</dataInputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="58" name="empty_47" lineNumber="49" fileName="src/gtsrb_cnn.cpp" fileDirectory=".." rtlName="empty_47_fu_417_p3" coreName="Sel" implIndex="auto_sel" control="no" opType="select" coreId="73" contextFuncName="maxpool2x2_valid" bitwidth="2" opcode="select" m_display="0" m_topoIndex="46" m_clusterGroupNumber="3">
+        <inlineStackInfo fileName="src/gtsrb_cnn.cpp" linenumber="49" fileDirectory="C:\Xilinx\pynq-zu\HLS\CNN_GTSRB" functionName="maxpool2x2_valid"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <dataInputObjs>partselect</dataInputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="59" name="select_ln49_5" lineNumber="49" fileName="src/gtsrb_cnn.cpp" fileDirectory=".." rtlName="select_ln49_5_fu_425_p3" coreName="Sel" implIndex="auto_sel" control="no" opType="select" coreId="73" contextFuncName="maxpool2x2_valid" bitwidth="2" opcode="select" m_display="0" m_delay="0.26" m_topoIndex="47" m_clusterGroupNumber="3">
+        <inlineStackInfo fileName="src/gtsrb_cnn.cpp" linenumber="49" fileDirectory="C:\Xilinx\pynq-zu\HLS\CNN_GTSRB" functionName="maxpool2x2_valid"/>
+        <dataInputObjs>and</dataInputObjs>
+        <dataInputObjs>partselect</dataInputObjs>
+        <dataInputObjs>select</dataInputObjs>
+        <dataOutputObjs>bitconcatenate</dataOutputObjs>
+        <dataOutputObjs>bitconcatenate</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="60" name="shl_ln8" lineNumber="58" fileName="src/gtsrb_cnn.cpp" fileDirectory=".." rtlName="shl_ln8_fu_433_p4" coreId="0" contextFuncName="maxpool2x2_valid" bitwidth="10" opcode="bitconcatenate" m_display="0" m_topoIndex="48" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="src/gtsrb_cnn.cpp" linenumber="58" fileDirectory="C:\Xilinx\pynq-zu\HLS\CNN_GTSRB" functionName="maxpool2x2_valid"/>
+        <dataInputObjs>select</dataInputObjs>
+        <dataInputObjs>or</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="61" name="add_ln4" lineNumber="59" fileName="src/gtsrb_cnn.cpp" fileDirectory=".." rtlName="add_ln4_fu_443_p5" coreId="0" contextFuncName="maxpool2x2_valid" bitwidth="10" opcode="bitconcatenate" m_display="0" m_topoIndex="49" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="src/gtsrb_cnn.cpp" linenumber="59" fileDirectory="C:\Xilinx\pynq-zu\HLS\CNN_GTSRB" functionName="maxpool2x2_valid"/>
+        <dataInputObjs>select</dataInputObjs>
+        <dataInputObjs>trunc</dataInputObjs>
+        <dataInputObjs>select</dataInputObjs>
+        <dataOutputObjs>zext</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="62" name="zext_ln59" lineNumber="59" fileName="src/gtsrb_cnn.cpp" fileDirectory=".." rtlName="zext_ln59_fu_455_p1" coreId="0" contextFuncName="maxpool2x2_valid" bitwidth="64" opcode="zext" m_display="0" m_topoIndex="50" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="src/gtsrb_cnn.cpp" linenumber="59" fileDirectory="C:\Xilinx\pynq-zu\HLS\CNN_GTSRB" functionName="maxpool2x2_valid"/>
+        <dataInputObjs>bitconcatenate</dataInputObjs>
+        <dataOutputObjs>getelementptr</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="63" name="feature_in_addr" lineNumber="59" fileName="src/gtsrb_cnn.cpp" fileDirectory=".." coreId="0" contextFuncName="maxpool2x2_valid" bitwidth="10" opcode="getelementptr" m_display="0" m_topoIndex="51" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="src/gtsrb_cnn.cpp" linenumber="59" fileDirectory="C:\Xilinx\pynq-zu\HLS\CNN_GTSRB" functionName="maxpool2x2_valid"/>
+        <dataInputObjs>feature_in</dataInputObjs>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataOutputObjs>load</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="64" name="v0" lineNumber="59" originalName="v0" fileName="src/gtsrb_cnn.cpp" fileDirectory=".." coreName="RAM_2P_BRAM" implIndex="bram" control="no" opType="ram_2p" coreId="94" contextFuncName="maxpool2x2_valid" bitwidth="32" opcode="load" nodeLatency="1" m_display="0" m_delay="1.35" m_topoIndex="52" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="src/gtsrb_cnn.cpp" linenumber="59" fileDirectory="C:\Xilinx\pynq-zu\HLS\CNN_GTSRB" functionName="maxpool2x2_valid"/>
+        <dataInputObjs>getelementptr</dataInputObjs>
+        <dataOutputObjs>bitcast</dataOutputObjs>
+        <dataOutputObjs>fcmp</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="65" name="add_ln60" lineNumber="60" fileName="src/gtsrb_cnn.cpp" fileDirectory=".." rtlName="add_ln60_fu_460_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="maxpool2x2_valid" bitwidth="10" opcode="add" m_display="0" m_delay="0.93" m_topoIndex="53" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="src/gtsrb_cnn.cpp" linenumber="60" fileDirectory="C:\Xilinx\pynq-zu\HLS\CNN_GTSRB" functionName="maxpool2x2_valid"/>
+        <dataInputObjs>bitconcatenate</dataInputObjs>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataOutputObjs>zext</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="66" name="zext_ln60" lineNumber="60" fileName="src/gtsrb_cnn.cpp" fileDirectory=".." rtlName="zext_ln60_fu_466_p1" coreId="0" contextFuncName="maxpool2x2_valid" bitwidth="64" opcode="zext" m_display="0" m_topoIndex="54" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="src/gtsrb_cnn.cpp" linenumber="60" fileDirectory="C:\Xilinx\pynq-zu\HLS\CNN_GTSRB" functionName="maxpool2x2_valid"/>
+        <dataInputObjs>add</dataInputObjs>
+        <dataOutputObjs>getelementptr</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="67" name="feature_in_addr_7" lineNumber="60" fileName="src/gtsrb_cnn.cpp" fileDirectory=".." coreId="0" contextFuncName="maxpool2x2_valid" bitwidth="10" opcode="getelementptr" m_display="0" m_topoIndex="55" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="src/gtsrb_cnn.cpp" linenumber="60" fileDirectory="C:\Xilinx\pynq-zu\HLS\CNN_GTSRB" functionName="maxpool2x2_valid"/>
+        <dataInputObjs>feature_in</dataInputObjs>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataOutputObjs>load</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="68" name="v1" lineNumber="60" originalName="v1" fileName="src/gtsrb_cnn.cpp" fileDirectory=".." coreName="RAM_2P_BRAM" implIndex="bram" control="no" opType="ram_2p" coreId="94" contextFuncName="maxpool2x2_valid" bitwidth="32" opcode="load" nodeLatency="1" m_display="1" m_delay="1.35" m_isLCDNode="true" m_isStartOfPath="true" m_topoIndex="56" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="src/gtsrb_cnn.cpp" linenumber="60" fileDirectory="C:\Xilinx\pynq-zu\HLS\CNN_GTSRB" functionName="maxpool2x2_valid"/>
+        <dataInputObjs>getelementptr</dataInputObjs>
+        <dataOutputObjs>bitcast</dataOutputObjs>
+        <dataOutputObjs>fcmp</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="69" name="add_ln5" lineNumber="61" fileName="src/gtsrb_cnn.cpp" fileDirectory=".." rtlName="add_ln5_fu_576_p4" coreId="0" contextFuncName="maxpool2x2_valid" bitwidth="10" opcode="bitconcatenate" nodeLabel="3.0" m_display="0" m_topoIndex="77" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="src/gtsrb_cnn.cpp" linenumber="61" fileDirectory="C:\Xilinx\pynq-zu\HLS\CNN_GTSRB" functionName="maxpool2x2_valid"/>
+        <dataInputObjs>select</dataInputObjs>
+        <dataInputObjs>trunc</dataInputObjs>
+        <dataInputObjs>select</dataInputObjs>
+        <dataOutputObjs>zext</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="70" name="zext_ln61" lineNumber="61" fileName="src/gtsrb_cnn.cpp" fileDirectory=".." rtlName="zext_ln61_fu_583_p1" coreId="0" contextFuncName="maxpool2x2_valid" bitwidth="64" opcode="zext" nodeLabel="3.0" m_display="0" m_topoIndex="78" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="src/gtsrb_cnn.cpp" linenumber="61" fileDirectory="C:\Xilinx\pynq-zu\HLS\CNN_GTSRB" functionName="maxpool2x2_valid"/>
+        <dataInputObjs>bitconcatenate</dataInputObjs>
+        <dataOutputObjs>getelementptr</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="71" name="feature_in_addr_8" lineNumber="61" fileName="src/gtsrb_cnn.cpp" fileDirectory=".." coreId="0" contextFuncName="maxpool2x2_valid" bitwidth="10" opcode="getelementptr" nodeLabel="3.0" m_display="0" m_topoIndex="79" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="src/gtsrb_cnn.cpp" linenumber="61" fileDirectory="C:\Xilinx\pynq-zu\HLS\CNN_GTSRB" functionName="maxpool2x2_valid"/>
+        <dataInputObjs>feature_in</dataInputObjs>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataOutputObjs>load</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="72" name="v2" lineNumber="61" originalName="v2" fileName="src/gtsrb_cnn.cpp" fileDirectory=".." coreName="RAM_2P_BRAM" implIndex="bram" control="no" opType="ram_2p" coreId="94" contextFuncName="maxpool2x2_valid" bitwidth="32" opcode="load" nodeLabel="3.0" nodeLatency="1" m_display="0" m_delay="1.35" m_topoIndex="80" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="src/gtsrb_cnn.cpp" linenumber="61" fileDirectory="C:\Xilinx\pynq-zu\HLS\CNN_GTSRB" functionName="maxpool2x2_valid"/>
+        <dataInputObjs>getelementptr</dataInputObjs>
+        <dataOutputObjs>bitcast</dataOutputObjs>
+        <dataOutputObjs>fcmp</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="73" name="add_ln62" lineNumber="62" fileName="src/gtsrb_cnn.cpp" fileDirectory=".." rtlName="add_ln62_fu_471_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="maxpool2x2_valid" bitwidth="10" opcode="add" m_display="0" m_delay="0.93" m_topoIndex="57" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="src/gtsrb_cnn.cpp" linenumber="62" fileDirectory="C:\Xilinx\pynq-zu\HLS\CNN_GTSRB" functionName="maxpool2x2_valid"/>
+        <dataInputObjs>bitconcatenate</dataInputObjs>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataOutputObjs>zext</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="74" name="zext_ln62" lineNumber="62" fileName="src/gtsrb_cnn.cpp" fileDirectory=".." rtlName="zext_ln62_fu_690_p1" coreId="0" contextFuncName="maxpool2x2_valid" bitwidth="64" opcode="zext" nodeLabel="5.0" m_display="0" m_topoIndex="99" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="src/gtsrb_cnn.cpp" linenumber="62" fileDirectory="C:\Xilinx\pynq-zu\HLS\CNN_GTSRB" functionName="maxpool2x2_valid"/>
+        <dataInputObjs>add</dataInputObjs>
+        <dataOutputObjs>getelementptr</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="75" name="feature_in_addr_9" lineNumber="62" fileName="src/gtsrb_cnn.cpp" fileDirectory=".." coreId="0" contextFuncName="maxpool2x2_valid" bitwidth="10" opcode="getelementptr" nodeLabel="5.0" m_display="0" m_topoIndex="100" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="src/gtsrb_cnn.cpp" linenumber="62" fileDirectory="C:\Xilinx\pynq-zu\HLS\CNN_GTSRB" functionName="maxpool2x2_valid"/>
+        <dataInputObjs>feature_in</dataInputObjs>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataOutputObjs>load</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="76" name="v3" lineNumber="62" originalName="v3" fileName="src/gtsrb_cnn.cpp" fileDirectory=".." coreName="RAM_2P_BRAM" implIndex="bram" control="no" opType="ram_2p" coreId="94" contextFuncName="maxpool2x2_valid" bitwidth="32" opcode="load" nodeLabel="5.0" nodeLatency="1" m_display="0" m_delay="1.35" m_topoIndex="101" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="src/gtsrb_cnn.cpp" linenumber="62" fileDirectory="C:\Xilinx\pynq-zu\HLS\CNN_GTSRB" functionName="maxpool2x2_valid"/>
+        <dataInputObjs>getelementptr</dataInputObjs>
+        <dataOutputObjs>bitcast</dataOutputObjs>
+        <dataOutputObjs>fcmp</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="77" name="bitcast_ln63" lineNumber="63" fileName="src/gtsrb_cnn.cpp" fileDirectory=".." rtlName="bitcast_ln63_fu_522_p1" coreId="0" contextFuncName="maxpool2x2_valid" bitwidth="32" opcode="bitcast" nodeLabel="2.0" m_display="0" m_topoIndex="67" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="src/gtsrb_cnn.cpp" linenumber="63" fileDirectory="C:\Xilinx\pynq-zu\HLS\CNN_GTSRB" functionName="maxpool2x2_valid"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>partselect</dataOutputObjs>
+        <dataOutputObjs>trunc</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="78" name="tmp_s" lineNumber="63" fileName="src/gtsrb_cnn.cpp" fileDirectory=".." rtlName="tmp_s_fu_526_p4" coreId="0" contextFuncName="maxpool2x2_valid" bitwidth="8" opcode="partselect" nodeLabel="2.0" m_display="0" m_topoIndex="68" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="src/gtsrb_cnn.cpp" linenumber="63" fileDirectory="C:\Xilinx\pynq-zu\HLS\CNN_GTSRB" functionName="maxpool2x2_valid"/>
+        <dataInputObjs>bitcast</dataInputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="79" name="trunc_ln63" lineNumber="63" fileName="src/gtsrb_cnn.cpp" fileDirectory=".." rtlName="trunc_ln63_fu_536_p1" coreId="0" contextFuncName="maxpool2x2_valid" bitwidth="23" opcode="trunc" nodeLabel="2.0" m_display="0" m_topoIndex="69" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="src/gtsrb_cnn.cpp" linenumber="63" fileDirectory="C:\Xilinx\pynq-zu\HLS\CNN_GTSRB" functionName="maxpool2x2_valid"/>
+        <dataInputObjs>bitcast</dataInputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="80" name="icmp_ln63" lineNumber="63" fileName="src/gtsrb_cnn.cpp" fileDirectory=".." rtlName="icmp_ln63_fu_540_p2" coreName="Cmp" implIndex="auto" control="no" opType="icmp" coreId="9" contextFuncName="maxpool2x2_valid" bitwidth="1" opcode="icmp" nodeLabel="2.0" m_display="0" m_delay="0.85" m_topoIndex="70" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="src/gtsrb_cnn.cpp" linenumber="63" fileDirectory="C:\Xilinx\pynq-zu\HLS\CNN_GTSRB" functionName="maxpool2x2_valid"/>
+        <dataInputObjs>partselect</dataInputObjs>
+        <dataOutputObjs>or</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="81" name="icmp_ln63_3" lineNumber="63" fileName="src/gtsrb_cnn.cpp" fileDirectory=".." rtlName="icmp_ln63_3_fu_546_p2" coreName="Cmp" implIndex="auto" control="no" opType="icmp" coreId="9" contextFuncName="maxpool2x2_valid" bitwidth="1" opcode="icmp" nodeLabel="2.0" m_display="0" m_delay="0.97" m_topoIndex="71" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="src/gtsrb_cnn.cpp" linenumber="63" fileDirectory="C:\Xilinx\pynq-zu\HLS\CNN_GTSRB" functionName="maxpool2x2_valid"/>
+        <dataInputObjs>trunc</dataInputObjs>
+        <dataOutputObjs>or</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="82" name="or_ln63" lineNumber="63" fileName="src/gtsrb_cnn.cpp" fileDirectory=".." rtlName="or_ln63_fu_552_p2" coreName="LogicGate" implIndex="auto" control="no" opType="or" coreId="74" contextFuncName="maxpool2x2_valid" bitwidth="1" opcode="or" nodeLabel="2.0" m_display="0" m_topoIndex="72" m_clusterGroupNumber="4">
+        <inlineStackInfo fileName="src/gtsrb_cnn.cpp" linenumber="63" fileDirectory="C:\Xilinx\pynq-zu\HLS\CNN_GTSRB" functionName="maxpool2x2_valid"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <dataInputObjs>icmp</dataInputObjs>
+        <dataOutputObjs>and</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="83" name="tmp_23" lineNumber="63" fileName="src/gtsrb_cnn.cpp" fileDirectory=".." coreName="FCompare" implIndex="auto" control="no" opType="fcmp" coreId="19" contextFuncName="maxpool2x2_valid" bitwidth="1" opcode="fcmp" nodeLabel="1.0" nodeLatency="1" m_display="0" m_delay="3.34" m_topoIndex="66" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="src/gtsrb_cnn.cpp" linenumber="63" fileDirectory="C:\Xilinx\pynq-zu\HLS\CNN_GTSRB" functionName="maxpool2x2_valid"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>and</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="84" name="and_ln63" lineNumber="63" fileName="src/gtsrb_cnn.cpp" fileDirectory=".." rtlName="and_ln63_fu_558_p2" coreName="LogicGate" implIndex="auto" control="no" opType="and" coreId="74" contextFuncName="maxpool2x2_valid" bitwidth="1" opcode="and" nodeLabel="2.0" m_display="0" m_topoIndex="73" m_clusterGroupNumber="4">
+        <inlineStackInfo fileName="src/gtsrb_cnn.cpp" linenumber="63" fileDirectory="C:\Xilinx\pynq-zu\HLS\CNN_GTSRB" functionName="maxpool2x2_valid"/>
+        <dataInputObjs>or</dataInputObjs>
+        <dataInputObjs>fcmp</dataInputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="85" name="m_15" lineNumber="63" originalName="m" fileName="src/gtsrb_cnn.cpp" fileDirectory=".." rtlName="m_15_fu_564_p3" coreName="Sel" implIndex="auto_sel" control="no" opType="select" coreId="73" contextFuncName="maxpool2x2_valid" bitwidth="32" opcode="select" nodeLabel="2.0" m_display="0" m_delay="0.52" m_topoIndex="74" m_clusterGroupNumber="4">
+        <inlineStackInfo fileName="src/gtsrb_cnn.cpp" linenumber="63" fileDirectory="C:\Xilinx\pynq-zu\HLS\CNN_GTSRB" functionName="maxpool2x2_valid"/>
+        <dataInputObjs>and</dataInputObjs>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>bitcast</dataOutputObjs>
+        <dataOutputObjs>fcmp</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="86" name="bitcast_ln64" lineNumber="64" fileName="src/gtsrb_cnn.cpp" fileDirectory=".." rtlName="bitcast_ln64_fu_588_p1" coreId="0" contextFuncName="maxpool2x2_valid" bitwidth="32" opcode="bitcast" nodeLabel="3.0" m_display="0" m_topoIndex="81" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="src/gtsrb_cnn.cpp" linenumber="64" fileDirectory="C:\Xilinx\pynq-zu\HLS\CNN_GTSRB" functionName="maxpool2x2_valid"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>partselect</dataOutputObjs>
+        <dataOutputObjs>trunc</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="87" name="tmp_24" lineNumber="64" fileName="src/gtsrb_cnn.cpp" fileDirectory=".." rtlName="tmp_24_fu_591_p4" coreId="0" contextFuncName="maxpool2x2_valid" bitwidth="8" opcode="partselect" nodeLabel="3.0" m_display="0" m_topoIndex="82" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="src/gtsrb_cnn.cpp" linenumber="64" fileDirectory="C:\Xilinx\pynq-zu\HLS\CNN_GTSRB" functionName="maxpool2x2_valid"/>
+        <dataInputObjs>bitcast</dataInputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="88" name="trunc_ln64" lineNumber="64" fileName="src/gtsrb_cnn.cpp" fileDirectory=".." rtlName="trunc_ln64_fu_601_p1" coreId="0" contextFuncName="maxpool2x2_valid" bitwidth="23" opcode="trunc" nodeLabel="3.0" m_display="0" m_topoIndex="83" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="src/gtsrb_cnn.cpp" linenumber="64" fileDirectory="C:\Xilinx\pynq-zu\HLS\CNN_GTSRB" functionName="maxpool2x2_valid"/>
+        <dataInputObjs>bitcast</dataInputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="89" name="bitcast_ln64_3" lineNumber="64" fileName="src/gtsrb_cnn.cpp" fileDirectory=".." rtlName="bitcast_ln64_3_fu_605_p1" coreId="0" contextFuncName="maxpool2x2_valid" bitwidth="32" opcode="bitcast" nodeLabel="3.0" m_display="0" m_topoIndex="84" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="src/gtsrb_cnn.cpp" linenumber="64" fileDirectory="C:\Xilinx\pynq-zu\HLS\CNN_GTSRB" functionName="maxpool2x2_valid"/>
+        <dataInputObjs>select</dataInputObjs>
+        <dataOutputObjs>partselect</dataOutputObjs>
+        <dataOutputObjs>trunc</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="90" name="tmp_25" lineNumber="64" fileName="src/gtsrb_cnn.cpp" fileDirectory=".." rtlName="tmp_25_fu_608_p4" coreId="0" contextFuncName="maxpool2x2_valid" bitwidth="8" opcode="partselect" nodeLabel="3.0" m_display="0" m_topoIndex="85" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="src/gtsrb_cnn.cpp" linenumber="64" fileDirectory="C:\Xilinx\pynq-zu\HLS\CNN_GTSRB" functionName="maxpool2x2_valid"/>
+        <dataInputObjs>bitcast</dataInputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="91" name="trunc_ln64_3" lineNumber="64" fileName="src/gtsrb_cnn.cpp" fileDirectory=".." rtlName="trunc_ln64_3_fu_618_p1" coreId="0" contextFuncName="maxpool2x2_valid" bitwidth="23" opcode="trunc" nodeLabel="3.0" m_display="0" m_topoIndex="86" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="src/gtsrb_cnn.cpp" linenumber="64" fileDirectory="C:\Xilinx\pynq-zu\HLS\CNN_GTSRB" functionName="maxpool2x2_valid"/>
+        <dataInputObjs>bitcast</dataInputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="92" name="icmp_ln64" lineNumber="64" fileName="src/gtsrb_cnn.cpp" fileDirectory=".." rtlName="icmp_ln64_fu_622_p2" coreName="Cmp" implIndex="auto" control="no" opType="icmp" coreId="9" contextFuncName="maxpool2x2_valid" bitwidth="1" opcode="icmp" nodeLabel="3.0" m_display="0" m_delay="0.85" m_topoIndex="87" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="src/gtsrb_cnn.cpp" linenumber="64" fileDirectory="C:\Xilinx\pynq-zu\HLS\CNN_GTSRB" functionName="maxpool2x2_valid"/>
+        <dataInputObjs>partselect</dataInputObjs>
+        <dataOutputObjs>or</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="93" name="icmp_ln64_7" lineNumber="64" fileName="src/gtsrb_cnn.cpp" fileDirectory=".." rtlName="icmp_ln64_7_fu_628_p2" coreName="Cmp" implIndex="auto" control="no" opType="icmp" coreId="9" contextFuncName="maxpool2x2_valid" bitwidth="1" opcode="icmp" nodeLabel="3.0" m_display="0" m_delay="0.97" m_topoIndex="88" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="src/gtsrb_cnn.cpp" linenumber="64" fileDirectory="C:\Xilinx\pynq-zu\HLS\CNN_GTSRB" functionName="maxpool2x2_valid"/>
+        <dataInputObjs>trunc</dataInputObjs>
+        <dataOutputObjs>or</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="94" name="or_ln64" lineNumber="64" fileName="src/gtsrb_cnn.cpp" fileDirectory=".." rtlName="or_ln64_fu_634_p2" coreName="LogicGate" implIndex="auto" control="no" opType="or" coreId="74" contextFuncName="maxpool2x2_valid" bitwidth="1" opcode="or" nodeLabel="3.0" m_display="0" m_topoIndex="89" m_clusterGroupNumber="5">
+        <inlineStackInfo fileName="src/gtsrb_cnn.cpp" linenumber="64" fileDirectory="C:\Xilinx\pynq-zu\HLS\CNN_GTSRB" functionName="maxpool2x2_valid"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <dataInputObjs>icmp</dataInputObjs>
+        <dataOutputObjs>and</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="95" name="icmp_ln64_8" lineNumber="64" fileName="src/gtsrb_cnn.cpp" fileDirectory=".." rtlName="icmp_ln64_8_fu_640_p2" coreName="Cmp" implIndex="auto" control="no" opType="icmp" coreId="9" contextFuncName="maxpool2x2_valid" bitwidth="1" opcode="icmp" nodeLabel="3.0" m_display="0" m_delay="0.85" m_topoIndex="90" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="src/gtsrb_cnn.cpp" linenumber="64" fileDirectory="C:\Xilinx\pynq-zu\HLS\CNN_GTSRB" functionName="maxpool2x2_valid"/>
+        <dataInputObjs>partselect</dataInputObjs>
+        <dataOutputObjs>or</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="96" name="icmp_ln64_9" lineNumber="64" fileName="src/gtsrb_cnn.cpp" fileDirectory=".." rtlName="icmp_ln64_9_fu_646_p2" coreName="Cmp" implIndex="auto" control="no" opType="icmp" coreId="9" contextFuncName="maxpool2x2_valid" bitwidth="1" opcode="icmp" nodeLabel="3.0" m_display="0" m_delay="0.97" m_topoIndex="91" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="src/gtsrb_cnn.cpp" linenumber="64" fileDirectory="C:\Xilinx\pynq-zu\HLS\CNN_GTSRB" functionName="maxpool2x2_valid"/>
+        <dataInputObjs>trunc</dataInputObjs>
+        <dataOutputObjs>or</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="97" name="or_ln64_3" lineNumber="64" fileName="src/gtsrb_cnn.cpp" fileDirectory=".." rtlName="or_ln64_3_fu_652_p2" coreName="LogicGate" implIndex="auto" control="no" opType="or" coreId="74" contextFuncName="maxpool2x2_valid" bitwidth="1" opcode="or" nodeLabel="3.0" m_display="0" m_topoIndex="92" m_clusterGroupNumber="5">
+        <inlineStackInfo fileName="src/gtsrb_cnn.cpp" linenumber="64" fileDirectory="C:\Xilinx\pynq-zu\HLS\CNN_GTSRB" functionName="maxpool2x2_valid"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <dataInputObjs>icmp</dataInputObjs>
+        <dataOutputObjs>and</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="98" name="and_ln64" lineNumber="64" fileName="src/gtsrb_cnn.cpp" fileDirectory=".." rtlName="and_ln64_fu_658_p2" coreName="LogicGate" implIndex="auto" control="no" opType="and" coreId="74" contextFuncName="maxpool2x2_valid" bitwidth="1" opcode="and" nodeLabel="3.0" m_display="0" m_topoIndex="93" m_clusterGroupNumber="5">
+        <inlineStackInfo fileName="src/gtsrb_cnn.cpp" linenumber="64" fileDirectory="C:\Xilinx\pynq-zu\HLS\CNN_GTSRB" functionName="maxpool2x2_valid"/>
+        <dataInputObjs>or</dataInputObjs>
+        <dataInputObjs>or</dataInputObjs>
+        <dataOutputObjs>and</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="99" name="tmp_26" lineNumber="64" fileName="src/gtsrb_cnn.cpp" fileDirectory=".." coreName="FCompare" implIndex="auto" control="no" opType="fcmp" coreId="19" contextFuncName="maxpool2x2_valid" bitwidth="1" opcode="fcmp" nodeLabel="2.0" nodeLatency="1" m_display="0" m_delay="3.34" m_topoIndex="75" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="src/gtsrb_cnn.cpp" linenumber="64" fileDirectory="C:\Xilinx\pynq-zu\HLS\CNN_GTSRB" functionName="maxpool2x2_valid"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataInputObjs>select</dataInputObjs>
+        <dataOutputObjs>and</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="100" name="and_ln64_3" lineNumber="64" fileName="src/gtsrb_cnn.cpp" fileDirectory=".." rtlName="and_ln64_3_fu_664_p2" coreName="LogicGate" implIndex="auto" control="no" opType="and" coreId="74" contextFuncName="maxpool2x2_valid" bitwidth="1" opcode="and" nodeLabel="3.0" m_display="0" m_delay="0.33" m_topoIndex="94" m_clusterGroupNumber="5">
+        <inlineStackInfo fileName="src/gtsrb_cnn.cpp" linenumber="64" fileDirectory="C:\Xilinx\pynq-zu\HLS\CNN_GTSRB" functionName="maxpool2x2_valid"/>
+        <dataInputObjs>and</dataInputObjs>
+        <dataInputObjs>fcmp</dataInputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="101" name="m_17" lineNumber="64" originalName="m" fileName="src/gtsrb_cnn.cpp" fileDirectory=".." rtlName="m_17_fu_670_p3" coreName="Sel" implIndex="auto_sel" control="no" opType="select" coreId="73" contextFuncName="maxpool2x2_valid" bitwidth="32" opcode="select" nodeLabel="3.0" m_display="0" m_delay="0.52" m_topoIndex="95" m_clusterGroupNumber="6">
+        <inlineStackInfo fileName="src/gtsrb_cnn.cpp" linenumber="64" fileDirectory="C:\Xilinx\pynq-zu\HLS\CNN_GTSRB" functionName="maxpool2x2_valid"/>
+        <dataInputObjs>and</dataInputObjs>
+        <dataInputObjs>load</dataInputObjs>
+        <dataInputObjs>select</dataInputObjs>
+        <dataOutputObjs>bitcast</dataOutputObjs>
+        <dataOutputObjs>fcmp</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="102" name="bitcast_ln65" lineNumber="65" fileName="src/gtsrb_cnn.cpp" fileDirectory=".." rtlName="bitcast_ln65_fu_694_p1" coreId="0" contextFuncName="maxpool2x2_valid" bitwidth="32" opcode="bitcast" nodeLabel="5.0" m_display="0" m_topoIndex="102" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="src/gtsrb_cnn.cpp" linenumber="65" fileDirectory="C:\Xilinx\pynq-zu\HLS\CNN_GTSRB" functionName="maxpool2x2_valid"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>partselect</dataOutputObjs>
+        <dataOutputObjs>trunc</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="103" name="tmp_27" lineNumber="65" fileName="src/gtsrb_cnn.cpp" fileDirectory=".." rtlName="tmp_27_fu_698_p4" coreId="0" contextFuncName="maxpool2x2_valid" bitwidth="8" opcode="partselect" nodeLabel="5.0" m_display="0" m_topoIndex="103" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="src/gtsrb_cnn.cpp" linenumber="65" fileDirectory="C:\Xilinx\pynq-zu\HLS\CNN_GTSRB" functionName="maxpool2x2_valid"/>
+        <dataInputObjs>bitcast</dataInputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="104" name="trunc_ln65" lineNumber="65" fileName="src/gtsrb_cnn.cpp" fileDirectory=".." rtlName="trunc_ln65_fu_708_p1" coreId="0" contextFuncName="maxpool2x2_valid" bitwidth="23" opcode="trunc" nodeLabel="5.0" m_display="0" m_topoIndex="104" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="src/gtsrb_cnn.cpp" linenumber="65" fileDirectory="C:\Xilinx\pynq-zu\HLS\CNN_GTSRB" functionName="maxpool2x2_valid"/>
+        <dataInputObjs>bitcast</dataInputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="105" name="bitcast_ln65_3" lineNumber="65" fileName="src/gtsrb_cnn.cpp" fileDirectory=".." rtlName="bitcast_ln65_3_fu_712_p1" coreId="0" contextFuncName="maxpool2x2_valid" bitwidth="32" opcode="bitcast" nodeLabel="5.0" m_display="0" m_topoIndex="105" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="src/gtsrb_cnn.cpp" linenumber="65" fileDirectory="C:\Xilinx\pynq-zu\HLS\CNN_GTSRB" functionName="maxpool2x2_valid"/>
+        <dataInputObjs>select</dataInputObjs>
+        <dataOutputObjs>partselect</dataOutputObjs>
+        <dataOutputObjs>trunc</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="106" name="tmp_28" lineNumber="65" fileName="src/gtsrb_cnn.cpp" fileDirectory=".." rtlName="tmp_28_fu_715_p4" coreId="0" contextFuncName="maxpool2x2_valid" bitwidth="8" opcode="partselect" nodeLabel="5.0" m_display="0" m_topoIndex="106" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="src/gtsrb_cnn.cpp" linenumber="65" fileDirectory="C:\Xilinx\pynq-zu\HLS\CNN_GTSRB" functionName="maxpool2x2_valid"/>
+        <dataInputObjs>bitcast</dataInputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="107" name="trunc_ln65_3" lineNumber="65" fileName="src/gtsrb_cnn.cpp" fileDirectory=".." rtlName="trunc_ln65_3_fu_725_p1" coreId="0" contextFuncName="maxpool2x2_valid" bitwidth="23" opcode="trunc" nodeLabel="5.0" m_display="0" m_topoIndex="107" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="src/gtsrb_cnn.cpp" linenumber="65" fileDirectory="C:\Xilinx\pynq-zu\HLS\CNN_GTSRB" functionName="maxpool2x2_valid"/>
+        <dataInputObjs>bitcast</dataInputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="108" name="icmp_ln65" lineNumber="65" fileName="src/gtsrb_cnn.cpp" fileDirectory=".." rtlName="icmp_ln65_fu_729_p2" coreName="Cmp" implIndex="auto" control="no" opType="icmp" coreId="9" contextFuncName="maxpool2x2_valid" bitwidth="1" opcode="icmp" nodeLabel="5.0" m_display="0" m_delay="0.85" m_topoIndex="108" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="src/gtsrb_cnn.cpp" linenumber="65" fileDirectory="C:\Xilinx\pynq-zu\HLS\CNN_GTSRB" functionName="maxpool2x2_valid"/>
+        <dataInputObjs>partselect</dataInputObjs>
+        <dataOutputObjs>or</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="109" name="icmp_ln65_7" lineNumber="65" fileName="src/gtsrb_cnn.cpp" fileDirectory=".." rtlName="icmp_ln65_7_fu_735_p2" coreName="Cmp" implIndex="auto" control="no" opType="icmp" coreId="9" contextFuncName="maxpool2x2_valid" bitwidth="1" opcode="icmp" nodeLabel="5.0" m_display="0" m_delay="0.97" m_topoIndex="109" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="src/gtsrb_cnn.cpp" linenumber="65" fileDirectory="C:\Xilinx\pynq-zu\HLS\CNN_GTSRB" functionName="maxpool2x2_valid"/>
+        <dataInputObjs>trunc</dataInputObjs>
+        <dataOutputObjs>or</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="110" name="or_ln65" lineNumber="65" fileName="src/gtsrb_cnn.cpp" fileDirectory=".." rtlName="or_ln65_fu_741_p2" coreName="LogicGate" implIndex="auto" control="no" opType="or" coreId="74" contextFuncName="maxpool2x2_valid" bitwidth="1" opcode="or" nodeLabel="5.0" m_display="0" m_topoIndex="110" m_clusterGroupNumber="7">
+        <inlineStackInfo fileName="src/gtsrb_cnn.cpp" linenumber="65" fileDirectory="C:\Xilinx\pynq-zu\HLS\CNN_GTSRB" functionName="maxpool2x2_valid"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <dataInputObjs>icmp</dataInputObjs>
+        <dataOutputObjs>and</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="111" name="icmp_ln65_8" lineNumber="65" fileName="src/gtsrb_cnn.cpp" fileDirectory=".." rtlName="icmp_ln65_8_fu_747_p2" coreName="Cmp" implIndex="auto" control="no" opType="icmp" coreId="9" contextFuncName="maxpool2x2_valid" bitwidth="1" opcode="icmp" nodeLabel="5.0" m_display="0" m_delay="0.85" m_topoIndex="111" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="src/gtsrb_cnn.cpp" linenumber="65" fileDirectory="C:\Xilinx\pynq-zu\HLS\CNN_GTSRB" functionName="maxpool2x2_valid"/>
+        <dataInputObjs>partselect</dataInputObjs>
+        <dataOutputObjs>or</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="112" name="icmp_ln65_9" lineNumber="65" fileName="src/gtsrb_cnn.cpp" fileDirectory=".." rtlName="icmp_ln65_9_fu_753_p2" coreName="Cmp" implIndex="auto" control="no" opType="icmp" coreId="9" contextFuncName="maxpool2x2_valid" bitwidth="1" opcode="icmp" nodeLabel="5.0" m_display="0" m_delay="0.97" m_topoIndex="112" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="src/gtsrb_cnn.cpp" linenumber="65" fileDirectory="C:\Xilinx\pynq-zu\HLS\CNN_GTSRB" functionName="maxpool2x2_valid"/>
+        <dataInputObjs>trunc</dataInputObjs>
+        <dataOutputObjs>or</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="113" name="or_ln65_3" lineNumber="65" fileName="src/gtsrb_cnn.cpp" fileDirectory=".." rtlName="or_ln65_3_fu_759_p2" coreName="LogicGate" implIndex="auto" control="no" opType="or" coreId="74" contextFuncName="maxpool2x2_valid" bitwidth="1" opcode="or" nodeLabel="5.0" m_display="0" m_topoIndex="113" m_clusterGroupNumber="7">
+        <inlineStackInfo fileName="src/gtsrb_cnn.cpp" linenumber="65" fileDirectory="C:\Xilinx\pynq-zu\HLS\CNN_GTSRB" functionName="maxpool2x2_valid"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <dataInputObjs>icmp</dataInputObjs>
+        <dataOutputObjs>and</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="114" name="and_ln65" lineNumber="65" fileName="src/gtsrb_cnn.cpp" fileDirectory=".." rtlName="and_ln65_fu_765_p2" coreName="LogicGate" implIndex="auto" control="no" opType="and" coreId="74" contextFuncName="maxpool2x2_valid" bitwidth="1" opcode="and" nodeLabel="5.0" m_display="0" m_topoIndex="114" m_clusterGroupNumber="7">
+        <inlineStackInfo fileName="src/gtsrb_cnn.cpp" linenumber="65" fileDirectory="C:\Xilinx\pynq-zu\HLS\CNN_GTSRB" functionName="maxpool2x2_valid"/>
+        <dataInputObjs>or</dataInputObjs>
+        <dataInputObjs>or</dataInputObjs>
+        <dataOutputObjs>and</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="115" name="tmp_29" lineNumber="65" fileName="src/gtsrb_cnn.cpp" fileDirectory=".." coreName="FCompare" implIndex="auto" control="no" opType="fcmp" coreId="19" contextFuncName="maxpool2x2_valid" bitwidth="1" opcode="fcmp" nodeLabel="4.0" nodeLatency="1" m_display="0" m_delay="3.34" m_topoIndex="98" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="src/gtsrb_cnn.cpp" linenumber="65" fileDirectory="C:\Xilinx\pynq-zu\HLS\CNN_GTSRB" functionName="maxpool2x2_valid"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataInputObjs>select</dataInputObjs>
+        <dataOutputObjs>and</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="116" name="and_ln65_3" lineNumber="65" fileName="src/gtsrb_cnn.cpp" fileDirectory=".." rtlName="and_ln65_3_fu_771_p2" coreName="LogicGate" implIndex="auto" control="no" opType="and" coreId="74" contextFuncName="maxpool2x2_valid" bitwidth="1" opcode="and" nodeLabel="5.0" m_display="0" m_delay="0.33" m_topoIndex="115" m_clusterGroupNumber="7">
+        <inlineStackInfo fileName="src/gtsrb_cnn.cpp" linenumber="65" fileDirectory="C:\Xilinx\pynq-zu\HLS\CNN_GTSRB" functionName="maxpool2x2_valid"/>
+        <dataInputObjs>and</dataInputObjs>
+        <dataInputObjs>fcmp</dataInputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="117" name="m_19" lineNumber="65" originalName="m" fileName="src/gtsrb_cnn.cpp" fileDirectory=".." rtlName="m_19_fu_777_p3" coreName="Sel" implIndex="auto_sel" control="no" opType="select" coreId="73" contextFuncName="maxpool2x2_valid" bitwidth="32" opcode="select" nodeLabel="5.0" m_display="0" m_delay="0.52" m_topoIndex="116" m_clusterGroupNumber="8">
+        <inlineStackInfo fileName="src/gtsrb_cnn.cpp" linenumber="65" fileDirectory="C:\Xilinx\pynq-zu\HLS\CNN_GTSRB" functionName="maxpool2x2_valid"/>
+        <dataInputObjs>and</dataInputObjs>
+        <dataInputObjs>load</dataInputObjs>
+        <dataInputObjs>select</dataInputObjs>
+        <dataOutputObjs>bitcast</dataOutputObjs>
+        <dataOutputObjs>fcmp</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="118" name="bitcast_ln66" lineNumber="66" fileName="src/gtsrb_cnn.cpp" fileDirectory=".." rtlName="bitcast_ln66_fu_784_p1" coreId="0" contextFuncName="maxpool2x2_valid" bitwidth="32" opcode="bitcast" nodeLabel="8.0" m_display="0" m_topoIndex="119" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="src/gtsrb_cnn.cpp" linenumber="66" fileDirectory="C:\Xilinx\pynq-zu\HLS\CNN_GTSRB" functionName="maxpool2x2_valid"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>partselect</dataOutputObjs>
+        <dataOutputObjs>trunc</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="119" name="tmp_30" lineNumber="66" fileName="src/gtsrb_cnn.cpp" fileDirectory=".." rtlName="tmp_30_fu_787_p4" coreId="0" contextFuncName="maxpool2x2_valid" bitwidth="8" opcode="partselect" nodeLabel="8.0" m_display="0" m_topoIndex="120" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="src/gtsrb_cnn.cpp" linenumber="66" fileDirectory="C:\Xilinx\pynq-zu\HLS\CNN_GTSRB" functionName="maxpool2x2_valid"/>
+        <dataInputObjs>bitcast</dataInputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="120" name="trunc_ln66" lineNumber="66" fileName="src/gtsrb_cnn.cpp" fileDirectory=".." rtlName="trunc_ln66_fu_797_p1" coreId="0" contextFuncName="maxpool2x2_valid" bitwidth="23" opcode="trunc" nodeLabel="8.0" m_display="0" m_topoIndex="121" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="src/gtsrb_cnn.cpp" linenumber="66" fileDirectory="C:\Xilinx\pynq-zu\HLS\CNN_GTSRB" functionName="maxpool2x2_valid"/>
+        <dataInputObjs>bitcast</dataInputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="121" name="bitcast_ln66_3" lineNumber="66" fileName="src/gtsrb_cnn.cpp" fileDirectory=".." rtlName="bitcast_ln66_3_fu_801_p1" coreId="0" contextFuncName="maxpool2x2_valid" bitwidth="32" opcode="bitcast" nodeLabel="8.0" m_display="0" m_topoIndex="122" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="src/gtsrb_cnn.cpp" linenumber="66" fileDirectory="C:\Xilinx\pynq-zu\HLS\CNN_GTSRB" functionName="maxpool2x2_valid"/>
+        <dataInputObjs>select</dataInputObjs>
+        <dataOutputObjs>partselect</dataOutputObjs>
+        <dataOutputObjs>trunc</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="122" name="tmp_31" lineNumber="66" fileName="src/gtsrb_cnn.cpp" fileDirectory=".." rtlName="tmp_31_fu_804_p4" coreId="0" contextFuncName="maxpool2x2_valid" bitwidth="8" opcode="partselect" nodeLabel="8.0" m_display="0" m_topoIndex="123" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="src/gtsrb_cnn.cpp" linenumber="66" fileDirectory="C:\Xilinx\pynq-zu\HLS\CNN_GTSRB" functionName="maxpool2x2_valid"/>
+        <dataInputObjs>bitcast</dataInputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="123" name="trunc_ln66_3" lineNumber="66" fileName="src/gtsrb_cnn.cpp" fileDirectory=".." rtlName="trunc_ln66_3_fu_814_p1" coreId="0" contextFuncName="maxpool2x2_valid" bitwidth="23" opcode="trunc" nodeLabel="8.0" m_display="0" m_topoIndex="124" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="src/gtsrb_cnn.cpp" linenumber="66" fileDirectory="C:\Xilinx\pynq-zu\HLS\CNN_GTSRB" functionName="maxpool2x2_valid"/>
+        <dataInputObjs>bitcast</dataInputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="124" name="icmp_ln66" lineNumber="66" fileName="src/gtsrb_cnn.cpp" fileDirectory=".." rtlName="icmp_ln66_fu_818_p2" coreName="Cmp" implIndex="auto" control="no" opType="icmp" coreId="9" contextFuncName="maxpool2x2_valid" bitwidth="1" opcode="icmp" nodeLabel="8.0" m_display="0" m_delay="0.85" m_topoIndex="125" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="src/gtsrb_cnn.cpp" linenumber="66" fileDirectory="C:\Xilinx\pynq-zu\HLS\CNN_GTSRB" functionName="maxpool2x2_valid"/>
+        <dataInputObjs>partselect</dataInputObjs>
+        <dataOutputObjs>or</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="125" name="icmp_ln66_7" lineNumber="66" fileName="src/gtsrb_cnn.cpp" fileDirectory=".." rtlName="icmp_ln66_7_fu_824_p2" coreName="Cmp" implIndex="auto" control="no" opType="icmp" coreId="9" contextFuncName="maxpool2x2_valid" bitwidth="1" opcode="icmp" nodeLabel="8.0" m_display="0" m_delay="0.97" m_topoIndex="126" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="src/gtsrb_cnn.cpp" linenumber="66" fileDirectory="C:\Xilinx\pynq-zu\HLS\CNN_GTSRB" functionName="maxpool2x2_valid"/>
+        <dataInputObjs>trunc</dataInputObjs>
+        <dataOutputObjs>or</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="126" name="or_ln66" lineNumber="66" fileName="src/gtsrb_cnn.cpp" fileDirectory=".." rtlName="or_ln66_fu_830_p2" coreName="LogicGate" implIndex="auto" control="no" opType="or" coreId="74" contextFuncName="maxpool2x2_valid" bitwidth="1" opcode="or" nodeLabel="8.0" m_display="0" m_topoIndex="127" m_clusterGroupNumber="9">
+        <inlineStackInfo fileName="src/gtsrb_cnn.cpp" linenumber="66" fileDirectory="C:\Xilinx\pynq-zu\HLS\CNN_GTSRB" functionName="maxpool2x2_valid"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <dataInputObjs>icmp</dataInputObjs>
+        <dataOutputObjs>and</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="127" name="icmp_ln66_8" lineNumber="66" fileName="src/gtsrb_cnn.cpp" fileDirectory=".." rtlName="icmp_ln66_8_fu_836_p2" coreName="Cmp" implIndex="auto" control="no" opType="icmp" coreId="9" contextFuncName="maxpool2x2_valid" bitwidth="1" opcode="icmp" nodeLabel="8.0" m_display="0" m_delay="0.85" m_topoIndex="128" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="src/gtsrb_cnn.cpp" linenumber="66" fileDirectory="C:\Xilinx\pynq-zu\HLS\CNN_GTSRB" functionName="maxpool2x2_valid"/>
+        <dataInputObjs>partselect</dataInputObjs>
+        <dataOutputObjs>or</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="128" name="icmp_ln66_9" lineNumber="66" fileName="src/gtsrb_cnn.cpp" fileDirectory=".." rtlName="icmp_ln66_9_fu_842_p2" coreName="Cmp" implIndex="auto" control="no" opType="icmp" coreId="9" contextFuncName="maxpool2x2_valid" bitwidth="1" opcode="icmp" nodeLabel="8.0" m_display="0" m_delay="0.97" m_topoIndex="129" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="src/gtsrb_cnn.cpp" linenumber="66" fileDirectory="C:\Xilinx\pynq-zu\HLS\CNN_GTSRB" functionName="maxpool2x2_valid"/>
+        <dataInputObjs>trunc</dataInputObjs>
+        <dataOutputObjs>or</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="129" name="or_ln66_3" lineNumber="66" fileName="src/gtsrb_cnn.cpp" fileDirectory=".." rtlName="or_ln66_3_fu_848_p2" coreName="LogicGate" implIndex="auto" control="no" opType="or" coreId="74" contextFuncName="maxpool2x2_valid" bitwidth="1" opcode="or" nodeLabel="8.0" m_display="0" m_topoIndex="130" m_clusterGroupNumber="9">
+        <inlineStackInfo fileName="src/gtsrb_cnn.cpp" linenumber="66" fileDirectory="C:\Xilinx\pynq-zu\HLS\CNN_GTSRB" functionName="maxpool2x2_valid"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <dataInputObjs>icmp</dataInputObjs>
+        <dataOutputObjs>and</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="130" name="and_ln66" lineNumber="66" fileName="src/gtsrb_cnn.cpp" fileDirectory=".." rtlName="and_ln66_fu_854_p2" coreName="LogicGate" implIndex="auto" control="no" opType="and" coreId="74" contextFuncName="maxpool2x2_valid" bitwidth="1" opcode="and" nodeLabel="8.0" m_display="0" m_topoIndex="131" m_clusterGroupNumber="9">
+        <inlineStackInfo fileName="src/gtsrb_cnn.cpp" linenumber="66" fileDirectory="C:\Xilinx\pynq-zu\HLS\CNN_GTSRB" functionName="maxpool2x2_valid"/>
+        <dataInputObjs>or</dataInputObjs>
+        <dataInputObjs>or</dataInputObjs>
+        <dataOutputObjs>and</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="131" name="tmp_32" lineNumber="66" fileName="src/gtsrb_cnn.cpp" fileDirectory=".." coreName="FCompare" implIndex="auto" control="no" opType="fcmp" coreId="19" contextFuncName="maxpool2x2_valid" bitwidth="1" opcode="fcmp" nodeLabel="7.0" nodeLatency="1" m_display="0" m_delay="3.34" m_topoIndex="118" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="src/gtsrb_cnn.cpp" linenumber="66" fileDirectory="C:\Xilinx\pynq-zu\HLS\CNN_GTSRB" functionName="maxpool2x2_valid"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataInputObjs>select</dataInputObjs>
+        <dataOutputObjs>and</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="132" name="and_ln66_3" lineNumber="66" fileName="src/gtsrb_cnn.cpp" fileDirectory=".." rtlName="and_ln66_3_fu_860_p2" coreName="LogicGate" implIndex="auto" control="no" opType="and" coreId="74" contextFuncName="maxpool2x2_valid" bitwidth="1" opcode="and" nodeLabel="8.0" m_display="0" m_delay="0.33" m_topoIndex="132" m_clusterGroupNumber="9">
+        <inlineStackInfo fileName="src/gtsrb_cnn.cpp" linenumber="66" fileDirectory="C:\Xilinx\pynq-zu\HLS\CNN_GTSRB" functionName="maxpool2x2_valid"/>
+        <dataInputObjs>and</dataInputObjs>
+        <dataInputObjs>fcmp</dataInputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="133" name="m_21" lineNumber="66" originalName="m" fileName="src/gtsrb_cnn.cpp" fileDirectory=".." rtlName="feature_out_d1" coreName="Sel" implIndex="auto_sel" control="no" opType="select" coreId="73" contextFuncName="maxpool2x2_valid" bitwidth="32" opcode="select" nodeLabel="8.0" m_display="0" m_delay="0.52" m_topoIndex="133" m_clusterGroupNumber="10">
+        <inlineStackInfo fileName="src/gtsrb_cnn.cpp" linenumber="66" fileDirectory="C:\Xilinx\pynq-zu\HLS\CNN_GTSRB" functionName="maxpool2x2_valid"/>
+        <dataInputObjs>and</dataInputObjs>
+        <dataInputObjs>load</dataInputObjs>
+        <dataInputObjs>select</dataInputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="134" name="shl_ln9" lineNumber="67" fileName="src/gtsrb_cnn.cpp" fileDirectory=".." rtlName="shl_ln9_fu_676_p4" coreId="0" contextFuncName="maxpool2x2_valid" bitwidth="8" opcode="bitconcatenate" nodeLabel="3.0" m_display="0" m_topoIndex="96" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="src/gtsrb_cnn.cpp" linenumber="67" fileDirectory="C:\Xilinx\pynq-zu\HLS\CNN_GTSRB" functionName="maxpool2x2_valid"/>
+        <dataInputObjs>select</dataInputObjs>
+        <dataInputObjs>trunc</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="135" name="add_ln67" lineNumber="67" fileName="src/gtsrb_cnn.cpp" fileDirectory=".." rtlName="add_ln67_fu_684_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="maxpool2x2_valid" bitwidth="8" opcode="add" nodeLabel="3.0" m_display="0" m_delay="0.9" m_topoIndex="97" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="src/gtsrb_cnn.cpp" linenumber="67" fileDirectory="C:\Xilinx\pynq-zu\HLS\CNN_GTSRB" functionName="maxpool2x2_valid"/>
+        <dataInputObjs>bitconcatenate</dataInputObjs>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataOutputObjs>zext</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="136" name="zext_ln67" lineNumber="67" fileName="src/gtsrb_cnn.cpp" fileDirectory=".." rtlName="zext_ln67_fu_873_p1" coreId="0" contextFuncName="maxpool2x2_valid" bitwidth="64" opcode="zext" nodeLabel="8.0" m_display="0" m_topoIndex="134" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="src/gtsrb_cnn.cpp" linenumber="67" fileDirectory="C:\Xilinx\pynq-zu\HLS\CNN_GTSRB" functionName="maxpool2x2_valid"/>
+        <dataInputObjs>add</dataInputObjs>
+        <dataOutputObjs>getelementptr</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="137" name="feature_out_addr" lineNumber="67" fileName="src/gtsrb_cnn.cpp" fileDirectory=".." coreId="0" contextFuncName="maxpool2x2_valid" bitwidth="8" opcode="getelementptr" nodeLabel="8.0" m_display="0" m_topoIndex="135" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="src/gtsrb_cnn.cpp" linenumber="67" fileDirectory="C:\Xilinx\pynq-zu\HLS\CNN_GTSRB" functionName="maxpool2x2_valid"/>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataOutputObjs>feature_out</dataOutputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="138" name="feature_out_addr_write_ln67" lineNumber="67" fileName="src/gtsrb_cnn.cpp" fileDirectory=".." coreName="RAM_2P_BRAM" implIndex="bram" control="no" opType="ram_2p" coreId="94" contextFuncName="maxpool2x2_valid" opcode="store" nodeLabel="8.0" m_display="0" m_delay="1.35" m_topoIndex="136" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="src/gtsrb_cnn.cpp" linenumber="67" fileDirectory="C:\Xilinx\pynq-zu\HLS\CNN_GTSRB" functionName="maxpool2x2_valid"/>
+        <dataInputObjs>select</dataInputObjs>
+        <dataInputObjs>getelementptr</dataInputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="139" name="add_ln50" lineNumber="50" fileName="src/gtsrb_cnn.cpp" fileDirectory=".." rtlName="add_ln50_fu_477_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="maxpool2x2_valid" bitwidth="2" opcode="add" m_display="0" m_delay="0.62" m_topoIndex="58" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="src/gtsrb_cnn.cpp" linenumber="50" fileDirectory="C:\Xilinx\pynq-zu\HLS\CNN_GTSRB" functionName="maxpool2x2_valid"/>
+        <dataInputObjs>select</dataInputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="140" name="add_ln49_3" lineNumber="49" fileName="src/gtsrb_cnn.cpp" fileDirectory=".." rtlName="add_ln49_3_fu_483_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="maxpool2x2_valid" bitwidth="4" opcode="add" m_display="0" m_delay="0.86" m_topoIndex="59" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="src/gtsrb_cnn.cpp" linenumber="49" fileDirectory="C:\Xilinx\pynq-zu\HLS\CNN_GTSRB" functionName="maxpool2x2_valid"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="141" name="select_ln49_6" lineNumber="49" fileName="src/gtsrb_cnn.cpp" fileDirectory=".." rtlName="select_ln49_6_fu_489_p3" coreName="Sel" implIndex="auto_sel" control="no" opType="select" coreId="73" contextFuncName="maxpool2x2_valid" bitwidth="4" opcode="select" m_display="0" m_delay="0.45" m_topoIndex="60" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="src/gtsrb_cnn.cpp" linenumber="49" fileDirectory="C:\Xilinx\pynq-zu\HLS\CNN_GTSRB" functionName="maxpool2x2_valid"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <dataInputObjs>add</dataInputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="142" name="indvar_flatten19_write_ln50" lineNumber="50" fileName="src/gtsrb_cnn.cpp" fileDirectory=".." coreId="0" contextFuncName="maxpool2x2_valid" opcode="store" m_display="0" m_delay="0.48" m_topoIndex="61" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="src/gtsrb_cnn.cpp" linenumber="50" fileDirectory="C:\Xilinx\pynq-zu\HLS\CNN_GTSRB" functionName="maxpool2x2_valid"/>
+        <dataInputObjs>add</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="143" name="c_write_ln50" lineNumber="50" fileName="src/gtsrb_cnn.cpp" fileDirectory=".." coreId="0" contextFuncName="maxpool2x2_valid" opcode="store" m_display="0" m_delay="0.48" m_topoIndex="62" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="src/gtsrb_cnn.cpp" linenumber="50" fileDirectory="C:\Xilinx\pynq-zu\HLS\CNN_GTSRB" functionName="maxpool2x2_valid"/>
+        <dataInputObjs>select</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="144" name="indvar_flatten_write_ln50" lineNumber="50" fileName="src/gtsrb_cnn.cpp" fileDirectory=".." coreId="0" contextFuncName="maxpool2x2_valid" opcode="store" m_display="0" m_delay="0.48" m_topoIndex="63" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="src/gtsrb_cnn.cpp" linenumber="50" fileDirectory="C:\Xilinx\pynq-zu\HLS\CNN_GTSRB" functionName="maxpool2x2_valid"/>
+        <dataInputObjs>select</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="145" name="h_write_ln50" lineNumber="50" fileName="src/gtsrb_cnn.cpp" fileDirectory=".." coreId="0" contextFuncName="maxpool2x2_valid" opcode="store" m_display="0" m_delay="0.48" m_topoIndex="64" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="src/gtsrb_cnn.cpp" linenumber="50" fileDirectory="C:\Xilinx\pynq-zu\HLS\CNN_GTSRB" functionName="maxpool2x2_valid"/>
+        <dataInputObjs>select</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="146" name="w_write_ln50" lineNumber="50" fileName="src/gtsrb_cnn.cpp" fileDirectory=".." coreId="0" contextFuncName="maxpool2x2_valid" opcode="store" m_display="0" m_delay="0.48" m_topoIndex="65" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="src/gtsrb_cnn.cpp" linenumber="50" fileDirectory="C:\Xilinx\pynq-zu\HLS\CNN_GTSRB" functionName="maxpool2x2_valid"/>
+        <dataInputObjs>add</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="147" name="br_ln50" lineNumber="50" fileName="src/gtsrb_cnn.cpp" fileDirectory=".." coreId="0" contextFuncName="maxpool2x2_valid" opcode="br" nodeLabel="8.0" m_display="0" m_topoIndex="137" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="src/gtsrb_cnn.cpp" linenumber="50" fileDirectory="C:\Xilinx\pynq-zu\HLS\CNN_GTSRB" functionName="maxpool2x2_valid"/>
+        <controlInputObjs>for.body9</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="src/gtsrb_cnn.cpp">
+        <validLinenumbers>50</validLinenumbers>
+        <validLinenumbers>49</validLinenumbers>
+        <validLinenumbers>48</validLinenumbers>
+        <validLinenumbers>55</validLinenumbers>
+        <validLinenumbers>57</validLinenumbers>
+        <validLinenumbers>54</validLinenumbers>
+        <validLinenumbers>56</validLinenumbers>
+        <validLinenumbers>58</validLinenumbers>
+        <validLinenumbers>59</validLinenumbers>
+        <validLinenumbers>60</validLinenumbers>
+        <validLinenumbers>61</validLinenumbers>
+        <validLinenumbers>62</validLinenumbers>
+        <validLinenumbers>63</validLinenumbers>
+        <validLinenumbers>64</validLinenumbers>
+        <validLinenumbers>65</validLinenumbers>
+        <validLinenumbers>66</validLinenumbers>
+        <validLinenumbers>67</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+  </regions>
+  <ScheduleInfo time="0"/>
+  <ScheduleInfo time="1"/>
+  <ScheduleInfo time="2"/>
+  <ScheduleInfo time="3"/>
+  <ScheduleInfo time="4"/>
+  <ScheduleInfo time="5"/>
+  <ScheduleInfo time="6"/>
+  <ScheduleInfo time="7"/>
+  <ScheduleInfo time="8"/>
+  <regnodes realName="feature_in_addr_7_reg_943">
+    <nodeIds>67</nodeIds>
+  </regnodes>
+  <regnodes realName="c_cast2_mid2_v_reg_916">
+    <nodeIds>34</nodeIds>
+  </regnodes>
+  <regnodes realName="feature_in_addr_8_reg_967">
+    <nodeIds>71</nodeIds>
+  </regnodes>
+  <regnodes realName="indvar_flatten19_reg_905">
+    <nodeIds>7</nodeIds>
+  </regnodes>
+  <regnodes realName="h_reg_884">
+    <nodeIds>4</nodeIds>
+  </regnodes>
+  <regnodes realName="trunc_ln54_reg_927">
+    <nodeIds>52</nodeIds>
+  </regnodes>
+  <regnodes realName="select_ln49_5_reg_933">
+    <nodeIds>59</nodeIds>
+  </regnodes>
+  <regnodes realName="m_17_reg_972">
+    <nodeIds>101</nodeIds>
+  </regnodes>
+  <regnodes realName="v3_reg_996">
+    <nodeIds>76</nodeIds>
+  </regnodes>
+  <regnodes realName="c_reg_898">
+    <nodeIds>6</nodeIds>
+  </regnodes>
+  <regnodes realName="icmp_ln48_reg_912">
+    <nodeIds>22</nodeIds>
+  </regnodes>
+  <regnodes realName="v1_reg_953">
+    <nodeIds>68</nodeIds>
+  </regnodes>
+  <regnodes realName="select_ln49_3_reg_922">
+    <nodeIds>46</nodeIds>
+  </regnodes>
+  <regnodes realName="w_reg_877">
+    <nodeIds>3</nodeIds>
+  </regnodes>
+  <regnodes realName="feature_in_addr_9_reg_984">
+    <nodeIds>75</nodeIds>
+  </regnodes>
+  <regnodes realName="reg_183">
+    <nodeIds>64</nodeIds>
+    <nodeIds>72</nodeIds>
+  </regnodes>
+  <regnodes realName="indvar_flatten_reg_891">
+    <nodeIds>5</nodeIds>
+  </regnodes>
+  <regnodes realName="add_ln62_reg_948">
+    <nodeIds>73</nodeIds>
+  </regnodes>
+  <regnodes realName="feature_in_addr_reg_938">
+    <nodeIds>63</nodeIds>
+  </regnodes>
+  <regnodes realName="m_15_reg_960">
+    <nodeIds>85</nodeIds>
+  </regnodes>
+  <regnodes realName="add_ln67_reg_979">
+    <nodeIds>135</nodeIds>
+  </regnodes>
+  <regnodes realName="m_19_reg_989">
+    <nodeIds>117</nodeIds>
+  </regnodes>
+  <expressionNodes realName="or_ln49_fu_321">
+    <nodeIds>43</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln50_fu_303">
+    <nodeIds>39</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln66_fu_797">
+    <nodeIds>120</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln65_fu_729">
+    <nodeIds>108</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="m_21_fu_866">
+    <nodeIds>133</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="bitcast_ln64_3_fu_605">
+    <nodeIds>89</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_28_fu_715">
+    <nodeIds>106</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln65_8_fu_747">
+    <nodeIds>111</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln49_fu_259">
+    <nodeIds>31</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln5_fu_576">
+    <nodeIds>69</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="feature_in_addr_gep_fu_114">
+    <nodeIds>63</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="bitcast_ln65_fu_694">
+    <nodeIds>102</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="m_15_fu_564">
+    <nodeIds>85</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="and_ln65_fu_765">
+    <nodeIds>114</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="bitcast_ln66_3_fu_801">
+    <nodeIds>121</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="feature_in_addr_7_gep_fu_131">
+    <nodeIds>67</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="select_ln49_5_fu_425">
+    <nodeIds>59</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln64_7_fu_628">
+    <nodeIds>93</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="bitcast_ln64_fu_588">
+    <nodeIds>86</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="shl_ln_fu_224">
+    <nodeIds>20</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="m_17_fu_670">
+    <nodeIds>101</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="or_ln65_3_fu_759">
+    <nodeIds>113</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="w_fu_94">
+    <nodeIds>3</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln54_fu_369">
+    <nodeIds>52</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln4_fu_443">
+    <nodeIds>61</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln65_9_fu_753">
+    <nodeIds>112</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="empty_47_fu_417">
+    <nodeIds>58</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="and_ln64_fu_658">
+    <nodeIds>98</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="and_ln66_3_fu_860">
+    <nodeIds>132</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_30_fu_787">
+    <nodeIds>119</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln66_7_fu_824">
+    <nodeIds>125</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln65_3_fu_725">
+    <nodeIds>107</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln49_fu_315">
+    <nodeIds>41</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln64_fu_622">
+    <nodeIds>92</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln63_3_fu_546">
+    <nodeIds>81</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln66_3_fu_814">
+    <nodeIds>123</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="shl_ln55_fu_373">
+    <nodeIds>53</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_27_fu_698">
+    <nodeIds>103</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="or_ln57_fu_232">
+    <nodeIds>21</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_4_fu_407">
+    <nodeIds>57</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="or_ln66_fu_830">
+    <nodeIds>126</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="feature_in_addr_9_gep_fu_147">
+    <nodeIds>75</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln66_8_fu_836">
+    <nodeIds>127</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="or_ln64_fu_634">
+    <nodeIds>94</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln60_fu_460">
+    <nodeIds>65</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="feature_out_addr_gep_fu_155">
+    <nodeIds>137</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln61_fu_583">
+    <nodeIds>70</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln65_7_fu_735">
+    <nodeIds>109</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="m_19_fu_777">
+    <nodeIds>117</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="not_exitcond_flatten_fu_291">
+    <nodeIds>37</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln67_fu_684">
+    <nodeIds>135</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln65_fu_708">
+    <nodeIds>104</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="shl_ln8_fu_433">
+    <nodeIds>60</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln66_fu_818">
+    <nodeIds>124</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="h_fu_98">
+    <nodeIds>4</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln50_fu_477">
+    <nodeIds>139</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="and_ln66_fu_854">
+    <nodeIds>130</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln67_fu_873">
+    <nodeIds>136</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln64_3_fu_618">
+    <nodeIds>91</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_3_fu_397">
+    <nodeIds>56</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln59_fu_455">
+    <nodeIds>62</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_31_fu_804">
+    <nodeIds>122</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln66_9_fu_842">
+    <nodeIds>128</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_24_fu_591">
+    <nodeIds>87</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="select_ln49_4_fu_361">
+    <nodeIds>49</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="feature_in_addr_8_gep_fu_139">
+    <nodeIds>71</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="shl_ln7_fu_385">
+    <nodeIds>55</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="or_ln56_fu_379">
+    <nodeIds>54</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_s_fu_526">
+    <nodeIds>78</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="bitcast_ln63_fu_522">
+    <nodeIds>77</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="or_ln63_fu_552">
+    <nodeIds>82</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="bitcast_ln65_3_fu_712">
+    <nodeIds>105</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="select_ln49_6_fu_489">
+    <nodeIds>141</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="or_ln66_3_fu_848">
+    <nodeIds>129</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln60_fu_466">
+    <nodeIds>66</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln55_fu_220">
+    <nodeIds>19</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="c_cast_mid2_fu_287">
+    <nodeIds>36</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="shl_ln55_mid1_fu_347">
+    <nodeIds>47</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln64_8_fu_640">
+    <nodeIds>95</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln63_fu_540">
+    <nodeIds>80</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="and_ln65_3_fu_771">
+    <nodeIds>116</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln50_mid218_fu_309">
+    <nodeIds>40</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="shl_ln9_fu_676">
+    <nodeIds>134</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln55_1_fu_335">
+    <nodeIds>45</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="bitcast_ln66_fu_784">
+    <nodeIds>118</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="and_ln63_fu_558">
+    <nodeIds>84</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln62_fu_690">
+    <nodeIds>74</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln49_3_fu_483">
+    <nodeIds>140</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="or_ln65_fu_741">
+    <nodeIds>110</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln55_mid210_fu_297">
+    <nodeIds>38</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="or_ln57_1_fu_355">
+    <nodeIds>48</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_25_fu_608">
+    <nodeIds>90</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="c_fu_106">
+    <nodeIds>6</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="select_ln49_3_fu_339">
+    <nodeIds>46</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="or_ln64_3_fu_652">
+    <nodeIds>97</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln62_fu_471">
+    <nodeIds>73</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln48_fu_244">
+    <nodeIds>23</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln48_fu_238">
+    <nodeIds>22</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="h_mid27_fu_265">
+    <nodeIds>32</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="select_ln49_fu_327">
+    <nodeIds>44</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln63_fu_536">
+    <nodeIds>79</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="indvar_flatten_fu_102">
+    <nodeIds>5</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="indvar_flatten19_fu_110">
+    <nodeIds>7</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="and_ln64_3_fu_664">
+    <nodeIds>100</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="c_cast2_mid2_fu_573">
+    <nodeIds>35</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="c_cast2_mid2_v_fu_279">
+    <nodeIds>34</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln64_fu_601">
+    <nodeIds>88</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln48_3_fu_273">
+    <nodeIds>33</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln64_9_fu_646">
+    <nodeIds>96</nodeIds>
+  </expressionNodes>
+  <moduleNodes realName="grp_fu_172">
+    <nodeIds>83</nodeIds>
+    <nodeIds>99</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_fu_178">
+    <nodeIds>115</nodeIds>
+    <nodeIds>131</nodeIds>
+  </moduleNodes>
+  <ioNodes realName="store_ln48_store_fu_204">
+    <nodeIds>13</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln50_store_fu_512">
+    <nodeIds>145</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln50_store_fu_502">
+    <nodeIds>143</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln50_store_fu_507">
+    <nodeIds>144</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln48_store_fu_189">
+    <nodeIds>10</nodeIds>
+  </ioNodes>
+  <ioNodes realName="indvar_flatten19_load_load_fu_217">
+    <nodeIds>18</nodeIds>
+  </ioNodes>
+  <ioNodes realName="indvar_flatten_load_load_fu_253">
+    <nodeIds>27</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln48_store_fu_199">
+    <nodeIds>12</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln50_store_fu_517">
+    <nodeIds>146</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln48_store_fu_194">
+    <nodeIds>11</nodeIds>
+  </ioNodes>
+  <ioNodes realName="c_load_load_fu_256">
+    <nodeIds>28</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln50_store_fu_497">
+    <nodeIds>142</nodeIds>
+  </ioNodes>
+  <ioNodes realName="h_3_load_fu_214">
+    <nodeIds>17</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln48_store_fu_209">
+    <nodeIds>14</nodeIds>
+  </ioNodes>
+  <ioNodes realName="w_load_load_fu_250">
+    <nodeIds>26</nodeIds>
+  </ioNodes>
+  <memoryPorts dataString="feature_in">
+    <nodeIds>68</nodeIds>
+    <nodeIds>76</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="feature_in" portID="1">
+    <nodeIds>64</nodeIds>
+    <nodeIds>72</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="feature_out" portID="1">
+    <nodeIds>138</nodeIds>
+  </memoryPorts>
+  <ioPorts name="feature_in(p0)">
+    <contents name="load">
+      <nodeIds>68</nodeIds>
+      <nodeIds>76</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="feature_in(p1)">
+    <contents name="load">
+      <nodeIds>64</nodeIds>
+      <nodeIds>72</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="feature_out(p1)">
+    <contents name="store">
+      <nodeIds>138</nodeIds>
+    </contents>
+  </ioPorts>
+  <fsm>
+    <states id="1">
+      <operations id="3" stage="1" latency="1"/>
+      <operations id="4" stage="1" latency="1"/>
+      <operations id="5" stage="1" latency="1"/>
+      <operations id="6" stage="1" latency="1"/>
+      <operations id="7" stage="1" latency="1"/>
+      <operations id="8" stage="1" latency="1"/>
+      <operations id="9" stage="1" latency="1"/>
+      <operations id="10" stage="1" latency="1"/>
+      <operations id="11" stage="1" latency="1"/>
+      <operations id="12" stage="1" latency="1"/>
+      <operations id="13" stage="1" latency="1"/>
+      <operations id="14" stage="1" latency="1"/>
+      <operations id="15" stage="1" latency="1"/>
+      <operations id="17" stage="1" latency="1"/>
+      <operations id="18" stage="1" latency="1"/>
+      <operations id="19" stage="1" latency="1"/>
+      <operations id="20" stage="1" latency="1"/>
+      <operations id="21" stage="1" latency="1"/>
+      <operations id="22" stage="1" latency="1"/>
+      <operations id="23" stage="1" latency="1"/>
+      <operations id="24" stage="1" latency="1"/>
+      <operations id="26" stage="1" latency="1"/>
+      <operations id="27" stage="1" latency="1"/>
+      <operations id="28" stage="1" latency="1"/>
+      <operations id="31" stage="1" latency="1"/>
+      <operations id="32" stage="1" latency="1"/>
+      <operations id="33" stage="1" latency="1"/>
+      <operations id="34" stage="1" latency="1"/>
+      <operations id="36" stage="1" latency="1"/>
+      <operations id="37" stage="1" latency="1"/>
+      <operations id="38" stage="1" latency="1"/>
+      <operations id="39" stage="1" latency="1"/>
+      <operations id="40" stage="1" latency="1"/>
+      <operations id="41" stage="1" latency="1"/>
+      <operations id="43" stage="1" latency="1"/>
+      <operations id="44" stage="1" latency="1"/>
+      <operations id="45" stage="1" latency="1"/>
+      <operations id="46" stage="1" latency="1"/>
+      <operations id="47" stage="1" latency="1"/>
+      <operations id="48" stage="1" latency="1"/>
+      <operations id="49" stage="1" latency="1"/>
+      <operations id="52" stage="1" latency="1"/>
+      <operations id="53" stage="1" latency="1"/>
+      <operations id="54" stage="1" latency="1"/>
+      <operations id="55" stage="1" latency="1"/>
+      <operations id="56" stage="1" latency="1"/>
+      <operations id="57" stage="1" latency="1"/>
+      <operations id="58" stage="1" latency="1"/>
+      <operations id="59" stage="1" latency="1"/>
+      <operations id="60" stage="1" latency="1"/>
+      <operations id="61" stage="1" latency="1"/>
+      <operations id="62" stage="1" latency="1"/>
+      <operations id="63" stage="1" latency="1"/>
+      <operations id="64" stage="2" latency="2"/>
+      <operations id="65" stage="1" latency="1"/>
+      <operations id="66" stage="1" latency="1"/>
+      <operations id="67" stage="1" latency="1"/>
+      <operations id="68" stage="2" latency="2"/>
+      <operations id="73" stage="1" latency="1"/>
+      <operations id="139" stage="1" latency="1"/>
+      <operations id="140" stage="1" latency="1"/>
+      <operations id="141" stage="1" latency="1"/>
+      <operations id="142" stage="1" latency="1"/>
+      <operations id="143" stage="1" latency="1"/>
+      <operations id="144" stage="1" latency="1"/>
+      <operations id="145" stage="1" latency="1"/>
+      <operations id="146" stage="1" latency="1"/>
+    </states>
+    <states id="2">
+      <operations id="64" stage="1" latency="2"/>
+      <operations id="68" stage="1" latency="2"/>
+      <operations id="83" stage="2" latency="2"/>
+    </states>
+    <states id="3">
+      <operations id="77" stage="1" latency="1"/>
+      <operations id="78" stage="1" latency="1"/>
+      <operations id="79" stage="1" latency="1"/>
+      <operations id="80" stage="1" latency="1"/>
+      <operations id="81" stage="1" latency="1"/>
+      <operations id="82" stage="1" latency="1"/>
+      <operations id="83" stage="1" latency="2"/>
+      <operations id="84" stage="1" latency="1"/>
+      <operations id="85" stage="1" latency="1"/>
+      <operations id="99" stage="2" latency="2"/>
+    </states>
+    <states id="4">
+      <operations id="35" stage="1" latency="1"/>
+      <operations id="69" stage="1" latency="1"/>
+      <operations id="70" stage="1" latency="1"/>
+      <operations id="71" stage="1" latency="1"/>
+      <operations id="72" stage="2" latency="2"/>
+      <operations id="86" stage="1" latency="1"/>
+      <operations id="87" stage="1" latency="1"/>
+      <operations id="88" stage="1" latency="1"/>
+      <operations id="89" stage="1" latency="1"/>
+      <operations id="90" stage="1" latency="1"/>
+      <operations id="91" stage="1" latency="1"/>
+      <operations id="92" stage="1" latency="1"/>
+      <operations id="93" stage="1" latency="1"/>
+      <operations id="94" stage="1" latency="1"/>
+      <operations id="95" stage="1" latency="1"/>
+      <operations id="96" stage="1" latency="1"/>
+      <operations id="97" stage="1" latency="1"/>
+      <operations id="98" stage="1" latency="1"/>
+      <operations id="99" stage="1" latency="2"/>
+      <operations id="100" stage="1" latency="1"/>
+      <operations id="101" stage="1" latency="1"/>
+      <operations id="134" stage="1" latency="1"/>
+      <operations id="135" stage="1" latency="1"/>
+    </states>
+    <states id="5">
+      <operations id="72" stage="1" latency="2"/>
+      <operations id="115" stage="2" latency="2"/>
+    </states>
+    <states id="6">
+      <operations id="74" stage="1" latency="1"/>
+      <operations id="75" stage="1" latency="1"/>
+      <operations id="76" stage="2" latency="2"/>
+      <operations id="102" stage="1" latency="1"/>
+      <operations id="103" stage="1" latency="1"/>
+      <operations id="104" stage="1" latency="1"/>
+      <operations id="105" stage="1" latency="1"/>
+      <operations id="106" stage="1" latency="1"/>
+      <operations id="107" stage="1" latency="1"/>
+      <operations id="108" stage="1" latency="1"/>
+      <operations id="109" stage="1" latency="1"/>
+      <operations id="110" stage="1" latency="1"/>
+      <operations id="111" stage="1" latency="1"/>
+      <operations id="112" stage="1" latency="1"/>
+      <operations id="113" stage="1" latency="1"/>
+      <operations id="114" stage="1" latency="1"/>
+      <operations id="115" stage="1" latency="2"/>
+      <operations id="116" stage="1" latency="1"/>
+      <operations id="117" stage="1" latency="1"/>
+    </states>
+    <states id="7">
+      <operations id="76" stage="1" latency="2"/>
+      <operations id="149" stage="1" latency="1"/>
+    </states>
+    <states id="8">
+      <operations id="131" stage="2" latency="2"/>
+    </states>
+    <states id="9">
+      <operations id="29" stage="1" latency="1"/>
+      <operations id="30" stage="1" latency="1"/>
+      <operations id="42" stage="1" latency="1"/>
+      <operations id="50" stage="1" latency="1"/>
+      <operations id="51" stage="1" latency="1"/>
+      <operations id="118" stage="1" latency="1"/>
+      <operations id="119" stage="1" latency="1"/>
+      <operations id="120" stage="1" latency="1"/>
+      <operations id="121" stage="1" latency="1"/>
+      <operations id="122" stage="1" latency="1"/>
+      <operations id="123" stage="1" latency="1"/>
+      <operations id="124" stage="1" latency="1"/>
+      <operations id="125" stage="1" latency="1"/>
+      <operations id="126" stage="1" latency="1"/>
+      <operations id="127" stage="1" latency="1"/>
+      <operations id="128" stage="1" latency="1"/>
+      <operations id="129" stage="1" latency="1"/>
+      <operations id="130" stage="1" latency="1"/>
+      <operations id="131" stage="1" latency="2"/>
+      <operations id="132" stage="1" latency="1"/>
+      <operations id="133" stage="1" latency="1"/>
+      <operations id="136" stage="1" latency="1"/>
+      <operations id="137" stage="1" latency="1"/>
+      <operations id="138" stage="1" latency="1"/>
+      <operations id="147" stage="1" latency="1"/>
+    </states>
+    <transitions inState="2" outState="3">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="3" outState="4">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="4" outState="5">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="5" outState="6">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="6" outState="7">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="7" outState="8">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="8" outState="9">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="1" outState="2">
+      <condition id="-1"/>
+    </transitions>
+  </fsm>
+  <CFGRegionsRoot>
+    <cfgRegions mId="1" mTag="maxpool2x2_valid" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="520" mMaxLatency="520">
+      <subRegions>2</subRegions>
+      <subRegions>3</subRegions>
+      <subRegions>4</subRegions>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="2" mTag="Entry" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1">
+      <basicBlocks>16</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="3" mTag="VITIS_LOOP_48_1_VITIS_LOOP_49_2_VITIS_LOOP_50_3" mII="2" mDepth="9" mMinTripCount="256" mMaxTripCount="256" mMinLatency="518" mMaxLatency="518" mType="1">
+      <basicBlocks>25</basicBlocks>
+      <basicBlocks>148</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="4" mTag="Return" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1">
+      <basicBlocks>150</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+  </CFGRegionsRoot>
+</cdfg:DBCdfg>

@@ -1,0 +1,18 @@
+{"sourceFile": [{
+      "name": "",
+      "directive": [{
+          "functionName": "gtsrb_cnn",
+          "label": "",
+          "functionLabel": "",
+          "id": "1",
+          "sourceFile": "C:\/Xilinx\/pynq-zu\/HLS\/CNN_GTSRB\/CNN_GTSRB\/solution1\/csynth.tcl",
+          "sourceLine": "26",
+          "pragma": {
+            "name": "TOP",
+            "option": [{
+                "name": "name",
+                "value": "gtsrb_cnn"
+              }]
+          }
+        }]
+    }]}

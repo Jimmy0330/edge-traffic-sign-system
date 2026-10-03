@@ -1,0 +1,192 @@
+---
+MainSourceFile:  'C:/Xilinx/pynq-zu/HLS/CNN_GTSRB/CNN_GTSRB/solution1/.autopilot/db/gtsrb_cnn.pp.0.cpp'
+Diagnostics:     
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1211_1:  '
+    FileOffset:      1211
+    FilePath:        'C:\Xilinx\Vitis_HLS\2022.2\common\technology\autopilot\ap_int_base.h'
+    Replacements:    
+      - FilePath:        'C:\Xilinx\pynq-zu\HLS\CNN_GTSRB\CNN_GTSRB\solution1\.autopilot\db\gtsrb_cnn.pp.0.cpp'
+        Offset:          51717
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1211_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_676_1:  '
+    FileOffset:      676
+    FilePath:        'C:\Xilinx\Vitis_HLS\2022.2\common\technology\autopilot\ap_int_ref.h'
+    Replacements:    
+      - FilePath:        'C:\Xilinx\pynq-zu\HLS\CNN_GTSRB\CNN_GTSRB\solution1\.autopilot\db\gtsrb_cnn.pp.0.cpp'
+        Offset:          258733
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_676_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_690_1:  '
+    FileOffset:      690
+    FilePath:        'C:\Xilinx\Vitis_HLS\2022.2\common\technology\autopilot\ap_int_ref.h'
+    Replacements:    
+      - FilePath:        'C:\Xilinx\pynq-zu\HLS\CNN_GTSRB\CNN_GTSRB\solution1\.autopilot\db\gtsrb_cnn.pp.0.cpp'
+        Offset:          259172
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_690_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_704_1:  '
+    FileOffset:      704
+    FilePath:        'C:\Xilinx\Vitis_HLS\2022.2\common\technology\autopilot\ap_int_ref.h'
+    Replacements:    
+      - FilePath:        'C:\Xilinx\pynq-zu\HLS\CNN_GTSRB\CNN_GTSRB\solution1\.autopilot\db\gtsrb_cnn.pp.0.cpp'
+        Offset:          259612
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_704_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1245_1:  '
+    FileOffset:      1245
+    FilePath:        'C:\Xilinx\Vitis_HLS\2022.2\common\technology\autopilot\ap_fixed_base.h'
+    Replacements:    
+      - FilePath:        'C:\Xilinx\pynq-zu\HLS\CNN_GTSRB\CNN_GTSRB\solution1\.autopilot\db\gtsrb_cnn.pp.0.cpp'
+        Offset:          521337
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1245_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_14_1:  '
+    FileOffset:      14
+    FilePath:        'C:\Xilinx\pynq-zu\HLS\CNN_GTSRB\src\gtsrb_cnn.cpp'
+    Replacements:    
+      - FilePath:        'C:\Xilinx\pynq-zu\HLS\CNN_GTSRB\CNN_GTSRB\solution1\.autopilot\db\gtsrb_cnn.pp.0.cpp'
+        Offset:          865405
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_14_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_15_2:  '
+    FileOffset:      15
+    FilePath:        'C:\Xilinx\pynq-zu\HLS\CNN_GTSRB\src\gtsrb_cnn.cpp'
+    Replacements:    
+      - FilePath:        'C:\Xilinx\pynq-zu\HLS\CNN_GTSRB\CNN_GTSRB\solution1\.autopilot\db\gtsrb_cnn.pp.0.cpp'
+        Offset:          865455
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_15_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_16_3:  '
+    FileOffset:      16
+    FilePath:        'C:\Xilinx\pynq-zu\HLS\CNN_GTSRB\src\gtsrb_cnn.cpp'
+    Replacements:    
+      - FilePath:        'C:\Xilinx\pynq-zu\HLS\CNN_GTSRB\CNN_GTSRB\solution1\.autopilot\db\gtsrb_cnn.pp.0.cpp'
+        Offset:          865500
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_16_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_19_4:  '
+    FileOffset:      19
+    FilePath:        'C:\Xilinx\pynq-zu\HLS\CNN_GTSRB\src\gtsrb_cnn.cpp'
+    Replacements:    
+      - FilePath:        'C:\Xilinx\pynq-zu\HLS\CNN_GTSRB\CNN_GTSRB\solution1\.autopilot\db\gtsrb_cnn.pp.0.cpp'
+        Offset:          865599
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_19_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_21_5:  '
+    FileOffset:      21
+    FilePath:        'C:\Xilinx\pynq-zu\HLS\CNN_GTSRB\src\gtsrb_cnn.cpp'
+    Replacements:    
+      - FilePath:        'C:\Xilinx\pynq-zu\HLS\CNN_GTSRB\CNN_GTSRB\solution1\.autopilot\db\gtsrb_cnn.pp.0.cpp'
+        Offset:          865696
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_21_5: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_25_6:  '
+    FileOffset:      25
+    FilePath:        'C:\Xilinx\pynq-zu\HLS\CNN_GTSRB\src\gtsrb_cnn.cpp'
+    Replacements:    
+      - FilePath:        'C:\Xilinx\pynq-zu\HLS\CNN_GTSRB\CNN_GTSRB\solution1\.autopilot\db\gtsrb_cnn.pp.0.cpp'
+        Offset:          865947
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_25_6: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_48_1:  '
+    FileOffset:      48
+    FilePath:        'C:\Xilinx\pynq-zu\HLS\CNN_GTSRB\src\gtsrb_cnn.cpp'
+    Replacements:    
+      - FilePath:        'C:\Xilinx\pynq-zu\HLS\CNN_GTSRB\CNN_GTSRB\solution1\.autopilot\db\gtsrb_cnn.pp.0.cpp'
+        Offset:          866626
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_48_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_49_2:  '
+    FileOffset:      49
+    FilePath:        'C:\Xilinx\pynq-zu\HLS\CNN_GTSRB\src\gtsrb_cnn.cpp'
+    Replacements:    
+      - FilePath:        'C:\Xilinx\pynq-zu\HLS\CNN_GTSRB\CNN_GTSRB\solution1\.autopilot\db\gtsrb_cnn.pp.0.cpp'
+        Offset:          866666
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_49_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_50_3:  '
+    FileOffset:      50
+    FilePath:        'C:\Xilinx\pynq-zu\HLS\CNN_GTSRB\src\gtsrb_cnn.cpp'
+    Replacements:    
+      - FilePath:        'C:\Xilinx\pynq-zu\HLS\CNN_GTSRB\CNN_GTSRB\solution1\.autopilot\db\gtsrb_cnn.pp.0.cpp'
+        Offset:          866711
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_50_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_83_1:  '
+    FileOffset:      83
+    FilePath:        'C:\Xilinx\pynq-zu\HLS\CNN_GTSRB\src\gtsrb_cnn.cpp'
+    Replacements:    
+      - FilePath:        'C:\Xilinx\pynq-zu\HLS\CNN_GTSRB\CNN_GTSRB\solution1\.autopilot\db\gtsrb_cnn.pp.0.cpp'
+        Offset:          867807
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_83_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_86_2:  '
+    FileOffset:      86
+    FilePath:        'C:\Xilinx\pynq-zu\HLS\CNN_GTSRB\src\gtsrb_cnn.cpp'
+    Replacements:    
+      - FilePath:        'C:\Xilinx\pynq-zu\HLS\CNN_GTSRB\CNN_GTSRB\solution1\.autopilot\db\gtsrb_cnn.pp.0.cpp'
+        Offset:          867905
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_86_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_101_1:  '
+    FileOffset:      101
+    FilePath:        'C:\Xilinx\pynq-zu\HLS\CNN_GTSRB\src\gtsrb_cnn.cpp'
+    Replacements:    
+      - FilePath:        'C:\Xilinx\pynq-zu\HLS\CNN_GTSRB\CNN_GTSRB\solution1\.autopilot\db\gtsrb_cnn.pp.0.cpp'
+        Offset:          868219
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_101_1: '
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ram_2p + bram is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      161
+    FilePath:        'C:\Xilinx\pynq-zu\HLS\CNN_GTSRB\src\gtsrb_cnn.cpp'
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ram_2p + bram is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      162
+    FilePath:        'C:\Xilinx\pynq-zu\HLS\CNN_GTSRB\src\gtsrb_cnn.cpp'
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ram_2p + bram is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      163
+    FilePath:        'C:\Xilinx\pynq-zu\HLS\CNN_GTSRB\src\gtsrb_cnn.cpp'
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ram_2p + bram is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      164
+    FilePath:        'C:\Xilinx\pynq-zu\HLS\CNN_GTSRB\src\gtsrb_cnn.cpp'
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ram_2p + bram is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      165
+    FilePath:        'C:\Xilinx\pynq-zu\HLS\CNN_GTSRB\src\gtsrb_cnn.cpp'
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ram_2p + bram is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      166
+    FilePath:        'C:\Xilinx\pynq-zu\HLS\CNN_GTSRB\src\gtsrb_cnn.cpp'
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'Invalid Directive: for current device, ram_2p + bram is invalid combination for BIND_STORAGE''s option ''type + impl'''
+    FileOffset:      167
+    FilePath:        'C:\Xilinx\pynq-zu\HLS\CNN_GTSRB\src\gtsrb_cnn.cpp'
+    Replacements:    
+...

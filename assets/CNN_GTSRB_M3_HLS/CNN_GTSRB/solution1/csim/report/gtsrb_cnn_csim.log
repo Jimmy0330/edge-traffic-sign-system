@@ -1,0 +1,13 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling ../../../../src/test_gtsrb_cnn.cpp in debug mode
+   Generating csim.exe
+Loading weights...
+Loading input image...
+Running gtsrb_model3_cnn...
+Top-1 class index = 1
+Logits (43 classes):
+32.9805 50.9863 18.1737 -21.9315 23.7981 21.2541 3.50918 -15.1221 -6.86175 -33.43 -36.7057 -25.8299 -33.9781 -28.958 -12.051 -37.7156 -24.5139 -29.4917 -50.5544 -38.666 -54.149 -17.2531 -46.3418 -51.8483 -59.2367 -46.0464 -39.8227 -73.2211 -20.9897 -56.7848 -29.5541 -32.4505 -41.9607 -25.0215 -57.1833 -59.774 -70.6302 -42.9866 -38.8651 -18.5001 7.37982 -50.3662 -63.7821 
+Simulation done
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************

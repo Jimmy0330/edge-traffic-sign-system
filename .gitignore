@@ -1,0 +1,10 @@
+*.zip
+*.tar.gz
+*.7z
+*.dcp
+*.runs/
+*.cache/
+*.hw/
+.Xil/
+archive/
+dataset/

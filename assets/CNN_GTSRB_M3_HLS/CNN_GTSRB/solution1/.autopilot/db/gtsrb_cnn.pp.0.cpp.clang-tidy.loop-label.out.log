@@ -1,0 +1,106 @@
+C:\Xilinx\pynq-zu\HLS\CNN_GTSRB\CNN_GTSRB\solution1\.autopilot\db\gtsrb_cnn.pp.0.cpp:1322:7: warning: Added loop label VITIS_LOOP_1211_1:   [xilinx-label-all-loops]
+      for (i = 0; i < __N - 1; ++i) {
+      ^~~
+      VITIS_LOOP_1211_1: 
+C:\Xilinx\pynq-zu\HLS\CNN_GTSRB\CNN_GTSRB\solution1\.autopilot\db\gtsrb_cnn.pp.0.cpp:1322:7: note: FIX-IT applied suggested code changes
+C:\Xilinx\pynq-zu\HLS\CNN_GTSRB\CNN_GTSRB\solution1\.autopilot\db\gtsrb_cnn.pp.0.cpp:2296:5: warning: Added loop label VITIS_LOOP_676_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high; ++i) {
+    ^~~
+    VITIS_LOOP_676_1: 
+C:\Xilinx\pynq-zu\HLS\CNN_GTSRB\CNN_GTSRB\solution1\.autopilot\db\gtsrb_cnn.pp.0.cpp:2296:5: note: FIX-IT applied suggested code changes
+C:\Xilinx\pynq-zu\HLS\CNN_GTSRB\CNN_GTSRB\solution1\.autopilot\db\gtsrb_cnn.pp.0.cpp:2310:5: warning: Added loop label VITIS_LOOP_690_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high; ++i) {
+    ^~~
+    VITIS_LOOP_690_1: 
+C:\Xilinx\pynq-zu\HLS\CNN_GTSRB\CNN_GTSRB\solution1\.autopilot\db\gtsrb_cnn.pp.0.cpp:2310:5: note: FIX-IT applied suggested code changes
+C:\Xilinx\pynq-zu\HLS\CNN_GTSRB\CNN_GTSRB\solution1\.autopilot\db\gtsrb_cnn.pp.0.cpp:2324:5: warning: Added loop label VITIS_LOOP_704_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high; ++i) {
+    ^~~
+    VITIS_LOOP_704_1: 
+C:\Xilinx\pynq-zu\HLS\CNN_GTSRB\CNN_GTSRB\solution1\.autopilot\db\gtsrb_cnn.pp.0.cpp:2324:5: note: FIX-IT applied suggested code changes
+C:\Xilinx\pynq-zu\HLS\CNN_GTSRB\CNN_GTSRB\solution1\.autopilot\db\gtsrb_cnn.pp.0.cpp:3935:7: warning: Added loop label VITIS_LOOP_1245_1:   [xilinx-label-all-loops]
+      for (i = 0; i < __N - 1; ++i) {
+      ^~~
+      VITIS_LOOP_1245_1: 
+C:\Xilinx\pynq-zu\HLS\CNN_GTSRB\CNN_GTSRB\solution1\.autopilot\db\gtsrb_cnn.pp.0.cpp:3935:7: note: FIX-IT applied suggested code changes
+C:\Xilinx\pynq-zu\HLS\CNN_GTSRB\CNN_GTSRB\solution1\.autopilot\db\gtsrb_cnn.pp.0.cpp:5743:2: warning: Added loop label VITIS_LOOP_14_1:   [xilinx-label-all-loops]
+ for (int cout = 0; cout < Cout; ++cout) {
+ ^~~
+ VITIS_LOOP_14_1: 
+C:\Xilinx\pynq-zu\HLS\CNN_GTSRB\CNN_GTSRB\solution1\.autopilot\db\gtsrb_cnn.pp.0.cpp:5743:2: note: FIX-IT applied suggested code changes
+C:\Xilinx\pynq-zu\HLS\CNN_GTSRB\CNN_GTSRB\solution1\.autopilot\db\gtsrb_cnn.pp.0.cpp:5744:9: warning: Added loop label VITIS_LOOP_15_2:   [xilinx-label-all-loops]
+        for (int h = 0; h < Hout; ++h) {
+        ^~~
+        VITIS_LOOP_15_2: 
+C:\Xilinx\pynq-zu\HLS\CNN_GTSRB\CNN_GTSRB\solution1\.autopilot\db\gtsrb_cnn.pp.0.cpp:5744:9: note: FIX-IT applied suggested code changes
+C:\Xilinx\pynq-zu\HLS\CNN_GTSRB\CNN_GTSRB\solution1\.autopilot\db\gtsrb_cnn.pp.0.cpp:5745:13: warning: Added loop label VITIS_LOOP_16_3:   [xilinx-label-all-loops]
+            for (int w = 0; w < Wout; ++w) {
+            ^~~
+            VITIS_LOOP_16_3: 
+C:\Xilinx\pynq-zu\HLS\CNN_GTSRB\CNN_GTSRB\solution1\.autopilot\db\gtsrb_cnn.pp.0.cpp:5745:13: note: FIX-IT applied suggested code changes
+C:\Xilinx\pynq-zu\HLS\CNN_GTSRB\CNN_GTSRB\solution1\.autopilot\db\gtsrb_cnn.pp.0.cpp:5748:17: warning: Added loop label VITIS_LOOP_19_4:   [xilinx-label-all-loops]
+                for (int kh = 0; kh < Kh; ++kh) {
+                ^~~
+                VITIS_LOOP_19_4: 
+C:\Xilinx\pynq-zu\HLS\CNN_GTSRB\CNN_GTSRB\solution1\.autopilot\db\gtsrb_cnn.pp.0.cpp:5748:17: note: FIX-IT applied suggested code changes
+C:\Xilinx\pynq-zu\HLS\CNN_GTSRB\CNN_GTSRB\solution1\.autopilot\db\gtsrb_cnn.pp.0.cpp:5750:21: warning: Added loop label VITIS_LOOP_21_5:   [xilinx-label-all-loops]
+                    for (int kw = 0; kw < Kw; ++kw) {
+                    ^~~
+                    VITIS_LOOP_21_5: 
+C:\Xilinx\pynq-zu\HLS\CNN_GTSRB\CNN_GTSRB\solution1\.autopilot\db\gtsrb_cnn.pp.0.cpp:5750:21: note: FIX-IT applied suggested code changes
+C:\Xilinx\pynq-zu\HLS\CNN_GTSRB\CNN_GTSRB\solution1\.autopilot\db\gtsrb_cnn.pp.0.cpp:5754:25: warning: Added loop label VITIS_LOOP_25_6:   [xilinx-label-all-loops]
+                        for (int cin = 0; cin < Cin; ++cin) {
+                        ^~~
+                        VITIS_LOOP_25_6: 
+C:\Xilinx\pynq-zu\HLS\CNN_GTSRB\CNN_GTSRB\solution1\.autopilot\db\gtsrb_cnn.pp.0.cpp:5754:25: note: FIX-IT applied suggested code changes
+C:\Xilinx\pynq-zu\HLS\CNN_GTSRB\CNN_GTSRB\solution1\.autopilot\db\gtsrb_cnn.pp.0.cpp:5777:5: warning: Added loop label VITIS_LOOP_48_1:   [xilinx-label-all-loops]
+    for (int c = 0; c < Cin; ++c) {
+    ^~~
+    VITIS_LOOP_48_1: 
+C:\Xilinx\pynq-zu\HLS\CNN_GTSRB\CNN_GTSRB\solution1\.autopilot\db\gtsrb_cnn.pp.0.cpp:5777:5: note: FIX-IT applied suggested code changes
+C:\Xilinx\pynq-zu\HLS\CNN_GTSRB\CNN_GTSRB\solution1\.autopilot\db\gtsrb_cnn.pp.0.cpp:5778:9: warning: Added loop label VITIS_LOOP_49_2:   [xilinx-label-all-loops]
+        for (int h = 0; h < Hout; ++h) {
+        ^~~
+        VITIS_LOOP_49_2: 
+C:\Xilinx\pynq-zu\HLS\CNN_GTSRB\CNN_GTSRB\solution1\.autopilot\db\gtsrb_cnn.pp.0.cpp:5778:9: note: FIX-IT applied suggested code changes
+C:\Xilinx\pynq-zu\HLS\CNN_GTSRB\CNN_GTSRB\solution1\.autopilot\db\gtsrb_cnn.pp.0.cpp:5779:13: warning: Added loop label VITIS_LOOP_50_3:   [xilinx-label-all-loops]
+            for (int w = 0; w < Wout; ++w) {
+            ^~~
+            VITIS_LOOP_50_3: 
+C:\Xilinx\pynq-zu\HLS\CNN_GTSRB\CNN_GTSRB\solution1\.autopilot\db\gtsrb_cnn.pp.0.cpp:5779:13: note: FIX-IT applied suggested code changes
+C:\Xilinx\pynq-zu\HLS\CNN_GTSRB\CNN_GTSRB\solution1\.autopilot\db\gtsrb_cnn.pp.0.cpp:5812:2: warning: Added loop label VITIS_LOOP_83_1:   [xilinx-label-all-loops]
+ for (int j = 0; j < Fout; ++j) {
+ ^~~
+ VITIS_LOOP_83_1: 
+C:\Xilinx\pynq-zu\HLS\CNN_GTSRB\CNN_GTSRB\solution1\.autopilot\db\gtsrb_cnn.pp.0.cpp:5812:2: note: FIX-IT applied suggested code changes
+C:\Xilinx\pynq-zu\HLS\CNN_GTSRB\CNN_GTSRB\solution1\.autopilot\db\gtsrb_cnn.pp.0.cpp:5815:9: warning: Added loop label VITIS_LOOP_86_2:   [xilinx-label-all-loops]
+        for (int i = 0; i < Fin; ++i) {
+        ^~~
+        VITIS_LOOP_86_2: 
+C:\Xilinx\pynq-zu\HLS\CNN_GTSRB\CNN_GTSRB\solution1\.autopilot\db\gtsrb_cnn.pp.0.cpp:5815:9: note: FIX-IT applied suggested code changes
+C:\Xilinx\pynq-zu\HLS\CNN_GTSRB\CNN_GTSRB\solution1\.autopilot\db\gtsrb_cnn.pp.0.cpp:5830:5: warning: Added loop label VITIS_LOOP_101_1:   [xilinx-label-all-loops]
+    for (int i = 1; i < N; ++i) {
+    ^~~
+    VITIS_LOOP_101_1: 
+C:\Xilinx\pynq-zu\HLS\CNN_GTSRB\CNN_GTSRB\solution1\.autopilot\db\gtsrb_cnn.pp.0.cpp:5830:5: note: FIX-IT applied suggested code changes
+C:\Xilinx\pynq-zu\HLS\CNN_GTSRB\CNN_GTSRB\solution1\.autopilot\db\gtsrb_cnn.pp.0.cpp:5894:47: error: Invalid Directive: for current device, ram_2p + bram is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=c1_out type=ram_2p impl=bram
+                                              ^
+C:\Xilinx\pynq-zu\HLS\CNN_GTSRB\CNN_GTSRB\solution1\.autopilot\db\gtsrb_cnn.pp.0.cpp:5895:47: error: Invalid Directive: for current device, ram_2p + bram is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=p1_out type=ram_2p impl=bram
+                                              ^
+C:\Xilinx\pynq-zu\HLS\CNN_GTSRB\CNN_GTSRB\solution1\.autopilot\db\gtsrb_cnn.pp.0.cpp:5896:47: error: Invalid Directive: for current device, ram_2p + bram is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=c2_out type=ram_2p impl=bram
+                                              ^
+C:\Xilinx\pynq-zu\HLS\CNN_GTSRB\CNN_GTSRB\solution1\.autopilot\db\gtsrb_cnn.pp.0.cpp:5897:47: error: Invalid Directive: for current device, ram_2p + bram is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=p2_out type=ram_2p impl=bram
+                                              ^
+C:\Xilinx\pynq-zu\HLS\CNN_GTSRB\CNN_GTSRB\solution1\.autopilot\db\gtsrb_cnn.pp.0.cpp:5898:47: error: Invalid Directive: for current device, ram_2p + bram is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=c3_out type=ram_2p impl=bram
+                                              ^
+C:\Xilinx\pynq-zu\HLS\CNN_GTSRB\CNN_GTSRB\solution1\.autopilot\db\gtsrb_cnn.pp.0.cpp:5899:47: error: Invalid Directive: for current device, ram_2p + bram is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=p3_out type=ram_2p impl=bram
+                                              ^
+C:\Xilinx\pynq-zu\HLS\CNN_GTSRB\CNN_GTSRB\solution1\.autopilot\db\gtsrb_cnn.pp.0.cpp:5900:48: error: Invalid Directive: for current device, ram_2p + bram is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=fc1_out type=ram_2p impl=bram
+                                               ^

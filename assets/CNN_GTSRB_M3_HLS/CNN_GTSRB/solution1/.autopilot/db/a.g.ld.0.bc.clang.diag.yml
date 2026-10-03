@@ -1,0 +1,2346 @@
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 184, Column: 5 }
+Function:        _Z9gtsrb_cnnPfS_S_S_S_S_S_S_S_S_S_S_Pi
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'fmax_argmax(int, float const*, int*)'
+    DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 97, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'gtsrb_cnn(float*, float*, float*, float*, float*, float*, float*, float*, float*, float*, float*, float*, int*)'
+    DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 123, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 19, Column: 34 }
+Function:        _ZL15conv_valid_reluiiiiiiPKfS0_S0_iiPf
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_19_4
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 21, Column: 38 }
+Function:        _ZL15conv_valid_reluiiiiiiPKfS0_S0_iiPf
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_21_5
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 25, Column: 42 }
+Function:        _ZL15conv_valid_reluiiiiiiPKfS0_S0_iiPf
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_25_6
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 12, Column: 0 }
+Function:        _ZL15conv_valid_reluiiiiiiPKfS0_S0_iiPf
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_19_4
+  - String:          ''' ('
+  - LoopLoc:         'src/gtsrb_cnn.cpp:19:34'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          conv_valid_relu
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 12, Column: 0 }
+Function:        _ZL15conv_valid_reluiiiiiiPKfS0_S0_iiPf
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_21_5
+  - String:          ''' ('
+  - LoopLoc:         'src/gtsrb_cnn.cpp:21:38'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          conv_valid_relu
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 12, Column: 0 }
+Function:        _ZL15conv_valid_reluiiiiiiPKfS0_S0_iiPf
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_21_5
+  - String:          ''' ('
+  - LoopLoc:         'src/gtsrb_cnn.cpp:21:38'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          conv_valid_relu
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 12, Column: 0 }
+Function:        _ZL15conv_valid_reluiiiiiiPKfS0_S0_iiPf
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_21_5
+  - String:          ''' ('
+  - LoopLoc:         'src/gtsrb_cnn.cpp:21:38'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          conv_valid_relu
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Failure
+Pass:            reflow-function-uniquification
+Name:            FunctionUniquification
+DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 181, Column: 5 }
+Function:        _Z9gtsrb_cnnPfS_S_S_S_S_S_S_S_S_S_S_Pi
+Args:            
+  - String:          'Duplicating function '''
+  - Name:            'linear(int, int, float const*, float const*, float const*, bool, float*)'
+  - String:          ''' as different function signatures were detected between this call site and other call site(s). This may impact the resources used in the design.'
+...
+--- !Failure
+Pass:            reflow-function-uniquification
+Name:            FunctionUniquification
+DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 173, Column: 5 }
+Function:        _Z9gtsrb_cnnPfS_S_S_S_S_S_S_S_S_S_S_Pi
+Args:            
+  - String:          'Duplicating function '''
+  - Name:            'conv_valid_relu(int, int, int, int, int, int, float const*, float const*, float const*, int, int, float*)'
+  - String:          ''' as different function signatures were detected between this call site and other call site(s). This may impact the resources used in the design.'
+...
+--- !Failure
+Pass:            reflow-function-uniquification
+Name:            FunctionUniquification
+DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 177, Column: 5 }
+Function:        _Z9gtsrb_cnnPfS_S_S_S_S_S_S_S_S_S_S_Pi
+Args:            
+  - String:          'Duplicating function '''
+  - Name:            'conv_valid_relu(int, int, int, int, int, int, float const*, float const*, float const*, int, int, float*)'
+  - String:          ''' as different function signatures were detected between this call site and other call site(s). This may impact the resources used in the design.'
+...
+--- !Passed
+Pass:            reflow-burst-inference
+Name:            BurstInferred
+DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 101, Column: 23 }
+Function:        _Z9gtsrb_cnnPfS_S_S_S_S_S_S_S_S_S_S_Pi
+Args:            
+  - String:          'Sequential '
+  - Direction:       read
+  - String:          ' of length '
+  - Length:          '42'
+  - String:          ' has been inferred'
+  - String:          ' _XLX_SEP_ OldID='
+  - String:          for.body.i.load.9
+  - String:          ', '
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        scevgepseq
+  - String:          ' '
+  - ArrayName:       logits_out
+  - String:          ' '
+  - BundleName:      gmem5
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_101_1
+  - String:          ' '
+  - LoopLoc:         'src/gtsrb_cnn.cpp:101:23'
+  - String:          ' '
+  - Function:        'gtsrb_cnn(float*, float*, float*, float*, float*, float*, float*, float*, float*, float*, float*, float*, int*)'
+    DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 123, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-inference
+Name:            BurstInferred
+DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 25, Column: 42 }
+Function:        _ZL15conv_valid_reluiiiiiiPKfS0_S0_iiPf
+Args:            
+  - String:          'Sequential '
+  - Direction:       read
+  - String:          ' of length '
+  - Length:          '3'
+  - String:          ' has been inferred'
+  - String:          ' _XLX_SEP_ OldID='
+  - String:          for.inc.load.7
+  - String:          ', '
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        scevgepseq
+  - String:          ' '
+  - ArrayName:       feature_in
+  - String:          ' '
+  - BundleName:      gmem5
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_25_6
+  - String:          ' '
+  - LoopLoc:         'src/gtsrb_cnn.cpp:25:42'
+  - String:          ' '
+  - Function:        'conv_valid_relu(int, int, int, int, int, int, float const*, float const*, float const*, int, int, float*)'
+    DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 12, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-inference
+Name:            BurstInferred
+DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 25, Column: 42 }
+Function:        _ZL15conv_valid_reluiiiiiiPKfS0_S0_iiPf
+Args:            
+  - String:          'Sequential '
+  - Direction:       read
+  - String:          ' of length '
+  - Length:          '3'
+  - String:          ' has been inferred'
+  - String:          ' _XLX_SEP_ OldID='
+  - String:          for.inc.134.load.7
+  - String:          ', '
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        scevgep1seq
+  - String:          ' '
+  - ArrayName:       feature_in
+  - String:          ' '
+  - BundleName:      gmem5
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_25_6
+  - String:          ' '
+  - LoopLoc:         'src/gtsrb_cnn.cpp:25:42'
+  - String:          ' '
+  - Function:        'conv_valid_relu(int, int, int, int, int, int, float const*, float const*, float const*, int, int, float*)'
+    DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 12, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-inference
+Name:            BurstInferred
+DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 25, Column: 42 }
+Function:        _ZL15conv_valid_reluiiiiiiPKfS0_S0_iiPf
+Args:            
+  - String:          'Sequential '
+  - Direction:       read
+  - String:          ' of length '
+  - Length:          '3'
+  - String:          ' has been inferred'
+  - String:          ' _XLX_SEP_ OldID='
+  - String:          for.inc.259.load.7
+  - String:          ', '
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        scevgep2seq
+  - String:          ' '
+  - ArrayName:       feature_in
+  - String:          ' '
+  - BundleName:      gmem5
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_25_6
+  - String:          ' '
+  - LoopLoc:         'src/gtsrb_cnn.cpp:25:42'
+  - String:          ' '
+  - Function:        'conv_valid_relu(int, int, int, int, int, int, float const*, float const*, float const*, int, int, float*)'
+    DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 12, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-inference
+Name:            BurstInferred
+DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 25, Column: 42 }
+Function:        _ZL15conv_valid_reluiiiiiiPKfS0_S0_iiPf
+Args:            
+  - String:          'Sequential '
+  - Direction:       read
+  - String:          ' of length '
+  - Length:          '3'
+  - String:          ' has been inferred'
+  - String:          ' _XLX_SEP_ OldID='
+  - String:          for.inc.1.load.7
+  - String:          ', '
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        scevgep3seq
+  - String:          ' '
+  - ArrayName:       feature_in
+  - String:          ' '
+  - BundleName:      gmem5
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_25_6
+  - String:          ' '
+  - LoopLoc:         'src/gtsrb_cnn.cpp:25:42'
+  - String:          ' '
+  - Function:        'conv_valid_relu(int, int, int, int, int, int, float const*, float const*, float const*, int, int, float*)'
+    DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 12, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-inference
+Name:            BurstInferred
+DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 25, Column: 42 }
+Function:        _ZL15conv_valid_reluiiiiiiPKfS0_S0_iiPf
+Args:            
+  - String:          'Sequential '
+  - Direction:       read
+  - String:          ' of length '
+  - Length:          '3'
+  - String:          ' has been inferred'
+  - String:          ' _XLX_SEP_ OldID='
+  - String:          for.inc.1.1.load.7
+  - String:          ', '
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        scevgep4seq
+  - String:          ' '
+  - ArrayName:       feature_in
+  - String:          ' '
+  - BundleName:      gmem5
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_25_6
+  - String:          ' '
+  - LoopLoc:         'src/gtsrb_cnn.cpp:25:42'
+  - String:          ' '
+  - Function:        'conv_valid_relu(int, int, int, int, int, int, float const*, float const*, float const*, int, int, float*)'
+    DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 12, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-inference
+Name:            BurstInferred
+DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 25, Column: 42 }
+Function:        _ZL15conv_valid_reluiiiiiiPKfS0_S0_iiPf
+Args:            
+  - String:          'Sequential '
+  - Direction:       read
+  - String:          ' of length '
+  - Length:          '3'
+  - String:          ' has been inferred'
+  - String:          ' _XLX_SEP_ OldID='
+  - String:          for.inc.1.2.load.7
+  - String:          ', '
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        scevgep5seq
+  - String:          ' '
+  - ArrayName:       feature_in
+  - String:          ' '
+  - BundleName:      gmem5
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_25_6
+  - String:          ' '
+  - LoopLoc:         'src/gtsrb_cnn.cpp:25:42'
+  - String:          ' '
+  - Function:        'conv_valid_relu(int, int, int, int, int, int, float const*, float const*, float const*, int, int, float*)'
+    DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 12, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-inference
+Name:            BurstInferred
+DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 25, Column: 42 }
+Function:        _ZL15conv_valid_reluiiiiiiPKfS0_S0_iiPf
+Args:            
+  - String:          'Sequential '
+  - Direction:       read
+  - String:          ' of length '
+  - Length:          '3'
+  - String:          ' has been inferred'
+  - String:          ' _XLX_SEP_ OldID='
+  - String:          for.inc.2.load.7
+  - String:          ', '
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        scevgep6seq
+  - String:          ' '
+  - ArrayName:       feature_in
+  - String:          ' '
+  - BundleName:      gmem5
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_25_6
+  - String:          ' '
+  - LoopLoc:         'src/gtsrb_cnn.cpp:25:42'
+  - String:          ' '
+  - Function:        'conv_valid_relu(int, int, int, int, int, int, float const*, float const*, float const*, int, int, float*)'
+    DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 12, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-inference
+Name:            BurstInferred
+DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 25, Column: 42 }
+Function:        _ZL15conv_valid_reluiiiiiiPKfS0_S0_iiPf
+Args:            
+  - String:          'Sequential '
+  - Direction:       read
+  - String:          ' of length '
+  - Length:          '3'
+  - String:          ' has been inferred'
+  - String:          ' _XLX_SEP_ OldID='
+  - String:          for.inc.2.1.load.7
+  - String:          ', '
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        scevgep7seq
+  - String:          ' '
+  - ArrayName:       feature_in
+  - String:          ' '
+  - BundleName:      gmem5
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_25_6
+  - String:          ' '
+  - LoopLoc:         'src/gtsrb_cnn.cpp:25:42'
+  - String:          ' '
+  - Function:        'conv_valid_relu(int, int, int, int, int, int, float const*, float const*, float const*, int, int, float*)'
+    DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 12, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-inference
+Name:            BurstInferred
+DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 25, Column: 42 }
+Function:        _ZL15conv_valid_reluiiiiiiPKfS0_S0_iiPf
+Args:            
+  - String:          'Sequential '
+  - Direction:       read
+  - String:          ' of length '
+  - Length:          '3'
+  - String:          ' has been inferred'
+  - String:          ' _XLX_SEP_ OldID='
+  - String:          for.inc.2.2.load.7
+  - String:          ', '
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        scevgep8seq
+  - String:          ' '
+  - ArrayName:       feature_in
+  - String:          ' '
+  - BundleName:      gmem5
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_25_6
+  - String:          ' '
+  - LoopLoc:         'src/gtsrb_cnn.cpp:25:42'
+  - String:          ' '
+  - Function:        'conv_valid_relu(int, int, int, int, int, int, float const*, float const*, float const*, int, int, float*)'
+    DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 12, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            IncompatibleStride
+DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 27, Column: 49 }
+Function:        _ZL15conv_valid_reluiiiiiiPKfS0_S0_iiPf
+Args:            
+  - String:          Stride is incompatible
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        for.inc.load.12
+  - String:          ' '
+  - ArrayName:       W
+  - String:          ' '
+  - BundleName:      gmem0
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_25_6
+  - String:          ' '
+  - LoopLoc:         'src/gtsrb_cnn.cpp:25:42'
+  - String:          ' '
+  - Function:        'conv_valid_relu(int, int, int, int, int, int, float const*, float const*, float const*, int, int, float*)'
+    DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 12, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            IncompatibleStride
+DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 27, Column: 49 }
+Function:        _ZL15conv_valid_reluiiiiiiPKfS0_S0_iiPf
+Args:            
+  - String:          Stride is incompatible
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        for.inc.134.load.12
+  - String:          ' '
+  - ArrayName:       W
+  - String:          ' '
+  - BundleName:      gmem0
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_25_6
+  - String:          ' '
+  - LoopLoc:         'src/gtsrb_cnn.cpp:25:42'
+  - String:          ' '
+  - Function:        'conv_valid_relu(int, int, int, int, int, int, float const*, float const*, float const*, int, int, float*)'
+    DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 12, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            IncompatibleStride
+DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 27, Column: 49 }
+Function:        _ZL15conv_valid_reluiiiiiiPKfS0_S0_iiPf
+Args:            
+  - String:          Stride is incompatible
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        for.inc.259.load.12
+  - String:          ' '
+  - ArrayName:       W
+  - String:          ' '
+  - BundleName:      gmem0
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_25_6
+  - String:          ' '
+  - LoopLoc:         'src/gtsrb_cnn.cpp:25:42'
+  - String:          ' '
+  - Function:        'conv_valid_relu(int, int, int, int, int, int, float const*, float const*, float const*, int, int, float*)'
+    DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 12, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            IncompatibleStride
+DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 27, Column: 49 }
+Function:        _ZL15conv_valid_reluiiiiiiPKfS0_S0_iiPf
+Args:            
+  - String:          Stride is incompatible
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        for.inc.1.load.12
+  - String:          ' '
+  - ArrayName:       W
+  - String:          ' '
+  - BundleName:      gmem0
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_25_6
+  - String:          ' '
+  - LoopLoc:         'src/gtsrb_cnn.cpp:25:42'
+  - String:          ' '
+  - Function:        'conv_valid_relu(int, int, int, int, int, int, float const*, float const*, float const*, int, int, float*)'
+    DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 12, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            IncompatibleStride
+DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 27, Column: 49 }
+Function:        _ZL15conv_valid_reluiiiiiiPKfS0_S0_iiPf
+Args:            
+  - String:          Stride is incompatible
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        for.inc.1.1.load.12
+  - String:          ' '
+  - ArrayName:       W
+  - String:          ' '
+  - BundleName:      gmem0
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_25_6
+  - String:          ' '
+  - LoopLoc:         'src/gtsrb_cnn.cpp:25:42'
+  - String:          ' '
+  - Function:        'conv_valid_relu(int, int, int, int, int, int, float const*, float const*, float const*, int, int, float*)'
+    DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 12, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            IncompatibleStride
+DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 27, Column: 49 }
+Function:        _ZL15conv_valid_reluiiiiiiPKfS0_S0_iiPf
+Args:            
+  - String:          Stride is incompatible
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        for.inc.1.2.load.12
+  - String:          ' '
+  - ArrayName:       W
+  - String:          ' '
+  - BundleName:      gmem0
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_25_6
+  - String:          ' '
+  - LoopLoc:         'src/gtsrb_cnn.cpp:25:42'
+  - String:          ' '
+  - Function:        'conv_valid_relu(int, int, int, int, int, int, float const*, float const*, float const*, int, int, float*)'
+    DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 12, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            IncompatibleStride
+DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 27, Column: 49 }
+Function:        _ZL15conv_valid_reluiiiiiiPKfS0_S0_iiPf
+Args:            
+  - String:          Stride is incompatible
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        for.inc.2.load.12
+  - String:          ' '
+  - ArrayName:       W
+  - String:          ' '
+  - BundleName:      gmem0
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_25_6
+  - String:          ' '
+  - LoopLoc:         'src/gtsrb_cnn.cpp:25:42'
+  - String:          ' '
+  - Function:        'conv_valid_relu(int, int, int, int, int, int, float const*, float const*, float const*, int, int, float*)'
+    DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 12, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            IncompatibleStride
+DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 27, Column: 49 }
+Function:        _ZL15conv_valid_reluiiiiiiPKfS0_S0_iiPf
+Args:            
+  - String:          Stride is incompatible
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        for.inc.2.1.load.12
+  - String:          ' '
+  - ArrayName:       W
+  - String:          ' '
+  - BundleName:      gmem0
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_25_6
+  - String:          ' '
+  - LoopLoc:         'src/gtsrb_cnn.cpp:25:42'
+  - String:          ' '
+  - Function:        'conv_valid_relu(int, int, int, int, int, int, float const*, float const*, float const*, int, int, float*)'
+    DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 12, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            IncompatibleStride
+DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 27, Column: 49 }
+Function:        _ZL15conv_valid_reluiiiiiiPKfS0_S0_iiPf
+Args:            
+  - String:          Stride is incompatible
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        for.inc.2.2.load.12
+  - String:          ' '
+  - ArrayName:       W
+  - String:          ' '
+  - BundleName:      gmem0
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_25_6
+  - String:          ' '
+  - LoopLoc:         'src/gtsrb_cnn.cpp:25:42'
+  - String:          ' '
+  - Function:        'conv_valid_relu(int, int, int, int, int, int, float const*, float const*, float const*, int, int, float*)'
+    DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 12, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            AccessClobbered
+DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 25, Column: 42 }
+Function:        _ZL15conv_valid_reluiiiiiiPKfS0_S0_iiPf
+Args:            
+  - String:          'Access is clobbered by '
+  - ClobberedBy:     load
+    DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 26, Column: 49 }
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        scevgepseq
+  - String:          ' '
+  - ArrayName:       feature_in
+  - String:          ' '
+  - BundleName:      gmem5
+  - String:          ' '
+  - Function:        'conv_valid_relu(int, int, int, int, int, int, float const*, float const*, float const*, int, int, float*)'
+    DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 12, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            AccessClobbered
+DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 25, Column: 42 }
+Function:        _ZL15conv_valid_reluiiiiiiPKfS0_S0_iiPf
+Args:            
+  - String:          'Access is clobbered by '
+  - ClobberedBy:     load
+    DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 26, Column: 49 }
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        scevgep1seq
+  - String:          ' '
+  - ArrayName:       feature_in
+  - String:          ' '
+  - BundleName:      gmem5
+  - String:          ' '
+  - Function:        'conv_valid_relu(int, int, int, int, int, int, float const*, float const*, float const*, int, int, float*)'
+    DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 12, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            AccessClobbered
+DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 25, Column: 42 }
+Function:        _ZL15conv_valid_reluiiiiiiPKfS0_S0_iiPf
+Args:            
+  - String:          'Access is clobbered by '
+  - ClobberedBy:     load
+    DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 26, Column: 49 }
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        scevgep2seq
+  - String:          ' '
+  - ArrayName:       feature_in
+  - String:          ' '
+  - BundleName:      gmem5
+  - String:          ' '
+  - Function:        'conv_valid_relu(int, int, int, int, int, int, float const*, float const*, float const*, int, int, float*)'
+    DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 12, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            AccessClobbered
+DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 25, Column: 42 }
+Function:        _ZL15conv_valid_reluiiiiiiPKfS0_S0_iiPf
+Args:            
+  - String:          'Access is clobbered by '
+  - ClobberedBy:     load
+    DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 26, Column: 49 }
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        scevgep3seq
+  - String:          ' '
+  - ArrayName:       feature_in
+  - String:          ' '
+  - BundleName:      gmem5
+  - String:          ' '
+  - Function:        'conv_valid_relu(int, int, int, int, int, int, float const*, float const*, float const*, int, int, float*)'
+    DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 12, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            AccessClobbered
+DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 25, Column: 42 }
+Function:        _ZL15conv_valid_reluiiiiiiPKfS0_S0_iiPf
+Args:            
+  - String:          'Access is clobbered by '
+  - ClobberedBy:     load
+    DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 26, Column: 49 }
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        scevgep4seq
+  - String:          ' '
+  - ArrayName:       feature_in
+  - String:          ' '
+  - BundleName:      gmem5
+  - String:          ' '
+  - Function:        'conv_valid_relu(int, int, int, int, int, int, float const*, float const*, float const*, int, int, float*)'
+    DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 12, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            AccessClobbered
+DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 25, Column: 42 }
+Function:        _ZL15conv_valid_reluiiiiiiPKfS0_S0_iiPf
+Args:            
+  - String:          'Access is clobbered by '
+  - ClobberedBy:     load
+    DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 26, Column: 49 }
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        scevgep5seq
+  - String:          ' '
+  - ArrayName:       feature_in
+  - String:          ' '
+  - BundleName:      gmem5
+  - String:          ' '
+  - Function:        'conv_valid_relu(int, int, int, int, int, int, float const*, float const*, float const*, int, int, float*)'
+    DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 12, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            AccessClobbered
+DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 25, Column: 42 }
+Function:        _ZL15conv_valid_reluiiiiiiPKfS0_S0_iiPf
+Args:            
+  - String:          'Access is clobbered by '
+  - ClobberedBy:     load
+    DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 26, Column: 49 }
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        scevgep6seq
+  - String:          ' '
+  - ArrayName:       feature_in
+  - String:          ' '
+  - BundleName:      gmem5
+  - String:          ' '
+  - Function:        'conv_valid_relu(int, int, int, int, int, int, float const*, float const*, float const*, int, int, float*)'
+    DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 12, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            AccessClobbered
+DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 25, Column: 42 }
+Function:        _ZL15conv_valid_reluiiiiiiPKfS0_S0_iiPf
+Args:            
+  - String:          'Access is clobbered by '
+  - ClobberedBy:     load
+    DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 26, Column: 49 }
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        scevgep7seq
+  - String:          ' '
+  - ArrayName:       feature_in
+  - String:          ' '
+  - BundleName:      gmem5
+  - String:          ' '
+  - Function:        'conv_valid_relu(int, int, int, int, int, int, float const*, float const*, float const*, int, int, float*)'
+    DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 12, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            AccessClobbered
+DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 25, Column: 42 }
+Function:        _ZL15conv_valid_reluiiiiiiPKfS0_S0_iiPf
+Args:            
+  - String:          'Access is clobbered by '
+  - ClobberedBy:     load
+    DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 26, Column: 49 }
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        scevgep8seq
+  - String:          ' '
+  - ArrayName:       feature_in
+  - String:          ' '
+  - BundleName:      gmem5
+  - String:          ' '
+  - Function:        'conv_valid_relu(int, int, int, int, int, int, float const*, float const*, float const*, int, int, float*)'
+    DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 12, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            IncompatibleStride
+Function:        _ZL15conv_valid_reluiiiiiiPKfS0_S0_iiPf
+Args:            
+  - String:          Stride is incompatible
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        VITIS_LOOP_16_3.load.23
+  - String:          ' '
+  - ArrayName:       B
+  - String:          ' '
+  - BundleName:      gmem0
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_15_2
+  - String:          ' '
+  - LoopLoc:         'src/gtsrb_cnn.cpp:15:26'
+  - String:          ' '
+  - Function:        'conv_valid_relu(int, int, int, int, int, int, float const*, float const*, float const*, int, int, float*)'
+    DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 12, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-inference
+Name:            BurstInferred
+DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 83, Column: 19 }
+Function:        _ZL6lineariiPKfS0_S0_bPf
+Args:            
+  - String:          'Sequential '
+  - Direction:       read
+  - String:          ' of length '
+  - Length:          '43'
+  - String:          ' has been inferred'
+  - String:          ' _XLX_SEP_ OldID='
+  - String:          VITIS_LOOP_86_2.load.4
+  - String:          ', '
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        bseq
+  - String:          ' '
+  - ArrayName:       b
+  - String:          ' '
+  - BundleName:      gmem4
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_83_1
+  - String:          ' '
+  - LoopLoc:         'src/gtsrb_cnn.cpp:83:19'
+  - String:          ' '
+  - Function:        'linear(int, int, float const*, float const*, float const*, bool, float*)'
+    DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 81, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-inference
+Name:            BurstInferred
+DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 83, Column: 19 }
+Function:        _ZL6lineariiPKfS0_S0_bPf
+Args:            
+  - String:          'Sequential '
+  - Direction:       write
+  - String:          ' of length '
+  - Length:          '43'
+  - String:          ' has been inferred'
+  - String:          ' _XLX_SEP_ OldID='
+  - String:          for.end.store.5
+  - String:          ', '
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        voutseq
+  - String:          ' '
+  - ArrayName:       vout
+  - String:          ' '
+  - BundleName:      gmem5
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_83_1
+  - String:          ' '
+  - LoopLoc:         'src/gtsrb_cnn.cpp:83:19'
+  - String:          ' '
+  - Function:        'linear(int, int, float const*, float const*, float const*, bool, float*)'
+    DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 81, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            IncompatibleStride
+DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 87, Column: 29 }
+Function:        _ZL6lineariiPKfS0_S0_bPf
+Args:            
+  - String:          Stride is incompatible
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        for.inc.load.9
+  - String:          ' '
+  - ArrayName:       W
+  - String:          ' '
+  - BundleName:      gmem4
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_86_2
+  - String:          ' '
+  - LoopLoc:         'src/gtsrb_cnn.cpp:86:26'
+  - String:          ' '
+  - Function:        'linear(int, int, float const*, float const*, float const*, bool, float*)'
+    DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 81, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-inference
+Name:            BurstInferred
+DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 83, Column: 19 }
+Function:        _ZL6lineariiPKfS0_S0_bPf.1
+Args:            
+  - String:          'Sequential '
+  - Direction:       read
+  - String:          ' of length '
+  - Length:          '64'
+  - String:          ' has been inferred'
+  - String:          ' _XLX_SEP_ OldID='
+  - String:          VITIS_LOOP_86_2.load.4
+  - String:          ', '
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        bseq
+  - String:          ' '
+  - ArrayName:       b
+  - String:          ' '
+  - BundleName:      gmem3
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_83_1
+  - String:          ' '
+  - LoopLoc:         'src/gtsrb_cnn.cpp:83:19'
+  - String:          ' '
+  - Function:        'linear(int, int, float const*, float const*, float const*, bool, float*) (.1)'
+    DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 81, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            IncompatibleStride
+DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 87, Column: 29 }
+Function:        _ZL6lineariiPKfS0_S0_bPf.1
+Args:            
+  - String:          Stride is incompatible
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        for.inc.load.9
+  - String:          ' '
+  - ArrayName:       W
+  - String:          ' '
+  - BundleName:      gmem3
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_86_2
+  - String:          ' '
+  - LoopLoc:         'src/gtsrb_cnn.cpp:86:26'
+  - String:          ' '
+  - Function:        'linear(int, int, float const*, float const*, float const*, bool, float*) (.1)'
+    DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 81, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            IncompatibleStride
+DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 27, Column: 49 }
+Function:        _ZL15conv_valid_reluiiiiiiPKfS0_S0_iiPf.2
+Args:            
+  - String:          Stride is incompatible
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        for.inc.load.11
+  - String:          ' '
+  - ArrayName:       W
+  - String:          ' '
+  - BundleName:      gmem1,gmem2
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_25_6
+  - String:          ' '
+  - LoopLoc:         'src/gtsrb_cnn.cpp:25:42'
+  - String:          ' '
+  - Function:        'conv_valid_relu(int, int, int, int, int, int, float const*, float const*, float const*, int, int, float*) (.2)'
+    DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 12, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            IncompatibleStride
+DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 27, Column: 49 }
+Function:        _ZL15conv_valid_reluiiiiiiPKfS0_S0_iiPf.2
+Args:            
+  - String:          Stride is incompatible
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        for.inc.134.load.11
+  - String:          ' '
+  - ArrayName:       W
+  - String:          ' '
+  - BundleName:      gmem1,gmem2
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_25_6
+  - String:          ' '
+  - LoopLoc:         'src/gtsrb_cnn.cpp:25:42'
+  - String:          ' '
+  - Function:        'conv_valid_relu(int, int, int, int, int, int, float const*, float const*, float const*, int, int, float*) (.2)'
+    DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 12, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            IncompatibleStride
+DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 27, Column: 49 }
+Function:        _ZL15conv_valid_reluiiiiiiPKfS0_S0_iiPf.2
+Args:            
+  - String:          Stride is incompatible
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        for.inc.259.load.11
+  - String:          ' '
+  - ArrayName:       W
+  - String:          ' '
+  - BundleName:      gmem1,gmem2
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_25_6
+  - String:          ' '
+  - LoopLoc:         'src/gtsrb_cnn.cpp:25:42'
+  - String:          ' '
+  - Function:        'conv_valid_relu(int, int, int, int, int, int, float const*, float const*, float const*, int, int, float*) (.2)'
+    DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 12, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            IncompatibleStride
+DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 27, Column: 49 }
+Function:        _ZL15conv_valid_reluiiiiiiPKfS0_S0_iiPf.2
+Args:            
+  - String:          Stride is incompatible
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        for.inc.1.load.11
+  - String:          ' '
+  - ArrayName:       W
+  - String:          ' '
+  - BundleName:      gmem1,gmem2
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_25_6
+  - String:          ' '
+  - LoopLoc:         'src/gtsrb_cnn.cpp:25:42'
+  - String:          ' '
+  - Function:        'conv_valid_relu(int, int, int, int, int, int, float const*, float const*, float const*, int, int, float*) (.2)'
+    DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 12, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            IncompatibleStride
+DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 27, Column: 49 }
+Function:        _ZL15conv_valid_reluiiiiiiPKfS0_S0_iiPf.2
+Args:            
+  - String:          Stride is incompatible
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        for.inc.1.1.load.11
+  - String:          ' '
+  - ArrayName:       W
+  - String:          ' '
+  - BundleName:      gmem1,gmem2
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_25_6
+  - String:          ' '
+  - LoopLoc:         'src/gtsrb_cnn.cpp:25:42'
+  - String:          ' '
+  - Function:        'conv_valid_relu(int, int, int, int, int, int, float const*, float const*, float const*, int, int, float*) (.2)'
+    DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 12, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            IncompatibleStride
+DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 27, Column: 49 }
+Function:        _ZL15conv_valid_reluiiiiiiPKfS0_S0_iiPf.2
+Args:            
+  - String:          Stride is incompatible
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        for.inc.1.2.load.11
+  - String:          ' '
+  - ArrayName:       W
+  - String:          ' '
+  - BundleName:      gmem1,gmem2
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_25_6
+  - String:          ' '
+  - LoopLoc:         'src/gtsrb_cnn.cpp:25:42'
+  - String:          ' '
+  - Function:        'conv_valid_relu(int, int, int, int, int, int, float const*, float const*, float const*, int, int, float*) (.2)'
+    DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 12, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            IncompatibleStride
+DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 27, Column: 49 }
+Function:        _ZL15conv_valid_reluiiiiiiPKfS0_S0_iiPf.2
+Args:            
+  - String:          Stride is incompatible
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        for.inc.2.load.11
+  - String:          ' '
+  - ArrayName:       W
+  - String:          ' '
+  - BundleName:      gmem1,gmem2
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_25_6
+  - String:          ' '
+  - LoopLoc:         'src/gtsrb_cnn.cpp:25:42'
+  - String:          ' '
+  - Function:        'conv_valid_relu(int, int, int, int, int, int, float const*, float const*, float const*, int, int, float*) (.2)'
+    DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 12, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            IncompatibleStride
+DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 27, Column: 49 }
+Function:        _ZL15conv_valid_reluiiiiiiPKfS0_S0_iiPf.2
+Args:            
+  - String:          Stride is incompatible
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        for.inc.2.1.load.11
+  - String:          ' '
+  - ArrayName:       W
+  - String:          ' '
+  - BundleName:      gmem1,gmem2
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_25_6
+  - String:          ' '
+  - LoopLoc:         'src/gtsrb_cnn.cpp:25:42'
+  - String:          ' '
+  - Function:        'conv_valid_relu(int, int, int, int, int, int, float const*, float const*, float const*, int, int, float*) (.2)'
+    DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 12, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            IncompatibleStride
+DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 27, Column: 49 }
+Function:        _ZL15conv_valid_reluiiiiiiPKfS0_S0_iiPf.2
+Args:            
+  - String:          Stride is incompatible
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        for.inc.2.2.load.11
+  - String:          ' '
+  - ArrayName:       W
+  - String:          ' '
+  - BundleName:      gmem1,gmem2
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_25_6
+  - String:          ' '
+  - LoopLoc:         'src/gtsrb_cnn.cpp:25:42'
+  - String:          ' '
+  - Function:        'conv_valid_relu(int, int, int, int, int, int, float const*, float const*, float const*, int, int, float*) (.2)'
+    DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 12, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            IncompatibleStride
+Function:        _ZL15conv_valid_reluiiiiiiPKfS0_S0_iiPf.2
+Args:            
+  - String:          Stride is incompatible
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        for.body8.lr.ph.load.0
+  - String:          ' '
+  - ArrayName:       B
+  - String:          ' '
+  - BundleName:      gmem1,gmem2
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_15_2
+  - String:          ' '
+  - LoopLoc:         'src/gtsrb_cnn.cpp:15:26'
+  - String:          ' '
+  - Function:        'conv_valid_relu(int, int, int, int, int, int, float const*, float const*, float const*, int, int, float*) (.2)'
+    DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 12, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-widen
+Name:            GreaterOrEqualThreshold
+DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 101, Column: 23 }
+Function:        _Z9gtsrb_cnnPfS_S_S_S_S_S_S_S_S_S_S_Pi
+Args:            
+  - String:          'Could not widen since type '
+  - Type:            float
+  - String:          ' size is greater than or equal to the max_widen_bitwidth threshold of '
+  - Threshold:       '0'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        scevgepseq
+  - String:          ' '
+  - ArrayName:       logits_out
+  - String:          ' '
+  - BundleName:      gmem5
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_101_1
+  - String:          ' '
+  - LoopLoc:         'src/gtsrb_cnn.cpp:101:23'
+  - String:          ' '
+  - Function:        'gtsrb_cnn(float*, float*, float*, float*, float*, float*, float*, float*, float*, float*, float*, float*, int*)'
+    DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 123, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-widen
+Name:            GreaterOrEqualThreshold
+DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 25, Column: 42 }
+Function:        _ZL15conv_valid_reluiiiiiiPKfS0_S0_iiPf
+Args:            
+  - String:          'Could not widen since type '
+  - Type:            float
+  - String:          ' size is greater than or equal to the max_widen_bitwidth threshold of '
+  - Threshold:       '0'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        scevgep8seq
+  - String:          ' '
+  - ArrayName:       feature_in
+  - String:          ' '
+  - BundleName:      gmem5
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_25_6
+  - String:          ' '
+  - LoopLoc:         'src/gtsrb_cnn.cpp:25:42'
+  - String:          ' '
+  - Function:        'conv_valid_relu(int, int, int, int, int, int, float const*, float const*, float const*, int, int, float*)'
+    DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 12, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-widen
+Name:            GreaterOrEqualThreshold
+DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 25, Column: 42 }
+Function:        _ZL15conv_valid_reluiiiiiiPKfS0_S0_iiPf
+Args:            
+  - String:          'Could not widen since type '
+  - Type:            float
+  - String:          ' size is greater than or equal to the max_widen_bitwidth threshold of '
+  - Threshold:       '0'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        scevgep7seq
+  - String:          ' '
+  - ArrayName:       feature_in
+  - String:          ' '
+  - BundleName:      gmem5
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_25_6
+  - String:          ' '
+  - LoopLoc:         'src/gtsrb_cnn.cpp:25:42'
+  - String:          ' '
+  - Function:        'conv_valid_relu(int, int, int, int, int, int, float const*, float const*, float const*, int, int, float*)'
+    DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 12, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-widen
+Name:            GreaterOrEqualThreshold
+DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 25, Column: 42 }
+Function:        _ZL15conv_valid_reluiiiiiiPKfS0_S0_iiPf
+Args:            
+  - String:          'Could not widen since type '
+  - Type:            float
+  - String:          ' size is greater than or equal to the max_widen_bitwidth threshold of '
+  - Threshold:       '0'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        scevgep6seq
+  - String:          ' '
+  - ArrayName:       feature_in
+  - String:          ' '
+  - BundleName:      gmem5
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_25_6
+  - String:          ' '
+  - LoopLoc:         'src/gtsrb_cnn.cpp:25:42'
+  - String:          ' '
+  - Function:        'conv_valid_relu(int, int, int, int, int, int, float const*, float const*, float const*, int, int, float*)'
+    DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 12, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-widen
+Name:            GreaterOrEqualThreshold
+DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 25, Column: 42 }
+Function:        _ZL15conv_valid_reluiiiiiiPKfS0_S0_iiPf
+Args:            
+  - String:          'Could not widen since type '
+  - Type:            float
+  - String:          ' size is greater than or equal to the max_widen_bitwidth threshold of '
+  - Threshold:       '0'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        scevgep5seq
+  - String:          ' '
+  - ArrayName:       feature_in
+  - String:          ' '
+  - BundleName:      gmem5
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_25_6
+  - String:          ' '
+  - LoopLoc:         'src/gtsrb_cnn.cpp:25:42'
+  - String:          ' '
+  - Function:        'conv_valid_relu(int, int, int, int, int, int, float const*, float const*, float const*, int, int, float*)'
+    DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 12, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-widen
+Name:            GreaterOrEqualThreshold
+DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 25, Column: 42 }
+Function:        _ZL15conv_valid_reluiiiiiiPKfS0_S0_iiPf
+Args:            
+  - String:          'Could not widen since type '
+  - Type:            float
+  - String:          ' size is greater than or equal to the max_widen_bitwidth threshold of '
+  - Threshold:       '0'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        scevgep4seq
+  - String:          ' '
+  - ArrayName:       feature_in
+  - String:          ' '
+  - BundleName:      gmem5
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_25_6
+  - String:          ' '
+  - LoopLoc:         'src/gtsrb_cnn.cpp:25:42'
+  - String:          ' '
+  - Function:        'conv_valid_relu(int, int, int, int, int, int, float const*, float const*, float const*, int, int, float*)'
+    DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 12, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-widen
+Name:            GreaterOrEqualThreshold
+DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 25, Column: 42 }
+Function:        _ZL15conv_valid_reluiiiiiiPKfS0_S0_iiPf
+Args:            
+  - String:          'Could not widen since type '
+  - Type:            float
+  - String:          ' size is greater than or equal to the max_widen_bitwidth threshold of '
+  - Threshold:       '0'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        scevgep3seq
+  - String:          ' '
+  - ArrayName:       feature_in
+  - String:          ' '
+  - BundleName:      gmem5
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_25_6
+  - String:          ' '
+  - LoopLoc:         'src/gtsrb_cnn.cpp:25:42'
+  - String:          ' '
+  - Function:        'conv_valid_relu(int, int, int, int, int, int, float const*, float const*, float const*, int, int, float*)'
+    DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 12, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-widen
+Name:            GreaterOrEqualThreshold
+DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 25, Column: 42 }
+Function:        _ZL15conv_valid_reluiiiiiiPKfS0_S0_iiPf
+Args:            
+  - String:          'Could not widen since type '
+  - Type:            float
+  - String:          ' size is greater than or equal to the max_widen_bitwidth threshold of '
+  - Threshold:       '0'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        scevgep2seq
+  - String:          ' '
+  - ArrayName:       feature_in
+  - String:          ' '
+  - BundleName:      gmem5
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_25_6
+  - String:          ' '
+  - LoopLoc:         'src/gtsrb_cnn.cpp:25:42'
+  - String:          ' '
+  - Function:        'conv_valid_relu(int, int, int, int, int, int, float const*, float const*, float const*, int, int, float*)'
+    DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 12, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-widen
+Name:            GreaterOrEqualThreshold
+DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 25, Column: 42 }
+Function:        _ZL15conv_valid_reluiiiiiiPKfS0_S0_iiPf
+Args:            
+  - String:          'Could not widen since type '
+  - Type:            float
+  - String:          ' size is greater than or equal to the max_widen_bitwidth threshold of '
+  - Threshold:       '0'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        scevgep1seq
+  - String:          ' '
+  - ArrayName:       feature_in
+  - String:          ' '
+  - BundleName:      gmem5
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_25_6
+  - String:          ' '
+  - LoopLoc:         'src/gtsrb_cnn.cpp:25:42'
+  - String:          ' '
+  - Function:        'conv_valid_relu(int, int, int, int, int, int, float const*, float const*, float const*, int, int, float*)'
+    DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 12, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-widen
+Name:            GreaterOrEqualThreshold
+DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 25, Column: 42 }
+Function:        _ZL15conv_valid_reluiiiiiiPKfS0_S0_iiPf
+Args:            
+  - String:          'Could not widen since type '
+  - Type:            float
+  - String:          ' size is greater than or equal to the max_widen_bitwidth threshold of '
+  - Threshold:       '0'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        scevgepseq
+  - String:          ' '
+  - ArrayName:       feature_in
+  - String:          ' '
+  - BundleName:      gmem5
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_25_6
+  - String:          ' '
+  - LoopLoc:         'src/gtsrb_cnn.cpp:25:42'
+  - String:          ' '
+  - Function:        'conv_valid_relu(int, int, int, int, int, int, float const*, float const*, float const*, int, int, float*)'
+    DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 12, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-widen
+Name:            GreaterOrEqualThreshold
+DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 83, Column: 19 }
+Function:        _ZL6lineariiPKfS0_S0_bPf
+Args:            
+  - String:          'Could not widen since type '
+  - Type:            float
+  - String:          ' size is greater than or equal to the max_widen_bitwidth threshold of '
+  - Threshold:       '0'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        voutseq
+  - String:          ' '
+  - ArrayName:       vout
+  - String:          ' '
+  - BundleName:      gmem5
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_83_1
+  - String:          ' '
+  - LoopLoc:         'src/gtsrb_cnn.cpp:83:19'
+  - String:          ' '
+  - Function:        'linear(int, int, float const*, float const*, float const*, bool, float*)'
+    DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 81, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-widen
+Name:            GreaterOrEqualThreshold
+DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 83, Column: 19 }
+Function:        _ZL6lineariiPKfS0_S0_bPf
+Args:            
+  - String:          'Could not widen since type '
+  - Type:            float
+  - String:          ' size is greater than or equal to the max_widen_bitwidth threshold of '
+  - Threshold:       '0'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        bseq
+  - String:          ' '
+  - ArrayName:       b
+  - String:          ' '
+  - BundleName:      gmem4
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_83_1
+  - String:          ' '
+  - LoopLoc:         'src/gtsrb_cnn.cpp:83:19'
+  - String:          ' '
+  - Function:        'linear(int, int, float const*, float const*, float const*, bool, float*)'
+    DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 81, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-widen
+Name:            GreaterOrEqualThreshold
+DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 83, Column: 19 }
+Function:        _ZL6lineariiPKfS0_S0_bPf.1
+Args:            
+  - String:          'Could not widen since type '
+  - Type:            float
+  - String:          ' size is greater than or equal to the max_widen_bitwidth threshold of '
+  - Threshold:       '0'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        bseq
+  - String:          ' '
+  - ArrayName:       b
+  - String:          ' '
+  - BundleName:      gmem3
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_83_1
+  - String:          ' '
+  - LoopLoc:         'src/gtsrb_cnn.cpp:83:19'
+  - String:          ' '
+  - Function:        'linear(int, int, float const*, float const*, float const*, bool, float*) (.1)'
+    DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 81, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 12, Column: 0 }
+Function:        _ZL15conv_valid_reluiiiiiiPKfS0_S0_iiPf
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_25_6
+  - String:          ''' ('
+  - LoopLoc:         'src/gtsrb_cnn.cpp:25:42'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          conv_valid_relu
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 12, Column: 0 }
+Function:        _ZL15conv_valid_reluiiiiiiPKfS0_S0_iiPf
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_25_6
+  - String:          ''' ('
+  - LoopLoc:         'src/gtsrb_cnn.cpp:25:42'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          conv_valid_relu
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 12, Column: 0 }
+Function:        _ZL15conv_valid_reluiiiiiiPKfS0_S0_iiPf
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_25_6
+  - String:          ''' ('
+  - LoopLoc:         'src/gtsrb_cnn.cpp:25:42'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          conv_valid_relu
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 12, Column: 0 }
+Function:        _ZL15conv_valid_reluiiiiiiPKfS0_S0_iiPf
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_25_6
+  - String:          ''' ('
+  - LoopLoc:         'src/gtsrb_cnn.cpp:25:42'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          conv_valid_relu
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 12, Column: 0 }
+Function:        _ZL15conv_valid_reluiiiiiiPKfS0_S0_iiPf
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_25_6
+  - String:          ''' ('
+  - LoopLoc:         'src/gtsrb_cnn.cpp:25:42'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          conv_valid_relu
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 12, Column: 0 }
+Function:        _ZL15conv_valid_reluiiiiiiPKfS0_S0_iiPf
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_25_6
+  - String:          ''' ('
+  - LoopLoc:         'src/gtsrb_cnn.cpp:25:42'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          conv_valid_relu
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 12, Column: 0 }
+Function:        _ZL15conv_valid_reluiiiiiiPKfS0_S0_iiPf
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_25_6
+  - String:          ''' ('
+  - LoopLoc:         'src/gtsrb_cnn.cpp:25:42'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          conv_valid_relu
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 12, Column: 0 }
+Function:        _ZL15conv_valid_reluiiiiiiPKfS0_S0_iiPf
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_25_6
+  - String:          ''' ('
+  - LoopLoc:         'src/gtsrb_cnn.cpp:25:42'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          conv_valid_relu
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 12, Column: 0 }
+Function:        _ZL15conv_valid_reluiiiiiiPKfS0_S0_iiPf
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_25_6
+  - String:          ''' ('
+  - LoopLoc:         'src/gtsrb_cnn.cpp:25:42'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          conv_valid_relu
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 25, Column: 42 }
+Function:        _ZL15conv_valid_reluiiiiiiPKfS0_S0_iiPf.2
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_25_6
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 25, Column: 42 }
+Function:        _ZL15conv_valid_reluiiiiiiPKfS0_S0_iiPf.2
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_25_6
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 25, Column: 42 }
+Function:        _ZL15conv_valid_reluiiiiiiPKfS0_S0_iiPf.2
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_25_6
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 25, Column: 42 }
+Function:        _ZL15conv_valid_reluiiiiiiPKfS0_S0_iiPf.2
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_25_6
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 25, Column: 42 }
+Function:        _ZL15conv_valid_reluiiiiiiPKfS0_S0_iiPf.2
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_25_6
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 25, Column: 42 }
+Function:        _ZL15conv_valid_reluiiiiiiPKfS0_S0_iiPf.2
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_25_6
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 25, Column: 42 }
+Function:        _ZL15conv_valid_reluiiiiiiPKfS0_S0_iiPf.2
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_25_6
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 25, Column: 42 }
+Function:        _ZL15conv_valid_reluiiiiiiPKfS0_S0_iiPf.2
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_25_6
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 25, Column: 42 }
+Function:        _ZL15conv_valid_reluiiiiiiPKfS0_S0_iiPf.2
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_25_6
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredVerboseSummary
+DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 25, Column: 42 }
+Function:        _ZL15conv_valid_reluiiiiiiPKfS0_S0_iiPf.1
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of length '
+  - Length:          '3'
+  - String:          ' and bit width '
+  - Width:           '32'
+  - String:          ' has been inferred.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        seq
+  - String:          ' '
+  - ArrayName:       ''
+  - String:          ' '
+  - BundleName:      gmem5
+  - String:          ' '
+  - Function:        'conv_valid_relu(int, int, int, int, int, int, float const*, float const*, float const*, int, int, float*) (.1)'
+    DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 12, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredSummary
+DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 25, Column: 42 }
+Function:        _ZL15conv_valid_reluiiiiiiPKfS0_S0_iiPf.1
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of length '
+  - Length:          '3'
+  - String:          ' and bit width '
+  - Width:           '32'
+  - String:          ' has been inferred on bundle '''
+  - BundleName:      gmem5
+  - String:          '''.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredVerboseSummary
+DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 25, Column: 42 }
+Function:        _ZL15conv_valid_reluiiiiiiPKfS0_S0_iiPf.1
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of length '
+  - Length:          '3'
+  - String:          ' and bit width '
+  - Width:           '32'
+  - String:          ' has been inferred.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        seq1
+  - String:          ' '
+  - ArrayName:       ''
+  - String:          ' '
+  - BundleName:      gmem5
+  - String:          ' '
+  - Function:        'conv_valid_relu(int, int, int, int, int, int, float const*, float const*, float const*, int, int, float*) (.1)'
+    DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 12, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredSummary
+DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 25, Column: 42 }
+Function:        _ZL15conv_valid_reluiiiiiiPKfS0_S0_iiPf.1
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of length '
+  - Length:          '3'
+  - String:          ' and bit width '
+  - Width:           '32'
+  - String:          ' has been inferred on bundle '''
+  - BundleName:      gmem5
+  - String:          '''.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredVerboseSummary
+DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 25, Column: 42 }
+Function:        _ZL15conv_valid_reluiiiiiiPKfS0_S0_iiPf.1
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of length '
+  - Length:          '3'
+  - String:          ' and bit width '
+  - Width:           '32'
+  - String:          ' has been inferred.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        seq2
+  - String:          ' '
+  - ArrayName:       ''
+  - String:          ' '
+  - BundleName:      gmem5
+  - String:          ' '
+  - Function:        'conv_valid_relu(int, int, int, int, int, int, float const*, float const*, float const*, int, int, float*) (.1)'
+    DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 12, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredSummary
+DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 25, Column: 42 }
+Function:        _ZL15conv_valid_reluiiiiiiPKfS0_S0_iiPf.1
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of length '
+  - Length:          '3'
+  - String:          ' and bit width '
+  - Width:           '32'
+  - String:          ' has been inferred on bundle '''
+  - BundleName:      gmem5
+  - String:          '''.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredVerboseSummary
+DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 25, Column: 42 }
+Function:        _ZL15conv_valid_reluiiiiiiPKfS0_S0_iiPf.1
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of length '
+  - Length:          '3'
+  - String:          ' and bit width '
+  - Width:           '32'
+  - String:          ' has been inferred.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        seq3
+  - String:          ' '
+  - ArrayName:       ''
+  - String:          ' '
+  - BundleName:      gmem5
+  - String:          ' '
+  - Function:        'conv_valid_relu(int, int, int, int, int, int, float const*, float const*, float const*, int, int, float*) (.1)'
+    DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 12, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredSummary
+DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 25, Column: 42 }
+Function:        _ZL15conv_valid_reluiiiiiiPKfS0_S0_iiPf.1
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of length '
+  - Length:          '3'
+  - String:          ' and bit width '
+  - Width:           '32'
+  - String:          ' has been inferred on bundle '''
+  - BundleName:      gmem5
+  - String:          '''.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredVerboseSummary
+DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 25, Column: 42 }
+Function:        _ZL15conv_valid_reluiiiiiiPKfS0_S0_iiPf.1
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of length '
+  - Length:          '3'
+  - String:          ' and bit width '
+  - Width:           '32'
+  - String:          ' has been inferred.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        seq4
+  - String:          ' '
+  - ArrayName:       ''
+  - String:          ' '
+  - BundleName:      gmem5
+  - String:          ' '
+  - Function:        'conv_valid_relu(int, int, int, int, int, int, float const*, float const*, float const*, int, int, float*) (.1)'
+    DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 12, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredSummary
+DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 25, Column: 42 }
+Function:        _ZL15conv_valid_reluiiiiiiPKfS0_S0_iiPf.1
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of length '
+  - Length:          '3'
+  - String:          ' and bit width '
+  - Width:           '32'
+  - String:          ' has been inferred on bundle '''
+  - BundleName:      gmem5
+  - String:          '''.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredVerboseSummary
+DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 25, Column: 42 }
+Function:        _ZL15conv_valid_reluiiiiiiPKfS0_S0_iiPf.1
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of length '
+  - Length:          '3'
+  - String:          ' and bit width '
+  - Width:           '32'
+  - String:          ' has been inferred.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        seq5
+  - String:          ' '
+  - ArrayName:       ''
+  - String:          ' '
+  - BundleName:      gmem5
+  - String:          ' '
+  - Function:        'conv_valid_relu(int, int, int, int, int, int, float const*, float const*, float const*, int, int, float*) (.1)'
+    DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 12, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredSummary
+DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 25, Column: 42 }
+Function:        _ZL15conv_valid_reluiiiiiiPKfS0_S0_iiPf.1
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of length '
+  - Length:          '3'
+  - String:          ' and bit width '
+  - Width:           '32'
+  - String:          ' has been inferred on bundle '''
+  - BundleName:      gmem5
+  - String:          '''.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredVerboseSummary
+DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 25, Column: 42 }
+Function:        _ZL15conv_valid_reluiiiiiiPKfS0_S0_iiPf.1
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of length '
+  - Length:          '3'
+  - String:          ' and bit width '
+  - Width:           '32'
+  - String:          ' has been inferred.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        seq6
+  - String:          ' '
+  - ArrayName:       ''
+  - String:          ' '
+  - BundleName:      gmem5
+  - String:          ' '
+  - Function:        'conv_valid_relu(int, int, int, int, int, int, float const*, float const*, float const*, int, int, float*) (.1)'
+    DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 12, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredSummary
+DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 25, Column: 42 }
+Function:        _ZL15conv_valid_reluiiiiiiPKfS0_S0_iiPf.1
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of length '
+  - Length:          '3'
+  - String:          ' and bit width '
+  - Width:           '32'
+  - String:          ' has been inferred on bundle '''
+  - BundleName:      gmem5
+  - String:          '''.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredVerboseSummary
+DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 25, Column: 42 }
+Function:        _ZL15conv_valid_reluiiiiiiPKfS0_S0_iiPf.1
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of length '
+  - Length:          '3'
+  - String:          ' and bit width '
+  - Width:           '32'
+  - String:          ' has been inferred.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        seq7
+  - String:          ' '
+  - ArrayName:       ''
+  - String:          ' '
+  - BundleName:      gmem5
+  - String:          ' '
+  - Function:        'conv_valid_relu(int, int, int, int, int, int, float const*, float const*, float const*, int, int, float*) (.1)'
+    DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 12, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredSummary
+DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 25, Column: 42 }
+Function:        _ZL15conv_valid_reluiiiiiiPKfS0_S0_iiPf.1
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of length '
+  - Length:          '3'
+  - String:          ' and bit width '
+  - Width:           '32'
+  - String:          ' has been inferred on bundle '''
+  - BundleName:      gmem5
+  - String:          '''.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredVerboseSummary
+DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 25, Column: 42 }
+Function:        _ZL15conv_valid_reluiiiiiiPKfS0_S0_iiPf.1
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of length '
+  - Length:          '3'
+  - String:          ' and bit width '
+  - Width:           '32'
+  - String:          ' has been inferred.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        seq8
+  - String:          ' '
+  - ArrayName:       ''
+  - String:          ' '
+  - BundleName:      gmem5
+  - String:          ' '
+  - Function:        'conv_valid_relu(int, int, int, int, int, int, float const*, float const*, float const*, int, int, float*) (.1)'
+    DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 12, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredSummary
+DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 25, Column: 42 }
+Function:        _ZL15conv_valid_reluiiiiiiPKfS0_S0_iiPf.1
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of length '
+  - Length:          '3'
+  - String:          ' and bit width '
+  - Width:           '32'
+  - String:          ' has been inferred on bundle '''
+  - BundleName:      gmem5
+  - String:          '''.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            BurstConflict
+DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 83, Column: 19 }
+Function:        _ZL6lineariiPKfS0_S0_bPf.1.1
+Args:            
+  - String:          'Could not burst due to multiple potential '
+  - Direction:       reads
+  - String:          ' to the same bundle in the same region.'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        seq
+  - String:          ' '
+  - ArrayName:       ''
+  - String:          ' '
+  - BundleName:      gmem3
+  - String:          ' '
+  - Function:        'linear(int, int, float const*, float const*, float const*, bool, float*) (.1.1)'
+    DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 81, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            BurstConflict
+DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 83, Column: 19 }
+Function:        _ZL6lineariiPKfS0_S0_bPf.1.2
+Args:            
+  - String:          'Could not burst due to multiple potential '
+  - Direction:       reads
+  - String:          ' to the same bundle in the same region.'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        seq
+  - String:          ' '
+  - ArrayName:       ''
+  - String:          ' '
+  - BundleName:      gmem4
+  - String:          ' '
+  - Function:        'linear(int, int, float const*, float const*, float const*, bool, float*) (.1.2)'
+    DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 81, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredVerboseSummary
+DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 83, Column: 19 }
+Function:        _ZL6lineariiPKfS0_S0_bPf.1.2
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       writes
+  - String:          ' of length '
+  - Length:          '43'
+  - String:          ' and bit width '
+  - Width:           '32'
+  - String:          ' has been inferred.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        seq1
+  - String:          ' '
+  - ArrayName:       ''
+  - String:          ' '
+  - BundleName:      gmem5
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_83_1
+  - String:          ' '
+  - LoopLoc:         'src/gtsrb_cnn.cpp:83:19'
+  - String:          ' '
+  - Function:        'linear(int, int, float const*, float const*, float const*, bool, float*) (.1.2)'
+    DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 81, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredSummary
+DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 83, Column: 19 }
+Function:        _ZL6lineariiPKfS0_S0_bPf.1.2
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       writes
+  - String:          ' of length '
+  - Length:          '43'
+  - String:          ' and bit width '
+  - Width:           '32'
+  - String:          ' in loop '''
+  - LoopName:        VITIS_LOOP_83_1
+  - String:          '''('
+  - LoopLoc:         'src/gtsrb_cnn.cpp:83:19'
+  - String:          ')'
+  - String:          ' has been inferred on bundle '''
+  - BundleName:      gmem5
+  - String:          '''.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredVerboseSummary
+DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 101, Column: 23 }
+Function:        _Z9gtsrb_cnnPfS_S_S_S_S_S_S_S_S_S_S_Pi
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of length '
+  - Length:          '42'
+  - String:          ' and bit width '
+  - Width:           '32'
+  - String:          ' has been inferred.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        seq
+  - String:          ' '
+  - ArrayName:       ''
+  - String:          ' '
+  - BundleName:      gmem5
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_101_1
+  - String:          ' '
+  - LoopLoc:         'src/gtsrb_cnn.cpp:101:23'
+  - String:          ' '
+  - Function:        'gtsrb_cnn(float*, float*, float*, float*, float*, float*, float*, float*, float*, float*, float*, float*, int*)'
+    DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 123, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredSummary
+DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 101, Column: 23 }
+Function:        _Z9gtsrb_cnnPfS_S_S_S_S_S_S_S_S_S_S_Pi
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of length '
+  - Length:          '42'
+  - String:          ' and bit width '
+  - Width:           '32'
+  - String:          ' in loop '''
+  - LoopName:        VITIS_LOOP_101_1
+  - String:          '''('
+  - LoopLoc:         'src/gtsrb_cnn.cpp:101:23'
+  - String:          ')'
+  - String:          ' has been inferred on bundle '''
+  - BundleName:      gmem5
+  - String:          '''.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 25, Column: 42 }
+Function:        _ZL15conv_valid_reluiiiiiiPKfS0_S0_iiPf.2.1
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_25_6
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 25, Column: 42 }
+Function:        _ZL15conv_valid_reluiiiiiiPKfS0_S0_iiPf.2.1
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_25_6
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 25, Column: 42 }
+Function:        _ZL15conv_valid_reluiiiiiiPKfS0_S0_iiPf.2.1
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_25_6
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 25, Column: 42 }
+Function:        _ZL15conv_valid_reluiiiiiiPKfS0_S0_iiPf.2.1
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_25_6
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 25, Column: 42 }
+Function:        _ZL15conv_valid_reluiiiiiiPKfS0_S0_iiPf.2.1
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_25_6
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 25, Column: 42 }
+Function:        _ZL15conv_valid_reluiiiiiiPKfS0_S0_iiPf.2.1
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_25_6
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 25, Column: 42 }
+Function:        _ZL15conv_valid_reluiiiiiiPKfS0_S0_iiPf.2.1
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_25_6
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 25, Column: 42 }
+Function:        _ZL15conv_valid_reluiiiiiiPKfS0_S0_iiPf.2.1
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_25_6
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: src/gtsrb_cnn.cpp, Line: 25, Column: 42 }
+Function:        _ZL15conv_valid_reluiiiiiiPKfS0_S0_iiPf.2.1
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_25_6
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...

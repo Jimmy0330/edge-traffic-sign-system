@@ -1,0 +1,181 @@
+
+
+================================================================
+== Vitis HLS Report for 'linear_2'
+================================================================
+* Date:           Sat Sep 13 23:17:12 2025
+
+* Version:        2022.2 (Build 3670227 on Oct 13 2022)
+* Project:        CNN_GTSRB
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynquplus
+* Target device:  xczu5eg-sfvc784-1-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  7.300 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+-----------+------+------+---------+
+    |  Latency (cycles) |   Latency (absolute)  |   Interval  | Pipeline|
+    |   min   |   max   |    min    |    max    |  min |  max |   Type  |
+    +---------+---------+-----------+-----------+------+------+---------+
+    |     3141|     3141|  31.410 us|  31.410 us|  3141|  3141|       no|
+    +---------+---------+-----------+-----------+------+------+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 8
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 6 
+6 --> 7 
+7 --> 8 
+8 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 7.30>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%vout_read = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %vout" [src/gtsrb_cnn.cpp:83]   --->   Operation 9 'read' 'vout_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%trunc_ln83_1 = partselect i62 @_ssdm_op_PartSelect.i62.i64.i32.i32, i64 %vout_read, i32 2, i32 63" [src/gtsrb_cnn.cpp:83]   --->   Operation 10 'partselect' 'trunc_ln83_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%sext_ln83 = sext i62 %trunc_ln83_1" [src/gtsrb_cnn.cpp:83]   --->   Operation 11 'sext' 'sext_ln83' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%gmem5_addr = getelementptr i32 %gmem5, i64 %sext_ln83" [src/gtsrb_cnn.cpp:83]   --->   Operation 12 'getelementptr' 'gmem5_addr' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (7.30ns)   --->   "%empty = writereq i1 @_ssdm_op_WriteReq.m_axi.p1i32, i32 %gmem5_addr, i32 43" [src/gtsrb_cnn.cpp:83]   --->   Operation 13 'writereq' 'empty' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 2 <SV = 1> <Delay = 1.44>
+ST_2 : Operation 14 [1/1] (0.00ns)   --->   "%b_read = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %b" [src/gtsrb_cnn.cpp:83]   --->   Operation 14 'read' 'b_read' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 15 [1/1] (0.00ns)   --->   "%W_read = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %W" [src/gtsrb_cnn.cpp:83]   --->   Operation 15 'read' 'W_read' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 16 [1/1] (0.00ns)   --->   "%trunc_ln = partselect i62 @_ssdm_op_PartSelect.i62.i64.i32.i32, i64 %b_read, i32 2, i32 63" [src/gtsrb_cnn.cpp:83]   --->   Operation 16 'partselect' 'trunc_ln' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 17 [2/2] (1.44ns)   --->   "%call_ln83 = call void @linear.2_Pipeline_VITIS_LOOP_83_1, i32 %gmem5, i62 %trunc_ln83_1, i62 %trunc_ln, i32 %gmem4, i64 %W_read, i32 %fc1_out" [src/gtsrb_cnn.cpp:83]   --->   Operation 17 'call' 'call_ln83' <Predicate = true> <Delay = 1.44> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 3 <SV = 2> <Delay = 0.00>
+ST_3 : Operation 18 [1/2] (0.00ns)   --->   "%call_ln83 = call void @linear.2_Pipeline_VITIS_LOOP_83_1, i32 %gmem5, i62 %trunc_ln83_1, i62 %trunc_ln, i32 %gmem4, i64 %W_read, i32 %fc1_out" [src/gtsrb_cnn.cpp:83]   --->   Operation 18 'call' 'call_ln83' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 4 <SV = 3> <Delay = 7.30>
+ST_4 : Operation 19 [5/5] (7.30ns)   --->   "%empty_48 = writeresp i1 @_ssdm_op_WriteResp.m_axi.p1i32, i32 %gmem5_addr" [src/gtsrb_cnn.cpp:92]   --->   Operation 19 'writeresp' 'empty_48' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 5 <SV = 4> <Delay = 7.30>
+ST_5 : Operation 20 [4/5] (7.30ns)   --->   "%empty_48 = writeresp i1 @_ssdm_op_WriteResp.m_axi.p1i32, i32 %gmem5_addr" [src/gtsrb_cnn.cpp:92]   --->   Operation 20 'writeresp' 'empty_48' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 6 <SV = 5> <Delay = 7.30>
+ST_6 : Operation 21 [3/5] (7.30ns)   --->   "%empty_48 = writeresp i1 @_ssdm_op_WriteResp.m_axi.p1i32, i32 %gmem5_addr" [src/gtsrb_cnn.cpp:92]   --->   Operation 21 'writeresp' 'empty_48' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 7 <SV = 6> <Delay = 7.30>
+ST_7 : Operation 22 [2/5] (7.30ns)   --->   "%empty_48 = writeresp i1 @_ssdm_op_WriteResp.m_axi.p1i32, i32 %gmem5_addr" [src/gtsrb_cnn.cpp:92]   --->   Operation 22 'writeresp' 'empty_48' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 8 <SV = 7> <Delay = 7.30>
+ST_8 : Operation 23 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i32 %fc1_out, i64 666, i64 22, i64 18446744073709551615"   --->   Operation 23 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 24 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %gmem5, void @empty_25, i32 0, i32 0, void @empty_27, i32 0, i32 2700, void @empty, void @empty_30, void @empty_27, i32 16, i32 16, i32 16, i32 16, void @empty_27, void @empty_27, i32 4294967295, i32 0"   --->   Operation 24 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 25 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %gmem4, void @empty_25, i32 0, i32 0, void @empty_27, i32 0, i32 2752, void @empty_31, void @empty_30, void @empty_27, i32 16, i32 16, i32 16, i32 16, void @empty_27, void @empty_27, i32 4294967295, i32 0"   --->   Operation 25 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 26 [1/5] (7.30ns)   --->   "%empty_48 = writeresp i1 @_ssdm_op_WriteResp.m_axi.p1i32, i32 %gmem5_addr" [src/gtsrb_cnn.cpp:92]   --->   Operation 26 'writeresp' 'empty_48' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_8 : Operation 27 [1/1] (0.00ns)   --->   "%ret_ln92 = ret" [src/gtsrb_cnn.cpp:92]   --->   Operation 27 'ret' 'ret_ln92' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 2.7ns.
+
+ <State 1>: 7.3ns
+The critical path consists of the following:
+	wire read operation ('vout_read', src/gtsrb_cnn.cpp:83) on port 'vout' (src/gtsrb_cnn.cpp:83) [10]  (0 ns)
+	'getelementptr' operation ('gmem5_addr', src/gtsrb_cnn.cpp:83) [16]  (0 ns)
+	bus request operation ('empty', src/gtsrb_cnn.cpp:83) on port 'gmem5' (src/gtsrb_cnn.cpp:83) [17]  (7.3 ns)
+
+ <State 2>: 1.44ns
+The critical path consists of the following:
+	wire read operation ('b_read', src/gtsrb_cnn.cpp:83) on port 'b' (src/gtsrb_cnn.cpp:83) [11]  (0 ns)
+	'call' operation ('call_ln83', src/gtsrb_cnn.cpp:83) to 'linear.2_Pipeline_VITIS_LOOP_83_1' [18]  (1.44 ns)
+
+ <State 3>: 0ns
+The critical path consists of the following:
+
+ <State 4>: 7.3ns
+The critical path consists of the following:
+	bus response operation ('empty_48', src/gtsrb_cnn.cpp:92) on port 'gmem5' (src/gtsrb_cnn.cpp:92) [19]  (7.3 ns)
+
+ <State 5>: 7.3ns
+The critical path consists of the following:
+	bus response operation ('empty_48', src/gtsrb_cnn.cpp:92) on port 'gmem5' (src/gtsrb_cnn.cpp:92) [19]  (7.3 ns)
+
+ <State 6>: 7.3ns
+The critical path consists of the following:
+	bus response operation ('empty_48', src/gtsrb_cnn.cpp:92) on port 'gmem5' (src/gtsrb_cnn.cpp:92) [19]  (7.3 ns)
+
+ <State 7>: 7.3ns
+The critical path consists of the following:
+	bus response operation ('empty_48', src/gtsrb_cnn.cpp:92) on port 'gmem5' (src/gtsrb_cnn.cpp:92) [19]  (7.3 ns)
+
+ <State 8>: 7.3ns
+The critical path consists of the following:
+	bus response operation ('empty_48', src/gtsrb_cnn.cpp:92) on port 'gmem5' (src/gtsrb_cnn.cpp:92) [19]  (7.3 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A
